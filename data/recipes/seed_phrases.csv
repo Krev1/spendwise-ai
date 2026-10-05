@@ -1,0 +1,161 @@
+phrase_id,description,label,pattern_family_id
+an_uong_bua_an_01,ăn trưa cơm gà,an_uong,tpl_an_uong_bua_an
+an_uong_bua_an_02,bữa tối bún bò,an_uong,tpl_an_uong_bua_an
+an_uong_bua_an_03,bánh mì cho bữa sáng,an_uong,tpl_an_uong_bua_an
+an_uong_bua_an_04,cơm văn phòng buổi trưa,an_uong,tpl_an_uong_bua_an
+an_uong_bua_an_05,phở bò ăn sáng,an_uong,tpl_an_uong_bua_an
+an_uong_do_uong_01,cà phê sáng ở quán,an_uong,tpl_an_uong_do_uong
+an_uong_do_uong_02,trà sữa sau giờ học,an_uong,tpl_an_uong_do_uong
+an_uong_do_uong_03,nước cam uống buổi chiều,an_uong,tpl_an_uong_do_uong
+an_uong_do_uong_04,chai nước uống khi đi đường,an_uong,tpl_an_uong_do_uong
+an_uong_do_uong_05,ly trà đào mang về,an_uong,tpl_an_uong_do_uong
+an_uong_thuc_pham_01,mua rau để nấu cơm,an_uong,tpl_an_uong_thuc_pham
+an_uong_thuc_pham_02,thịt heo cho bữa tối,an_uong,tpl_an_uong_thuc_pham
+an_uong_thuc_pham_03,trứng gà để ăn trong tuần,an_uong,tpl_an_uong_thuc_pham
+an_uong_thuc_pham_04,gạo nấu cơm ở nhà,an_uong,tpl_an_uong_thuc_pham
+an_uong_thuc_pham_05,trái cây ăn tráng miệng,an_uong,tpl_an_uong_thuc_pham
+an_uong_giao_do_an_01,GrabFood đặt cơm trưa,an_uong,tpl_an_uong_giao_do_an
+an_uong_giao_do_an_02,đặt bánh pizza giao về nhà,an_uong,tpl_an_uong_giao_do_an
+an_uong_giao_do_an_03,đặt bún qua ứng dụng giao đồ ăn,an_uong,tpl_an_uong_giao_do_an
+an_uong_giao_do_an_04,gọi cháo giao tận phòng,an_uong,tpl_an_uong_giao_do_an
+an_uong_giao_do_an_05,mua đồ ăn tối qua ShopeeFood,an_uong,tpl_an_uong_giao_do_an
+di_chuyen_ve_phuong_tien_01,vé xe buýt đến trường,di_chuyen,tpl_di_chuyen_ve_phuong_tien
+di_chuyen_ve_phuong_tien_02,vé tàu về quê,di_chuyen,tpl_di_chuyen_ve_phuong_tien
+di_chuyen_ve_phuong_tien_03,vé xe khách đi tỉnh,di_chuyen,tpl_di_chuyen_ve_phuong_tien
+di_chuyen_ve_phuong_tien_04,vé tàu điện đi làm,di_chuyen,tpl_di_chuyen_ve_phuong_tien
+di_chuyen_ve_phuong_tien_05,vé phà qua sông,di_chuyen,tpl_di_chuyen_ve_phuong_tien
+di_chuyen_xe_cong_nghe_01,Grab đi làm buổi sáng,di_chuyen,tpl_di_chuyen_xe_cong_nghe
+di_chuyen_xe_cong_nghe_02,đi xe công nghệ tới trường,di_chuyen,tpl_di_chuyen_xe_cong_nghe
+di_chuyen_xe_cong_nghe_03,tiền taxi về phòng trọ,di_chuyen,tpl_di_chuyen_xe_cong_nghe
+di_chuyen_xe_cong_nghe_04,cuốc xe máy công nghệ đến bến xe,di_chuyen,tpl_di_chuyen_xe_cong_nghe
+di_chuyen_xe_cong_nghe_05,đặt xe ô tô về nhà,di_chuyen,tpl_di_chuyen_xe_cong_nghe
+di_chuyen_xang_gui_xe_01,đổ xăng xe máy,di_chuyen,tpl_di_chuyen_xang_gui_xe
+di_chuyen_xang_gui_xe_02,tiền gửi xe ở trường,di_chuyen,tpl_di_chuyen_xang_gui_xe
+di_chuyen_xang_gui_xe_03,phí đỗ ô tô ở bãi xe,di_chuyen,tpl_di_chuyen_xang_gui_xe
+di_chuyen_xang_gui_xe_04,nạp điện cho xe máy điện,di_chuyen,tpl_di_chuyen_xang_gui_xe
+di_chuyen_xang_gui_xe_05,gửi xe khi đi chợ,di_chuyen,tpl_di_chuyen_xang_gui_xe
+di_chuyen_sua_xe_01,thay lốp xe máy,di_chuyen,tpl_di_chuyen_sua_xe
+di_chuyen_sua_xe_02,sửa phanh xe đạp,di_chuyen,tpl_di_chuyen_sua_xe
+di_chuyen_sua_xe_03,bảo dưỡng xe máy cá nhân,di_chuyen,tpl_di_chuyen_sua_xe
+di_chuyen_sua_xe_04,vá bánh xe bị thủng,di_chuyen,tpl_di_chuyen_sua_xe
+di_chuyen_sua_xe_05,thay nhớt xe máy,di_chuyen,tpl_di_chuyen_sua_xe
+nha_o_hoa_don_thue_o_01,tiền thuê phòng trọ tháng này,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o
+nha_o_hoa_don_thue_o_02,đóng tiền ký túc xá,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o
+nha_o_hoa_don_thue_o_03,thanh toán tiền thuê căn hộ,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o
+nha_o_hoa_don_thue_o_04,tiền thuê chỗ ở hằng tháng,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o
+nha_o_hoa_don_thue_o_05,chia tiền thuê nhà với bạn,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o
+nha_o_hoa_don_dien_nuoc_01,tiền điện phòng trọ,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc
+nha_o_hoa_don_dien_nuoc_02,hóa đơn nước sinh hoạt,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc
+nha_o_hoa_don_dien_nuoc_03,đóng tiền điện tháng chín,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc
+nha_o_hoa_don_dien_nuoc_04,thanh toán nước máy ở nhà,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc
+nha_o_hoa_don_dien_nuoc_05,tiền điện căn hộ tháng này,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc
+nha_o_hoa_don_internet_01,cước internet phòng trọ,nha_o_hoa_don,tpl_nha_o_hoa_don_internet
+nha_o_hoa_don_internet_02,tiền wifi ở nhà,nha_o_hoa_don,tpl_nha_o_hoa_don_internet
+nha_o_hoa_don_internet_03,gia hạn mạng cáp quang gia đình,nha_o_hoa_don,tpl_nha_o_hoa_don_internet
+nha_o_hoa_don_internet_04,chia hóa đơn internet với bạn cùng phòng,nha_o_hoa_don,tpl_nha_o_hoa_don_internet
+nha_o_hoa_don_internet_05,phí thuê bao mạng internet cố định,nha_o_hoa_don,tpl_nha_o_hoa_don_internet
+nha_o_hoa_don_dien_thoai_01,cước điện thoại tháng này,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai
+nha_o_hoa_don_dien_thoai_02,nạp gói dữ liệu di động,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai
+nha_o_hoa_don_dien_thoai_03,tiền thuê bao điện thoại,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai
+nha_o_hoa_don_dien_thoai_04,gia hạn gói gọi điện,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai
+nha_o_hoa_don_dien_thoai_05,hóa đơn điện thoại trả sau,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai
+hoc_tap_hoc_phi_01,học phí học kỳ mới,hoc_tap,tpl_hoc_tap_hoc_phi
+hoc_tap_hoc_phi_02,đóng phí khóa học tiếng Anh,hoc_tap,tpl_hoc_tap_hoc_phi
+hoc_tap_hoc_phi_03,tiền học lớp lập trình,hoc_tap,tpl_hoc_tap_hoc_phi
+hoc_tap_hoc_phi_04,thanh toán khóa luyện thi,hoc_tap,tpl_hoc_tap_hoc_phi
+hoc_tap_hoc_phi_05,học phí môn học bổ sung,hoc_tap,tpl_hoc_tap_hoc_phi
+hoc_tap_tai_lieu_01,mua giáo trình đại số,hoc_tap,tpl_hoc_tap_tai_lieu
+hoc_tap_tai_lieu_02,sách luyện thi tiếng Anh,hoc_tap,tpl_hoc_tap_tai_lieu
+hoc_tap_tai_lieu_03,in tài liệu ôn thi,hoc_tap,tpl_hoc_tap_tai_lieu
+hoc_tap_tai_lieu_04,photo bài giảng ở trường,hoc_tap,tpl_hoc_tap_tai_lieu
+hoc_tap_tai_lieu_05,mua tài liệu học Python,hoc_tap,tpl_hoc_tap_tai_lieu
+hoc_tap_dung_cu_01,mua vở để ghi bài,hoc_tap,tpl_hoc_tap_dung_cu
+hoc_tap_dung_cu_02,bút dùng trong lớp học,hoc_tap,tpl_hoc_tap_dung_cu
+hoc_tap_dung_cu_03,thước kẻ cho môn hình học,hoc_tap,tpl_hoc_tap_dung_cu
+hoc_tap_dung_cu_04,giấy nháp để luyện bài tập,hoc_tap,tpl_hoc_tap_dung_cu
+hoc_tap_dung_cu_05,máy tính cầm tay phục vụ học tập,hoc_tap,tpl_hoc_tap_dung_cu
+hoc_tap_hoat_dong_hoc_01,phí tham dự hội thảo học thuật,hoc_tap,tpl_hoc_tap_hoat_dong_hoc
+hoc_tap_hoat_dong_hoc_02,lệ phí thi chứng chỉ tiếng Anh,hoc_tap,tpl_hoc_tap_hoat_dong_hoc
+hoc_tap_hoat_dong_hoc_03,phí đăng ký cuộc thi lập trình học thuật,hoc_tap,tpl_hoc_tap_hoat_dong_hoc
+hoc_tap_hoat_dong_hoc_04,mua bộ linh kiện cho môn thực hành,hoc_tap,tpl_hoc_tap_hoat_dong_hoc
+hoc_tap_hoat_dong_hoc_05,mua laptop để làm bài tập học lập trình,hoc_tap,tpl_hoc_tap_hoat_dong_hoc
+mua_sam_quan_ao_01,mua áo sơ mi,mua_sam,tpl_mua_sam_quan_ao
+mua_sam_quan_ao_02,đôi giày đi làm mới,mua_sam,tpl_mua_sam_quan_ao
+mua_sam_quan_ao_03,quần jeans mua ở cửa hàng,mua_sam,tpl_mua_sam_quan_ao
+mua_sam_quan_ao_04,mua áo mưa cá nhân,mua_sam,tpl_mua_sam_quan_ao
+mua_sam_quan_ao_05,mua tất và khăn choàng,mua_sam,tpl_mua_sam_quan_ao
+mua_sam_do_dung_01,mua nước giặt ở siêu thị,mua_sam,tpl_mua_sam_do_dung
+mua_sam_do_dung_02,nước rửa chén dùng trong nhà,mua_sam,tpl_mua_sam_do_dung
+mua_sam_do_dung_03,mua chổi quét nhà,mua_sam,tpl_mua_sam_do_dung
+mua_sam_do_dung_04,thay ga giường mới,mua_sam,tpl_mua_sam_do_dung
+mua_sam_do_dung_05,mua hộp đựng đồ cá nhân,mua_sam,tpl_mua_sam_do_dung
+mua_sam_my_pham_01,mua kem dưỡng da ở nhà thuốc,mua_sam,tpl_mua_sam_my_pham
+mua_sam_my_pham_02,sữa rửa mặt mua trên Shopee,mua_sam,tpl_mua_sam_my_pham
+mua_sam_my_pham_03,mua son môi,mua_sam,tpl_mua_sam_my_pham
+mua_sam_my_pham_04,mua dầu gội đầu,mua_sam,tpl_mua_sam_my_pham
+mua_sam_my_pham_05,mua kem chống nắng,mua_sam,tpl_mua_sam_my_pham
+mua_sam_thiet_bi_01,mua laptop,mua_sam,tpl_mua_sam_thiet_bi
+mua_sam_thiet_bi_02,mua tai nghe để sử dụng cá nhân,mua_sam,tpl_mua_sam_thiet_bi
+mua_sam_thiet_bi_03,mua chuột máy tính,mua_sam,tpl_mua_sam_thiet_bi
+mua_sam_thiet_bi_04,mua sạc điện thoại mới,mua_sam,tpl_mua_sam_thiet_bi
+mua_sam_thiet_bi_05,mua quạt bàn ở cửa hàng,mua_sam,tpl_mua_sam_thiet_bi
+giai_tri_xem_phim_01,vé xem phim cuối tuần,giai_tri,tpl_giai_tri_xem_phim
+giai_tri_xem_phim_02,gói xem phim trực tuyến,giai_tri,tpl_giai_tri_xem_phim
+giai_tri_xem_phim_03,thuê phim để xem buổi tối,giai_tri,tpl_giai_tri_xem_phim
+giai_tri_xem_phim_04,mua vé rạp chiếu phim,giai_tri,tpl_giai_tri_xem_phim
+giai_tri_xem_phim_05,gia hạn dịch vụ xem phim,giai_tri,tpl_giai_tri_xem_phim
+giai_tri_am_nhac_01,gói nghe nhạc hằng tháng,giai_tri,tpl_giai_tri_am_nhac
+giai_tri_am_nhac_02,vé hòa nhạc tối nay,giai_tri,tpl_giai_tri_am_nhac
+giai_tri_am_nhac_03,mua album nhạc để nghe,giai_tri,tpl_giai_tri_am_nhac
+giai_tri_am_nhac_04,gia hạn ứng dụng nghe nhạc,giai_tri,tpl_giai_tri_am_nhac
+giai_tri_am_nhac_05,vé biểu diễn ca nhạc,giai_tri,tpl_giai_tri_am_nhac
+giai_tri_tro_choi_01,mua trò chơi trên Steam,giai_tri,tpl_giai_tri_tro_choi
+giai_tri_tro_choi_02,vé khu vui chơi cuối tuần,giai_tri,tpl_giai_tri_tro_choi
+giai_tri_tro_choi_03,phí chơi bowling với bạn,giai_tri,tpl_giai_tri_tro_choi
+giai_tri_tro_choi_04,mua board game để giải trí,giai_tri,tpl_giai_tri_tro_choi
+giai_tri_tro_choi_05,nạp tiền trò chơi điện tử,giai_tri,tpl_giai_tri_tro_choi
+giai_tri_doc_vui_01,mua truyện đọc cuối tuần,giai_tri,tpl_giai_tri_doc_vui
+giai_tri_doc_vui_02,tiểu thuyết đọc để giải trí,giai_tri,tpl_giai_tri_doc_vui
+giai_tri_doc_vui_03,mua truyện tranh để đọc thư giãn,giai_tri,tpl_giai_tri_doc_vui
+giai_tri_doc_vui_04,sách hài đọc lúc rảnh,giai_tri,tpl_giai_tri_doc_vui
+giai_tri_doc_vui_05,thuê truyện về đọc giải trí,giai_tri,tpl_giai_tri_doc_vui
+suc_khoe_kham_01,khám răng định kỳ,suc_khoe,tpl_suc_khoe_kham
+suc_khoe_kham_02,tiền khám mắt ở bệnh viện,suc_khoe,tpl_suc_khoe_kham
+suc_khoe_kham_03,khám tổng quát tại phòng khám,suc_khoe,tpl_suc_khoe_kham
+suc_khoe_kham_04,đi khám vì đau họng,suc_khoe,tpl_suc_khoe_kham
+suc_khoe_kham_05,phí khám da liễu,suc_khoe,tpl_suc_khoe_kham
+suc_khoe_thuoc_01,mua thuốc cảm theo đơn,suc_khoe,tpl_suc_khoe_thuoc
+suc_khoe_thuoc_02,thuốc đau đầu ở nhà thuốc,suc_khoe,tpl_suc_khoe_thuoc
+suc_khoe_thuoc_03,mua thuốc ho để điều trị,suc_khoe,tpl_suc_khoe_thuoc
+suc_khoe_thuoc_04,thuốc nhỏ mắt theo đơn bác sĩ,suc_khoe,tpl_suc_khoe_thuoc
+suc_khoe_thuoc_05,mua thuốc dị ứng theo chỉ định,suc_khoe,tpl_suc_khoe_thuoc
+suc_khoe_xet_nghiem_01,phí xét nghiệm máu,suc_khoe,tpl_suc_khoe_xet_nghiem
+suc_khoe_xet_nghiem_02,chụp X quang theo chỉ định,suc_khoe,tpl_suc_khoe_xet_nghiem
+suc_khoe_xet_nghiem_03,siêu âm tại bệnh viện,suc_khoe,tpl_suc_khoe_xet_nghiem
+suc_khoe_xet_nghiem_04,tiền xét nghiệm đường huyết,suc_khoe,tpl_suc_khoe_xet_nghiem
+suc_khoe_xet_nghiem_05,phí xét nghiệm nước tiểu,suc_khoe,tpl_suc_khoe_xet_nghiem
+suc_khoe_dung_cu_y_te_01,mua nhiệt kế để theo dõi sốt,suc_khoe,tpl_suc_khoe_dung_cu_y_te
+suc_khoe_dung_cu_y_te_02,băng gạc để xử lý vết thương,suc_khoe,tpl_suc_khoe_dung_cu_y_te
+suc_khoe_dung_cu_y_te_03,mua máy đo huyết áp,suc_khoe,tpl_suc_khoe_dung_cu_y_te
+suc_khoe_dung_cu_y_te_04,mua dung dịch sát khuẩn vết thương,suc_khoe,tpl_suc_khoe_dung_cu_y_te
+suc_khoe_dung_cu_y_te_05,khẩu trang y tế dùng khi đi khám,suc_khoe,tpl_suc_khoe_dung_cu_y_te
+khac_qua_tang_01,quà mừng cưới bằng tiền,khac,tpl_khac_qua_tang
+khac_qua_tang_02,tiền mừng sinh nhật bạn,khac,tpl_khac_qua_tang
+khac_qua_tang_03,lì xì dịp đầu năm,khac,tpl_khac_qua_tang
+khac_qua_tang_04,phúng viếng đám tang,khac,tpl_khac_qua_tang
+khac_qua_tang_05,tiền mừng tân gia,khac,tpl_khac_qua_tang
+khac_dong_gop_01,đóng góp quỹ thiện nguyện,khac,tpl_khac_dong_gop
+khac_dong_gop_02,ủng hộ cứu trợ thiên tai,khac,tpl_khac_dong_gop
+khac_dong_gop_03,tiền ủng hộ thư viện cộng đồng,khac,tpl_khac_dong_gop
+khac_dong_gop_04,đóng góp quỹ cộng đồng địa phương,khac,tpl_khac_dong_gop
+khac_dong_gop_05,ủng hộ chương trình giúp đỡ trẻ em,khac,tpl_khac_dong_gop
+khac_dich_vu_khac_01,phí gửi bưu kiện,khac,tpl_khac_dich_vu_khac
+khac_dich_vu_khac_02,phí làm bản sao công chứng,khac,tpl_khac_dich_vu_khac
+khac_dich_vu_khac_03,phí dịch vụ chuyển nhà,khac,tpl_khac_dich_vu_khac
+khac_dich_vu_khac_04,phí giặt ủi quần áo,khac,tpl_khac_dich_vu_khac
+khac_dich_vu_khac_05,phí cắt chìa khóa,khac,tpl_khac_dich_vu_khac
+khac_thieu_ngu_canh_01,chi cá nhân,khac,tpl_khac_thieu_ngu_canh
+khac_thieu_ngu_canh_02,khoản chi khác,khac,tpl_khac_thieu_ngu_canh
+khac_thieu_ngu_canh_03,thanh toán khoản chi chưa nhớ nội dung,khac,tpl_khac_thieu_ngu_canh
+khac_thieu_ngu_canh_04,mua món đồ chưa ghi rõ loại,khac,tpl_khac_thieu_ngu_canh
+khac_thieu_ngu_canh_05,chi lặt vặt không bổ sung được mô tả,khac,tpl_khac_thieu_ngu_canh

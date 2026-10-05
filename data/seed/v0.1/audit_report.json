@@ -1,0 +1,64 @@
+{
+  "dataset_version": "0.1",
+  "created_on": "2026-10-05",
+  "sha256": "537e48b08ba3bc6022bc09cfa8e0cf8944ea2b652a7a66906ad297d745c362f6",
+  "structural_validation": "passed",
+  "records": 356,
+  "synthetic_records": 356,
+  "real_records": 0,
+  "groups": 33,
+  "records_by_label": {
+    "an_uong": 48,
+    "di_chuyen": 50,
+    "giai_tri": 46,
+    "hoc_tap": 40,
+    "khac": 40,
+    "mua_sam": 43,
+    "nha_o_hoa_don": 45,
+    "suc_khoe": 44
+  },
+  "records_by_source": {
+    "author_synthetic": 319,
+    "public_synthetic": 37
+  },
+  "groups_by_label": {
+    "an_uong": 5,
+    "di_chuyen": 5,
+    "giai_tri": 5,
+    "hoc_tap": 4,
+    "khac": 4,
+    "mua_sam": 5,
+    "nha_o_hoa_don": 5,
+    "suc_khoe": 5
+  },
+  "missing_labels": [],
+  "normalized_unique_descriptions": 356,
+  "diacritic_folded_unique_descriptions": 179,
+  "potential_pii_record_ids": [],
+  "human_annotation_review": "not_verified_by_validator",
+  "privacy_review": "requires_human_review",
+  "real_evaluation_readiness": "not_assessed; consent, annotation and independent real split required",
+  "annotation_status_counts": {
+    "ai_draft": 356
+  },
+  "human_reviewed_records": 0,
+  "source_rows_collected": 100,
+  "source_selection_counts": {
+    "excluded_nonexpense": 6,
+    "excluded_unmapped": 52,
+    "merged_same_source_description": 23,
+    "selected_translation": 19
+  },
+  "authored_base_phrases": 160,
+  "public_base_translations": 19,
+  "no_op_diacritic_variants_skipped": 2,
+  "provenance_sha256": "28dfc91888f8b59269c8c261cd8fd0b576aaea6d2e4154740bdd76585cc8b8e8",
+  "source_selection_sha256": "365a3fed7620c653d936e59df9c2df15c4b0ee5cc6ed2ee36ab880d71e75c37c",
+  "recipe_sha256": {
+    "data/recipes/seed_phrases.csv": "199bb218b534c3c553fa2f1c3916129bd9a3fd65e3f38ee1fd6d3df17f4ec175",
+    "data/recipes/public_adaptations.csv": "a02caaa7154623ff71ed24d2386141dfe43aec6125f6779ff2e1e4e1c7500bd0"
+  },
+  "split_status": "not_created",
+  "trained_models": 0,
+  "real_performance_metrics": null
+}

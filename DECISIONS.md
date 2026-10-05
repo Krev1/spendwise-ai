@@ -70,3 +70,9 @@ REQ / TASK / dataset / model bị ảnh hưởng:
 Ai quyết định:
 Cách kiểm tra sau thay đổi:
 ```
+
+## A11 — Seed dữ liệu hư cấu có nguồn — 05/10/2026
+
+Người dùng yêu cầu thu thập/xây dataset và hướng dẫn ở Learn. Chọn seed nhỏ có truy vết, không thay mục tiêu dữ liệu thật bằng hàng loạt câu AI. Đã thu 100 hàng demo hư cấu từ nguồn MIT tại commit cố định; chuyển ngữ 19 mô tả được chọn, tự soạn 160 câu nền và thêm biến thể không dấu. Tổng 356 câu, 0 thật; mọi nhãn `ai_draft`. Giữ 33 nhóm phụ thuộc, chưa split/train.
+
+Thêm `public_synthetic` với cờ `true` vào schema nguồn. Nguồn hư cấu không có nhãn sẵn; bản dịch/nhãn chưa được con người duyệt. Repo dự án giữ dataset/build/validate/provenance, Learn giữ phương pháp, biểu mẫu và bài tập. Đây là lựa chọn khởi động kỹ thuật, chưa xác nhận taxonomy với pilot hoặc dữ liệu thật đủ đại diện.

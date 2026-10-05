@@ -1,0 +1,29 @@
+{
+  "source_id": "pfa_demo",
+  "retrieved_on": "2026-10-05",
+  "repository": "https://github.com/lakshitrajput21/personal-finance-analyzer",
+  "commit": "5d727c66bf2beba91a54d5cda043b6b2eca97ec3",
+  "declared_kind": "synthetic",
+  "language": "en",
+  "provided_labels": false,
+  "readme_evidence_url": "https://github.com/lakshitrajput21/personal-finance-analyzer/blob/5d727c66bf2beba91a54d5cda043b6b2eca97ec3/README.md",
+  "readme_evidence_summary": "Tác giả mô tả CSV demo là giao dịch hư cấu, không chứa tài chính cá nhân thật.",
+  "license": "MIT (repository license; no separate dataset license found)",
+  "copyright_notice": "Copyright (c) 2026 Surabhi Pradhan",
+  "files": [
+    {
+      "repository_path": "data/raw/demo_transactions.csv",
+      "snapshot_path": "data/reference/pfa_demo_transactions.csv",
+      "url": "https://raw.githubusercontent.com/lakshitrajput21/personal-finance-analyzer/5d727c66bf2beba91a54d5cda043b6b2eca97ec3/data/raw/demo_transactions.csv",
+      "sha256_repository_bytes": "76677420433e21260ecf2a8bfc47c268c056b669d7432e7de164ba6f749c256e",
+      "sha256_utf8_lf": "76677420433e21260ecf2a8bfc47c268c056b669d7432e7de164ba6f749c256e"
+    },
+    {
+      "repository_path": "LICENSE",
+      "snapshot_path": "data/reference/LICENSE.pfa.txt",
+      "url": "https://raw.githubusercontent.com/lakshitrajput21/personal-finance-analyzer/5d727c66bf2beba91a54d5cda043b6b2eca97ec3/LICENSE",
+      "sha256_repository_bytes": "5c791cc9ef4ce8a9574f5a4fdeef707a15974b2d03739d09429f1f07b46d8bd2",
+      "sha256_utf8_lf": "5c791cc9ef4ce8a9574f5a4fdeef707a15974b2d03739d09429f1f07b46d8bd2"
+    }
+  ]
+}

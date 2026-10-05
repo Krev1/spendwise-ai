@@ -1,0 +1,357 @@
+record_id,description,label,group_id,source,is_synthetic
+seed_an_uong_bua_an_01,ăn trưa cơm gà,an_uong,tpl_an_uong_bua_an,author_synthetic,true
+seed_an_uong_bua_an_01_nd,an trua com ga,an_uong,tpl_an_uong_bua_an,author_synthetic,true
+seed_an_uong_bua_an_02,bữa tối bún bò,an_uong,tpl_an_uong_bua_an,author_synthetic,true
+seed_an_uong_bua_an_02_nd,bua toi bun bo,an_uong,tpl_an_uong_bua_an,author_synthetic,true
+seed_an_uong_bua_an_03,bánh mì cho bữa sáng,an_uong,tpl_an_uong_bua_an,author_synthetic,true
+seed_an_uong_bua_an_03_nd,banh mi cho bua sang,an_uong,tpl_an_uong_bua_an,author_synthetic,true
+seed_an_uong_bua_an_04,cơm văn phòng buổi trưa,an_uong,tpl_an_uong_bua_an,author_synthetic,true
+seed_an_uong_bua_an_04_nd,com van phong buoi trua,an_uong,tpl_an_uong_bua_an,author_synthetic,true
+seed_an_uong_bua_an_05,phở bò ăn sáng,an_uong,tpl_an_uong_bua_an,author_synthetic,true
+seed_an_uong_bua_an_05_nd,pho bo an sang,an_uong,tpl_an_uong_bua_an,author_synthetic,true
+seed_an_uong_do_uong_01,cà phê sáng ở quán,an_uong,tpl_an_uong_do_uong,author_synthetic,true
+seed_an_uong_do_uong_01_nd,ca phe sang o quan,an_uong,tpl_an_uong_do_uong,author_synthetic,true
+seed_an_uong_do_uong_02,trà sữa sau giờ học,an_uong,tpl_an_uong_do_uong,author_synthetic,true
+seed_an_uong_do_uong_02_nd,tra sua sau gio hoc,an_uong,tpl_an_uong_do_uong,author_synthetic,true
+seed_an_uong_do_uong_03,nước cam uống buổi chiều,an_uong,tpl_an_uong_do_uong,author_synthetic,true
+seed_an_uong_do_uong_03_nd,nuoc cam uong buoi chieu,an_uong,tpl_an_uong_do_uong,author_synthetic,true
+seed_an_uong_do_uong_04,chai nước uống khi đi đường,an_uong,tpl_an_uong_do_uong,author_synthetic,true
+seed_an_uong_do_uong_04_nd,chai nuoc uong khi di duong,an_uong,tpl_an_uong_do_uong,author_synthetic,true
+seed_an_uong_do_uong_05,ly trà đào mang về,an_uong,tpl_an_uong_do_uong,author_synthetic,true
+seed_an_uong_do_uong_05_nd,ly tra dao mang ve,an_uong,tpl_an_uong_do_uong,author_synthetic,true
+seed_an_uong_thuc_pham_01,mua rau để nấu cơm,an_uong,tpl_an_uong_thuc_pham,author_synthetic,true
+seed_an_uong_thuc_pham_01_nd,mua rau de nau com,an_uong,tpl_an_uong_thuc_pham,author_synthetic,true
+seed_an_uong_thuc_pham_02,thịt heo cho bữa tối,an_uong,tpl_an_uong_thuc_pham,author_synthetic,true
+seed_an_uong_thuc_pham_02_nd,thit heo cho bua toi,an_uong,tpl_an_uong_thuc_pham,author_synthetic,true
+seed_an_uong_thuc_pham_03,trứng gà để ăn trong tuần,an_uong,tpl_an_uong_thuc_pham,author_synthetic,true
+seed_an_uong_thuc_pham_03_nd,trung ga de an trong tuan,an_uong,tpl_an_uong_thuc_pham,author_synthetic,true
+seed_an_uong_thuc_pham_04,gạo nấu cơm ở nhà,an_uong,tpl_an_uong_thuc_pham,author_synthetic,true
+seed_an_uong_thuc_pham_04_nd,gao nau com o nha,an_uong,tpl_an_uong_thuc_pham,author_synthetic,true
+seed_an_uong_thuc_pham_05,trái cây ăn tráng miệng,an_uong,tpl_an_uong_thuc_pham,author_synthetic,true
+seed_an_uong_thuc_pham_05_nd,trai cay an trang mieng,an_uong,tpl_an_uong_thuc_pham,author_synthetic,true
+seed_an_uong_giao_do_an_01,GrabFood đặt cơm trưa,an_uong,tpl_an_uong_giao_do_an,author_synthetic,true
+seed_an_uong_giao_do_an_01_nd,GrabFood dat com trua,an_uong,tpl_an_uong_giao_do_an,author_synthetic,true
+seed_an_uong_giao_do_an_02,đặt bánh pizza giao về nhà,an_uong,tpl_an_uong_giao_do_an,author_synthetic,true
+seed_an_uong_giao_do_an_02_nd,dat banh pizza giao ve nha,an_uong,tpl_an_uong_giao_do_an,author_synthetic,true
+seed_an_uong_giao_do_an_03,đặt bún qua ứng dụng giao đồ ăn,an_uong,tpl_an_uong_giao_do_an,author_synthetic,true
+seed_an_uong_giao_do_an_03_nd,dat bun qua ung dung giao do an,an_uong,tpl_an_uong_giao_do_an,author_synthetic,true
+seed_an_uong_giao_do_an_04,gọi cháo giao tận phòng,an_uong,tpl_an_uong_giao_do_an,author_synthetic,true
+seed_an_uong_giao_do_an_04_nd,goi chao giao tan phong,an_uong,tpl_an_uong_giao_do_an,author_synthetic,true
+seed_an_uong_giao_do_an_05,mua đồ ăn tối qua ShopeeFood,an_uong,tpl_an_uong_giao_do_an,author_synthetic,true
+seed_an_uong_giao_do_an_05_nd,mua do an toi qua ShopeeFood,an_uong,tpl_an_uong_giao_do_an,author_synthetic,true
+seed_di_chuyen_ve_phuong_tien_01,vé xe buýt đến trường,di_chuyen,tpl_di_chuyen_ve_phuong_tien,author_synthetic,true
+seed_di_chuyen_ve_phuong_tien_01_nd,ve xe buyt den truong,di_chuyen,tpl_di_chuyen_ve_phuong_tien,author_synthetic,true
+seed_di_chuyen_ve_phuong_tien_02,vé tàu về quê,di_chuyen,tpl_di_chuyen_ve_phuong_tien,author_synthetic,true
+seed_di_chuyen_ve_phuong_tien_02_nd,ve tau ve que,di_chuyen,tpl_di_chuyen_ve_phuong_tien,author_synthetic,true
+seed_di_chuyen_ve_phuong_tien_03,vé xe khách đi tỉnh,di_chuyen,tpl_di_chuyen_ve_phuong_tien,author_synthetic,true
+seed_di_chuyen_ve_phuong_tien_03_nd,ve xe khach di tinh,di_chuyen,tpl_di_chuyen_ve_phuong_tien,author_synthetic,true
+seed_di_chuyen_ve_phuong_tien_04,vé tàu điện đi làm,di_chuyen,tpl_di_chuyen_ve_phuong_tien,author_synthetic,true
+seed_di_chuyen_ve_phuong_tien_04_nd,ve tau dien di lam,di_chuyen,tpl_di_chuyen_ve_phuong_tien,author_synthetic,true
+seed_di_chuyen_ve_phuong_tien_05,vé phà qua sông,di_chuyen,tpl_di_chuyen_ve_phuong_tien,author_synthetic,true
+seed_di_chuyen_ve_phuong_tien_05_nd,ve pha qua song,di_chuyen,tpl_di_chuyen_ve_phuong_tien,author_synthetic,true
+seed_di_chuyen_xe_cong_nghe_01,Grab đi làm buổi sáng,di_chuyen,tpl_di_chuyen_xe_cong_nghe,author_synthetic,true
+seed_di_chuyen_xe_cong_nghe_01_nd,Grab di lam buoi sang,di_chuyen,tpl_di_chuyen_xe_cong_nghe,author_synthetic,true
+seed_di_chuyen_xe_cong_nghe_02,đi xe công nghệ tới trường,di_chuyen,tpl_di_chuyen_xe_cong_nghe,author_synthetic,true
+seed_di_chuyen_xe_cong_nghe_02_nd,di xe cong nghe toi truong,di_chuyen,tpl_di_chuyen_xe_cong_nghe,author_synthetic,true
+seed_di_chuyen_xe_cong_nghe_03,tiền taxi về phòng trọ,di_chuyen,tpl_di_chuyen_xe_cong_nghe,author_synthetic,true
+seed_di_chuyen_xe_cong_nghe_03_nd,tien taxi ve phong tro,di_chuyen,tpl_di_chuyen_xe_cong_nghe,author_synthetic,true
+seed_di_chuyen_xe_cong_nghe_04,cuốc xe máy công nghệ đến bến xe,di_chuyen,tpl_di_chuyen_xe_cong_nghe,author_synthetic,true
+seed_di_chuyen_xe_cong_nghe_04_nd,cuoc xe may cong nghe den ben xe,di_chuyen,tpl_di_chuyen_xe_cong_nghe,author_synthetic,true
+seed_di_chuyen_xe_cong_nghe_05,đặt xe ô tô về nhà,di_chuyen,tpl_di_chuyen_xe_cong_nghe,author_synthetic,true
+seed_di_chuyen_xe_cong_nghe_05_nd,dat xe o to ve nha,di_chuyen,tpl_di_chuyen_xe_cong_nghe,author_synthetic,true
+seed_di_chuyen_xang_gui_xe_01,đổ xăng xe máy,di_chuyen,tpl_di_chuyen_xang_gui_xe,author_synthetic,true
+seed_di_chuyen_xang_gui_xe_01_nd,do xang xe may,di_chuyen,tpl_di_chuyen_xang_gui_xe,author_synthetic,true
+seed_di_chuyen_xang_gui_xe_02,tiền gửi xe ở trường,di_chuyen,tpl_di_chuyen_xang_gui_xe,author_synthetic,true
+seed_di_chuyen_xang_gui_xe_02_nd,tien gui xe o truong,di_chuyen,tpl_di_chuyen_xang_gui_xe,author_synthetic,true
+seed_di_chuyen_xang_gui_xe_03,phí đỗ ô tô ở bãi xe,di_chuyen,tpl_di_chuyen_xang_gui_xe,author_synthetic,true
+seed_di_chuyen_xang_gui_xe_03_nd,phi do o to o bai xe,di_chuyen,tpl_di_chuyen_xang_gui_xe,author_synthetic,true
+seed_di_chuyen_xang_gui_xe_04,nạp điện cho xe máy điện,di_chuyen,tpl_di_chuyen_xang_gui_xe,author_synthetic,true
+seed_di_chuyen_xang_gui_xe_04_nd,nap dien cho xe may dien,di_chuyen,tpl_di_chuyen_xang_gui_xe,author_synthetic,true
+seed_di_chuyen_xang_gui_xe_05,gửi xe khi đi chợ,di_chuyen,tpl_di_chuyen_xang_gui_xe,author_synthetic,true
+seed_di_chuyen_xang_gui_xe_05_nd,gui xe khi di cho,di_chuyen,tpl_di_chuyen_xang_gui_xe,author_synthetic,true
+seed_di_chuyen_sua_xe_01,thay lốp xe máy,di_chuyen,tpl_di_chuyen_sua_xe,author_synthetic,true
+seed_di_chuyen_sua_xe_01_nd,thay lop xe may,di_chuyen,tpl_di_chuyen_sua_xe,author_synthetic,true
+seed_di_chuyen_sua_xe_02,sửa phanh xe đạp,di_chuyen,tpl_di_chuyen_sua_xe,author_synthetic,true
+seed_di_chuyen_sua_xe_02_nd,sua phanh xe dap,di_chuyen,tpl_di_chuyen_sua_xe,author_synthetic,true
+seed_di_chuyen_sua_xe_03,bảo dưỡng xe máy cá nhân,di_chuyen,tpl_di_chuyen_sua_xe,author_synthetic,true
+seed_di_chuyen_sua_xe_03_nd,bao duong xe may ca nhan,di_chuyen,tpl_di_chuyen_sua_xe,author_synthetic,true
+seed_di_chuyen_sua_xe_04,vá bánh xe bị thủng,di_chuyen,tpl_di_chuyen_sua_xe,author_synthetic,true
+seed_di_chuyen_sua_xe_04_nd,va banh xe bi thung,di_chuyen,tpl_di_chuyen_sua_xe,author_synthetic,true
+seed_di_chuyen_sua_xe_05,thay nhớt xe máy,di_chuyen,tpl_di_chuyen_sua_xe,author_synthetic,true
+seed_di_chuyen_sua_xe_05_nd,thay nhot xe may,di_chuyen,tpl_di_chuyen_sua_xe,author_synthetic,true
+seed_nha_o_hoa_don_thue_o_01,tiền thuê phòng trọ tháng này,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o,author_synthetic,true
+seed_nha_o_hoa_don_thue_o_01_nd,tien thue phong tro thang nay,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o,author_synthetic,true
+seed_nha_o_hoa_don_thue_o_02,đóng tiền ký túc xá,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o,author_synthetic,true
+seed_nha_o_hoa_don_thue_o_02_nd,dong tien ky tuc xa,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o,author_synthetic,true
+seed_nha_o_hoa_don_thue_o_03,thanh toán tiền thuê căn hộ,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o,author_synthetic,true
+seed_nha_o_hoa_don_thue_o_03_nd,thanh toan tien thue can ho,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o,author_synthetic,true
+seed_nha_o_hoa_don_thue_o_04,tiền thuê chỗ ở hằng tháng,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o,author_synthetic,true
+seed_nha_o_hoa_don_thue_o_04_nd,tien thue cho o hang thang,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o,author_synthetic,true
+seed_nha_o_hoa_don_thue_o_05,chia tiền thuê nhà với bạn,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o,author_synthetic,true
+seed_nha_o_hoa_don_thue_o_05_nd,chia tien thue nha voi ban,nha_o_hoa_don,tpl_nha_o_hoa_don_thue_o,author_synthetic,true
+seed_nha_o_hoa_don_dien_nuoc_01,tiền điện phòng trọ,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc,author_synthetic,true
+seed_nha_o_hoa_don_dien_nuoc_01_nd,tien dien phong tro,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc,author_synthetic,true
+seed_nha_o_hoa_don_dien_nuoc_02,hóa đơn nước sinh hoạt,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc,author_synthetic,true
+seed_nha_o_hoa_don_dien_nuoc_02_nd,hoa don nuoc sinh hoat,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc,author_synthetic,true
+seed_nha_o_hoa_don_dien_nuoc_03,đóng tiền điện tháng chín,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc,author_synthetic,true
+seed_nha_o_hoa_don_dien_nuoc_03_nd,dong tien dien thang chin,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc,author_synthetic,true
+seed_nha_o_hoa_don_dien_nuoc_04,thanh toán nước máy ở nhà,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc,author_synthetic,true
+seed_nha_o_hoa_don_dien_nuoc_04_nd,thanh toan nuoc may o nha,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc,author_synthetic,true
+seed_nha_o_hoa_don_dien_nuoc_05,tiền điện căn hộ tháng này,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc,author_synthetic,true
+seed_nha_o_hoa_don_dien_nuoc_05_nd,tien dien can ho thang nay,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_nuoc,author_synthetic,true
+seed_nha_o_hoa_don_internet_01,cước internet phòng trọ,nha_o_hoa_don,tpl_nha_o_hoa_don_internet,author_synthetic,true
+seed_nha_o_hoa_don_internet_01_nd,cuoc internet phong tro,nha_o_hoa_don,tpl_nha_o_hoa_don_internet,author_synthetic,true
+seed_nha_o_hoa_don_internet_02,tiền wifi ở nhà,nha_o_hoa_don,tpl_nha_o_hoa_don_internet,author_synthetic,true
+seed_nha_o_hoa_don_internet_02_nd,tien wifi o nha,nha_o_hoa_don,tpl_nha_o_hoa_don_internet,author_synthetic,true
+seed_nha_o_hoa_don_internet_03,gia hạn mạng cáp quang gia đình,nha_o_hoa_don,tpl_nha_o_hoa_don_internet,author_synthetic,true
+seed_nha_o_hoa_don_internet_03_nd,gia han mang cap quang gia dinh,nha_o_hoa_don,tpl_nha_o_hoa_don_internet,author_synthetic,true
+seed_nha_o_hoa_don_internet_04,chia hóa đơn internet với bạn cùng phòng,nha_o_hoa_don,tpl_nha_o_hoa_don_internet,author_synthetic,true
+seed_nha_o_hoa_don_internet_04_nd,chia hoa don internet voi ban cung phong,nha_o_hoa_don,tpl_nha_o_hoa_don_internet,author_synthetic,true
+seed_nha_o_hoa_don_internet_05,phí thuê bao mạng internet cố định,nha_o_hoa_don,tpl_nha_o_hoa_don_internet,author_synthetic,true
+seed_nha_o_hoa_don_internet_05_nd,phi thue bao mang internet co dinh,nha_o_hoa_don,tpl_nha_o_hoa_don_internet,author_synthetic,true
+seed_nha_o_hoa_don_dien_thoai_01,cước điện thoại tháng này,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai,author_synthetic,true
+seed_nha_o_hoa_don_dien_thoai_01_nd,cuoc dien thoai thang nay,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai,author_synthetic,true
+seed_nha_o_hoa_don_dien_thoai_02,nạp gói dữ liệu di động,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai,author_synthetic,true
+seed_nha_o_hoa_don_dien_thoai_02_nd,nap goi du lieu di dong,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai,author_synthetic,true
+seed_nha_o_hoa_don_dien_thoai_03,tiền thuê bao điện thoại,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai,author_synthetic,true
+seed_nha_o_hoa_don_dien_thoai_03_nd,tien thue bao dien thoai,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai,author_synthetic,true
+seed_nha_o_hoa_don_dien_thoai_04,gia hạn gói gọi điện,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai,author_synthetic,true
+seed_nha_o_hoa_don_dien_thoai_04_nd,gia han goi goi dien,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai,author_synthetic,true
+seed_nha_o_hoa_don_dien_thoai_05,hóa đơn điện thoại trả sau,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai,author_synthetic,true
+seed_nha_o_hoa_don_dien_thoai_05_nd,hoa don dien thoai tra sau,nha_o_hoa_don,tpl_nha_o_hoa_don_dien_thoai,author_synthetic,true
+seed_hoc_tap_hoc_phi_01,học phí học kỳ mới,hoc_tap,tpl_hoc_tap_hoc_phi,author_synthetic,true
+seed_hoc_tap_hoc_phi_01_nd,hoc phi hoc ky moi,hoc_tap,tpl_hoc_tap_hoc_phi,author_synthetic,true
+seed_hoc_tap_hoc_phi_02,đóng phí khóa học tiếng Anh,hoc_tap,tpl_hoc_tap_hoc_phi,author_synthetic,true
+seed_hoc_tap_hoc_phi_02_nd,dong phi khoa hoc tieng Anh,hoc_tap,tpl_hoc_tap_hoc_phi,author_synthetic,true
+seed_hoc_tap_hoc_phi_03,tiền học lớp lập trình,hoc_tap,tpl_hoc_tap_hoc_phi,author_synthetic,true
+seed_hoc_tap_hoc_phi_03_nd,tien hoc lop lap trinh,hoc_tap,tpl_hoc_tap_hoc_phi,author_synthetic,true
+seed_hoc_tap_hoc_phi_04,thanh toán khóa luyện thi,hoc_tap,tpl_hoc_tap_hoc_phi,author_synthetic,true
+seed_hoc_tap_hoc_phi_04_nd,thanh toan khoa luyen thi,hoc_tap,tpl_hoc_tap_hoc_phi,author_synthetic,true
+seed_hoc_tap_hoc_phi_05,học phí môn học bổ sung,hoc_tap,tpl_hoc_tap_hoc_phi,author_synthetic,true
+seed_hoc_tap_hoc_phi_05_nd,hoc phi mon hoc bo sung,hoc_tap,tpl_hoc_tap_hoc_phi,author_synthetic,true
+seed_hoc_tap_tai_lieu_01,mua giáo trình đại số,hoc_tap,tpl_hoc_tap_tai_lieu,author_synthetic,true
+seed_hoc_tap_tai_lieu_01_nd,mua giao trinh dai so,hoc_tap,tpl_hoc_tap_tai_lieu,author_synthetic,true
+seed_hoc_tap_tai_lieu_02,sách luyện thi tiếng Anh,hoc_tap,tpl_hoc_tap_tai_lieu,author_synthetic,true
+seed_hoc_tap_tai_lieu_02_nd,sach luyen thi tieng Anh,hoc_tap,tpl_hoc_tap_tai_lieu,author_synthetic,true
+seed_hoc_tap_tai_lieu_03,in tài liệu ôn thi,hoc_tap,tpl_hoc_tap_tai_lieu,author_synthetic,true
+seed_hoc_tap_tai_lieu_03_nd,in tai lieu on thi,hoc_tap,tpl_hoc_tap_tai_lieu,author_synthetic,true
+seed_hoc_tap_tai_lieu_04,photo bài giảng ở trường,hoc_tap,tpl_hoc_tap_tai_lieu,author_synthetic,true
+seed_hoc_tap_tai_lieu_04_nd,photo bai giang o truong,hoc_tap,tpl_hoc_tap_tai_lieu,author_synthetic,true
+seed_hoc_tap_tai_lieu_05,mua tài liệu học Python,hoc_tap,tpl_hoc_tap_tai_lieu,author_synthetic,true
+seed_hoc_tap_tai_lieu_05_nd,mua tai lieu hoc Python,hoc_tap,tpl_hoc_tap_tai_lieu,author_synthetic,true
+seed_hoc_tap_dung_cu_01,mua vở để ghi bài,hoc_tap,tpl_hoc_tap_dung_cu,author_synthetic,true
+seed_hoc_tap_dung_cu_01_nd,mua vo de ghi bai,hoc_tap,tpl_hoc_tap_dung_cu,author_synthetic,true
+seed_hoc_tap_dung_cu_02,bút dùng trong lớp học,hoc_tap,tpl_hoc_tap_dung_cu,author_synthetic,true
+seed_hoc_tap_dung_cu_02_nd,but dung trong lop hoc,hoc_tap,tpl_hoc_tap_dung_cu,author_synthetic,true
+seed_hoc_tap_dung_cu_03,thước kẻ cho môn hình học,hoc_tap,tpl_hoc_tap_dung_cu,author_synthetic,true
+seed_hoc_tap_dung_cu_03_nd,thuoc ke cho mon hinh hoc,hoc_tap,tpl_hoc_tap_dung_cu,author_synthetic,true
+seed_hoc_tap_dung_cu_04,giấy nháp để luyện bài tập,hoc_tap,tpl_hoc_tap_dung_cu,author_synthetic,true
+seed_hoc_tap_dung_cu_04_nd,giay nhap de luyen bai tap,hoc_tap,tpl_hoc_tap_dung_cu,author_synthetic,true
+seed_hoc_tap_dung_cu_05,máy tính cầm tay phục vụ học tập,hoc_tap,tpl_hoc_tap_dung_cu,author_synthetic,true
+seed_hoc_tap_dung_cu_05_nd,may tinh cam tay phuc vu hoc tap,hoc_tap,tpl_hoc_tap_dung_cu,author_synthetic,true
+seed_hoc_tap_hoat_dong_hoc_01,phí tham dự hội thảo học thuật,hoc_tap,tpl_hoc_tap_hoat_dong_hoc,author_synthetic,true
+seed_hoc_tap_hoat_dong_hoc_01_nd,phi tham du hoi thao hoc thuat,hoc_tap,tpl_hoc_tap_hoat_dong_hoc,author_synthetic,true
+seed_hoc_tap_hoat_dong_hoc_02,lệ phí thi chứng chỉ tiếng Anh,hoc_tap,tpl_hoc_tap_hoat_dong_hoc,author_synthetic,true
+seed_hoc_tap_hoat_dong_hoc_02_nd,le phi thi chung chi tieng Anh,hoc_tap,tpl_hoc_tap_hoat_dong_hoc,author_synthetic,true
+seed_hoc_tap_hoat_dong_hoc_03,phí đăng ký cuộc thi lập trình học thuật,hoc_tap,tpl_hoc_tap_hoat_dong_hoc,author_synthetic,true
+seed_hoc_tap_hoat_dong_hoc_03_nd,phi dang ky cuoc thi lap trinh hoc thuat,hoc_tap,tpl_hoc_tap_hoat_dong_hoc,author_synthetic,true
+seed_hoc_tap_hoat_dong_hoc_04,mua bộ linh kiện cho môn thực hành,hoc_tap,tpl_hoc_tap_hoat_dong_hoc,author_synthetic,true
+seed_hoc_tap_hoat_dong_hoc_04_nd,mua bo linh kien cho mon thuc hanh,hoc_tap,tpl_hoc_tap_hoat_dong_hoc,author_synthetic,true
+seed_hoc_tap_hoat_dong_hoc_05,mua laptop để làm bài tập học lập trình,hoc_tap,tpl_hoc_tap_hoat_dong_hoc,author_synthetic,true
+seed_hoc_tap_hoat_dong_hoc_05_nd,mua laptop de lam bai tap hoc lap trinh,hoc_tap,tpl_hoc_tap_hoat_dong_hoc,author_synthetic,true
+seed_mua_sam_quan_ao_01,mua áo sơ mi,mua_sam,tpl_mua_sam_quan_ao,author_synthetic,true
+seed_mua_sam_quan_ao_01_nd,mua ao so mi,mua_sam,tpl_mua_sam_quan_ao,author_synthetic,true
+seed_mua_sam_quan_ao_02,đôi giày đi làm mới,mua_sam,tpl_mua_sam_quan_ao,author_synthetic,true
+seed_mua_sam_quan_ao_02_nd,doi giay di lam moi,mua_sam,tpl_mua_sam_quan_ao,author_synthetic,true
+seed_mua_sam_quan_ao_03,quần jeans mua ở cửa hàng,mua_sam,tpl_mua_sam_quan_ao,author_synthetic,true
+seed_mua_sam_quan_ao_03_nd,quan jeans mua o cua hang,mua_sam,tpl_mua_sam_quan_ao,author_synthetic,true
+seed_mua_sam_quan_ao_04,mua áo mưa cá nhân,mua_sam,tpl_mua_sam_quan_ao,author_synthetic,true
+seed_mua_sam_quan_ao_04_nd,mua ao mua ca nhan,mua_sam,tpl_mua_sam_quan_ao,author_synthetic,true
+seed_mua_sam_quan_ao_05,mua tất và khăn choàng,mua_sam,tpl_mua_sam_quan_ao,author_synthetic,true
+seed_mua_sam_quan_ao_05_nd,mua tat va khan choang,mua_sam,tpl_mua_sam_quan_ao,author_synthetic,true
+seed_mua_sam_do_dung_01,mua nước giặt ở siêu thị,mua_sam,tpl_mua_sam_do_dung,author_synthetic,true
+seed_mua_sam_do_dung_01_nd,mua nuoc giat o sieu thi,mua_sam,tpl_mua_sam_do_dung,author_synthetic,true
+seed_mua_sam_do_dung_02,nước rửa chén dùng trong nhà,mua_sam,tpl_mua_sam_do_dung,author_synthetic,true
+seed_mua_sam_do_dung_02_nd,nuoc rua chen dung trong nha,mua_sam,tpl_mua_sam_do_dung,author_synthetic,true
+seed_mua_sam_do_dung_03,mua chổi quét nhà,mua_sam,tpl_mua_sam_do_dung,author_synthetic,true
+seed_mua_sam_do_dung_03_nd,mua choi quet nha,mua_sam,tpl_mua_sam_do_dung,author_synthetic,true
+seed_mua_sam_do_dung_04,thay ga giường mới,mua_sam,tpl_mua_sam_do_dung,author_synthetic,true
+seed_mua_sam_do_dung_04_nd,thay ga giuong moi,mua_sam,tpl_mua_sam_do_dung,author_synthetic,true
+seed_mua_sam_do_dung_05,mua hộp đựng đồ cá nhân,mua_sam,tpl_mua_sam_do_dung,author_synthetic,true
+seed_mua_sam_do_dung_05_nd,mua hop dung do ca nhan,mua_sam,tpl_mua_sam_do_dung,author_synthetic,true
+seed_mua_sam_my_pham_01,mua kem dưỡng da ở nhà thuốc,mua_sam,tpl_mua_sam_my_pham,author_synthetic,true
+seed_mua_sam_my_pham_01_nd,mua kem duong da o nha thuoc,mua_sam,tpl_mua_sam_my_pham,author_synthetic,true
+seed_mua_sam_my_pham_02,sữa rửa mặt mua trên Shopee,mua_sam,tpl_mua_sam_my_pham,author_synthetic,true
+seed_mua_sam_my_pham_02_nd,sua rua mat mua tren Shopee,mua_sam,tpl_mua_sam_my_pham,author_synthetic,true
+seed_mua_sam_my_pham_03,mua son môi,mua_sam,tpl_mua_sam_my_pham,author_synthetic,true
+seed_mua_sam_my_pham_03_nd,mua son moi,mua_sam,tpl_mua_sam_my_pham,author_synthetic,true
+seed_mua_sam_my_pham_04,mua dầu gội đầu,mua_sam,tpl_mua_sam_my_pham,author_synthetic,true
+seed_mua_sam_my_pham_04_nd,mua dau goi dau,mua_sam,tpl_mua_sam_my_pham,author_synthetic,true
+seed_mua_sam_my_pham_05,mua kem chống nắng,mua_sam,tpl_mua_sam_my_pham,author_synthetic,true
+seed_mua_sam_my_pham_05_nd,mua kem chong nang,mua_sam,tpl_mua_sam_my_pham,author_synthetic,true
+seed_mua_sam_thiet_bi_01,mua laptop,mua_sam,tpl_mua_sam_thiet_bi,author_synthetic,true
+seed_mua_sam_thiet_bi_02,mua tai nghe để sử dụng cá nhân,mua_sam,tpl_mua_sam_thiet_bi,author_synthetic,true
+seed_mua_sam_thiet_bi_02_nd,mua tai nghe de su dung ca nhan,mua_sam,tpl_mua_sam_thiet_bi,author_synthetic,true
+seed_mua_sam_thiet_bi_03,mua chuột máy tính,mua_sam,tpl_mua_sam_thiet_bi,author_synthetic,true
+seed_mua_sam_thiet_bi_03_nd,mua chuot may tinh,mua_sam,tpl_mua_sam_thiet_bi,author_synthetic,true
+seed_mua_sam_thiet_bi_04,mua sạc điện thoại mới,mua_sam,tpl_mua_sam_thiet_bi,author_synthetic,true
+seed_mua_sam_thiet_bi_04_nd,mua sac dien thoai moi,mua_sam,tpl_mua_sam_thiet_bi,author_synthetic,true
+seed_mua_sam_thiet_bi_05,mua quạt bàn ở cửa hàng,mua_sam,tpl_mua_sam_thiet_bi,author_synthetic,true
+seed_mua_sam_thiet_bi_05_nd,mua quat ban o cua hang,mua_sam,tpl_mua_sam_thiet_bi,author_synthetic,true
+seed_giai_tri_xem_phim_01,vé xem phim cuối tuần,giai_tri,tpl_giai_tri_xem_phim,author_synthetic,true
+seed_giai_tri_xem_phim_01_nd,ve xem phim cuoi tuan,giai_tri,tpl_giai_tri_xem_phim,author_synthetic,true
+seed_giai_tri_xem_phim_02,gói xem phim trực tuyến,giai_tri,tpl_giai_tri_xem_phim,author_synthetic,true
+seed_giai_tri_xem_phim_02_nd,goi xem phim truc tuyen,giai_tri,tpl_giai_tri_xem_phim,author_synthetic,true
+seed_giai_tri_xem_phim_03,thuê phim để xem buổi tối,giai_tri,tpl_giai_tri_xem_phim,author_synthetic,true
+seed_giai_tri_xem_phim_03_nd,thue phim de xem buoi toi,giai_tri,tpl_giai_tri_xem_phim,author_synthetic,true
+seed_giai_tri_xem_phim_04,mua vé rạp chiếu phim,giai_tri,tpl_giai_tri_xem_phim,author_synthetic,true
+seed_giai_tri_xem_phim_04_nd,mua ve rap chieu phim,giai_tri,tpl_giai_tri_xem_phim,author_synthetic,true
+seed_giai_tri_xem_phim_05,gia hạn dịch vụ xem phim,giai_tri,tpl_giai_tri_xem_phim,author_synthetic,true
+seed_giai_tri_xem_phim_05_nd,gia han dich vu xem phim,giai_tri,tpl_giai_tri_xem_phim,author_synthetic,true
+seed_giai_tri_am_nhac_01,gói nghe nhạc hằng tháng,giai_tri,tpl_giai_tri_am_nhac,author_synthetic,true
+seed_giai_tri_am_nhac_01_nd,goi nghe nhac hang thang,giai_tri,tpl_giai_tri_am_nhac,author_synthetic,true
+seed_giai_tri_am_nhac_02,vé hòa nhạc tối nay,giai_tri,tpl_giai_tri_am_nhac,author_synthetic,true
+seed_giai_tri_am_nhac_02_nd,ve hoa nhac toi nay,giai_tri,tpl_giai_tri_am_nhac,author_synthetic,true
+seed_giai_tri_am_nhac_03,mua album nhạc để nghe,giai_tri,tpl_giai_tri_am_nhac,author_synthetic,true
+seed_giai_tri_am_nhac_03_nd,mua album nhac de nghe,giai_tri,tpl_giai_tri_am_nhac,author_synthetic,true
+seed_giai_tri_am_nhac_04,gia hạn ứng dụng nghe nhạc,giai_tri,tpl_giai_tri_am_nhac,author_synthetic,true
+seed_giai_tri_am_nhac_04_nd,gia han ung dung nghe nhac,giai_tri,tpl_giai_tri_am_nhac,author_synthetic,true
+seed_giai_tri_am_nhac_05,vé biểu diễn ca nhạc,giai_tri,tpl_giai_tri_am_nhac,author_synthetic,true
+seed_giai_tri_am_nhac_05_nd,ve bieu dien ca nhac,giai_tri,tpl_giai_tri_am_nhac,author_synthetic,true
+seed_giai_tri_tro_choi_01,mua trò chơi trên Steam,giai_tri,tpl_giai_tri_tro_choi,author_synthetic,true
+seed_giai_tri_tro_choi_01_nd,mua tro choi tren Steam,giai_tri,tpl_giai_tri_tro_choi,author_synthetic,true
+seed_giai_tri_tro_choi_02,vé khu vui chơi cuối tuần,giai_tri,tpl_giai_tri_tro_choi,author_synthetic,true
+seed_giai_tri_tro_choi_02_nd,ve khu vui choi cuoi tuan,giai_tri,tpl_giai_tri_tro_choi,author_synthetic,true
+seed_giai_tri_tro_choi_03,phí chơi bowling với bạn,giai_tri,tpl_giai_tri_tro_choi,author_synthetic,true
+seed_giai_tri_tro_choi_03_nd,phi choi bowling voi ban,giai_tri,tpl_giai_tri_tro_choi,author_synthetic,true
+seed_giai_tri_tro_choi_04,mua board game để giải trí,giai_tri,tpl_giai_tri_tro_choi,author_synthetic,true
+seed_giai_tri_tro_choi_04_nd,mua board game de giai tri,giai_tri,tpl_giai_tri_tro_choi,author_synthetic,true
+seed_giai_tri_tro_choi_05,nạp tiền trò chơi điện tử,giai_tri,tpl_giai_tri_tro_choi,author_synthetic,true
+seed_giai_tri_tro_choi_05_nd,nap tien tro choi dien tu,giai_tri,tpl_giai_tri_tro_choi,author_synthetic,true
+seed_giai_tri_doc_vui_01,mua truyện đọc cuối tuần,giai_tri,tpl_giai_tri_doc_vui,author_synthetic,true
+seed_giai_tri_doc_vui_01_nd,mua truyen doc cuoi tuan,giai_tri,tpl_giai_tri_doc_vui,author_synthetic,true
+seed_giai_tri_doc_vui_02,tiểu thuyết đọc để giải trí,giai_tri,tpl_giai_tri_doc_vui,author_synthetic,true
+seed_giai_tri_doc_vui_02_nd,tieu thuyet doc de giai tri,giai_tri,tpl_giai_tri_doc_vui,author_synthetic,true
+seed_giai_tri_doc_vui_03,mua truyện tranh để đọc thư giãn,giai_tri,tpl_giai_tri_doc_vui,author_synthetic,true
+seed_giai_tri_doc_vui_03_nd,mua truyen tranh de doc thu gian,giai_tri,tpl_giai_tri_doc_vui,author_synthetic,true
+seed_giai_tri_doc_vui_04,sách hài đọc lúc rảnh,giai_tri,tpl_giai_tri_doc_vui,author_synthetic,true
+seed_giai_tri_doc_vui_04_nd,sach hai doc luc ranh,giai_tri,tpl_giai_tri_doc_vui,author_synthetic,true
+seed_giai_tri_doc_vui_05,thuê truyện về đọc giải trí,giai_tri,tpl_giai_tri_doc_vui,author_synthetic,true
+seed_giai_tri_doc_vui_05_nd,thue truyen ve doc giai tri,giai_tri,tpl_giai_tri_doc_vui,author_synthetic,true
+seed_suc_khoe_kham_01,khám răng định kỳ,suc_khoe,tpl_suc_khoe_kham,author_synthetic,true
+seed_suc_khoe_kham_01_nd,kham rang dinh ky,suc_khoe,tpl_suc_khoe_kham,author_synthetic,true
+seed_suc_khoe_kham_02,tiền khám mắt ở bệnh viện,suc_khoe,tpl_suc_khoe_kham,author_synthetic,true
+seed_suc_khoe_kham_02_nd,tien kham mat o benh vien,suc_khoe,tpl_suc_khoe_kham,author_synthetic,true
+seed_suc_khoe_kham_03,khám tổng quát tại phòng khám,suc_khoe,tpl_suc_khoe_kham,author_synthetic,true
+seed_suc_khoe_kham_03_nd,kham tong quat tai phong kham,suc_khoe,tpl_suc_khoe_kham,author_synthetic,true
+seed_suc_khoe_kham_04,đi khám vì đau họng,suc_khoe,tpl_suc_khoe_kham,author_synthetic,true
+seed_suc_khoe_kham_04_nd,di kham vi dau hong,suc_khoe,tpl_suc_khoe_kham,author_synthetic,true
+seed_suc_khoe_kham_05,phí khám da liễu,suc_khoe,tpl_suc_khoe_kham,author_synthetic,true
+seed_suc_khoe_kham_05_nd,phi kham da lieu,suc_khoe,tpl_suc_khoe_kham,author_synthetic,true
+seed_suc_khoe_thuoc_01,mua thuốc cảm theo đơn,suc_khoe,tpl_suc_khoe_thuoc,author_synthetic,true
+seed_suc_khoe_thuoc_01_nd,mua thuoc cam theo don,suc_khoe,tpl_suc_khoe_thuoc,author_synthetic,true
+seed_suc_khoe_thuoc_02,thuốc đau đầu ở nhà thuốc,suc_khoe,tpl_suc_khoe_thuoc,author_synthetic,true
+seed_suc_khoe_thuoc_02_nd,thuoc dau dau o nha thuoc,suc_khoe,tpl_suc_khoe_thuoc,author_synthetic,true
+seed_suc_khoe_thuoc_03,mua thuốc ho để điều trị,suc_khoe,tpl_suc_khoe_thuoc,author_synthetic,true
+seed_suc_khoe_thuoc_03_nd,mua thuoc ho de dieu tri,suc_khoe,tpl_suc_khoe_thuoc,author_synthetic,true
+seed_suc_khoe_thuoc_04,thuốc nhỏ mắt theo đơn bác sĩ,suc_khoe,tpl_suc_khoe_thuoc,author_synthetic,true
+seed_suc_khoe_thuoc_04_nd,thuoc nho mat theo don bac si,suc_khoe,tpl_suc_khoe_thuoc,author_synthetic,true
+seed_suc_khoe_thuoc_05,mua thuốc dị ứng theo chỉ định,suc_khoe,tpl_suc_khoe_thuoc,author_synthetic,true
+seed_suc_khoe_thuoc_05_nd,mua thuoc di ung theo chi dinh,suc_khoe,tpl_suc_khoe_thuoc,author_synthetic,true
+seed_suc_khoe_xet_nghiem_01,phí xét nghiệm máu,suc_khoe,tpl_suc_khoe_xet_nghiem,author_synthetic,true
+seed_suc_khoe_xet_nghiem_01_nd,phi xet nghiem mau,suc_khoe,tpl_suc_khoe_xet_nghiem,author_synthetic,true
+seed_suc_khoe_xet_nghiem_02,chụp X quang theo chỉ định,suc_khoe,tpl_suc_khoe_xet_nghiem,author_synthetic,true
+seed_suc_khoe_xet_nghiem_02_nd,chup X quang theo chi dinh,suc_khoe,tpl_suc_khoe_xet_nghiem,author_synthetic,true
+seed_suc_khoe_xet_nghiem_03,siêu âm tại bệnh viện,suc_khoe,tpl_suc_khoe_xet_nghiem,author_synthetic,true
+seed_suc_khoe_xet_nghiem_03_nd,sieu am tai benh vien,suc_khoe,tpl_suc_khoe_xet_nghiem,author_synthetic,true
+seed_suc_khoe_xet_nghiem_04,tiền xét nghiệm đường huyết,suc_khoe,tpl_suc_khoe_xet_nghiem,author_synthetic,true
+seed_suc_khoe_xet_nghiem_04_nd,tien xet nghiem duong huyet,suc_khoe,tpl_suc_khoe_xet_nghiem,author_synthetic,true
+seed_suc_khoe_xet_nghiem_05,phí xét nghiệm nước tiểu,suc_khoe,tpl_suc_khoe_xet_nghiem,author_synthetic,true
+seed_suc_khoe_xet_nghiem_05_nd,phi xet nghiem nuoc tieu,suc_khoe,tpl_suc_khoe_xet_nghiem,author_synthetic,true
+seed_suc_khoe_dung_cu_y_te_01,mua nhiệt kế để theo dõi sốt,suc_khoe,tpl_suc_khoe_dung_cu_y_te,author_synthetic,true
+seed_suc_khoe_dung_cu_y_te_01_nd,mua nhiet ke de theo doi sot,suc_khoe,tpl_suc_khoe_dung_cu_y_te,author_synthetic,true
+seed_suc_khoe_dung_cu_y_te_02,băng gạc để xử lý vết thương,suc_khoe,tpl_suc_khoe_dung_cu_y_te,author_synthetic,true
+seed_suc_khoe_dung_cu_y_te_02_nd,bang gac de xu ly vet thuong,suc_khoe,tpl_suc_khoe_dung_cu_y_te,author_synthetic,true
+seed_suc_khoe_dung_cu_y_te_03,mua máy đo huyết áp,suc_khoe,tpl_suc_khoe_dung_cu_y_te,author_synthetic,true
+seed_suc_khoe_dung_cu_y_te_03_nd,mua may do huyet ap,suc_khoe,tpl_suc_khoe_dung_cu_y_te,author_synthetic,true
+seed_suc_khoe_dung_cu_y_te_04,mua dung dịch sát khuẩn vết thương,suc_khoe,tpl_suc_khoe_dung_cu_y_te,author_synthetic,true
+seed_suc_khoe_dung_cu_y_te_04_nd,mua dung dich sat khuan vet thuong,suc_khoe,tpl_suc_khoe_dung_cu_y_te,author_synthetic,true
+seed_suc_khoe_dung_cu_y_te_05,khẩu trang y tế dùng khi đi khám,suc_khoe,tpl_suc_khoe_dung_cu_y_te,author_synthetic,true
+seed_suc_khoe_dung_cu_y_te_05_nd,khau trang y te dung khi di kham,suc_khoe,tpl_suc_khoe_dung_cu_y_te,author_synthetic,true
+seed_khac_qua_tang_01,quà mừng cưới bằng tiền,khac,tpl_khac_qua_tang,author_synthetic,true
+seed_khac_qua_tang_01_nd,qua mung cuoi bang tien,khac,tpl_khac_qua_tang,author_synthetic,true
+seed_khac_qua_tang_02,tiền mừng sinh nhật bạn,khac,tpl_khac_qua_tang,author_synthetic,true
+seed_khac_qua_tang_02_nd,tien mung sinh nhat ban,khac,tpl_khac_qua_tang,author_synthetic,true
+seed_khac_qua_tang_03,lì xì dịp đầu năm,khac,tpl_khac_qua_tang,author_synthetic,true
+seed_khac_qua_tang_03_nd,li xi dip dau nam,khac,tpl_khac_qua_tang,author_synthetic,true
+seed_khac_qua_tang_04,phúng viếng đám tang,khac,tpl_khac_qua_tang,author_synthetic,true
+seed_khac_qua_tang_04_nd,phung vieng dam tang,khac,tpl_khac_qua_tang,author_synthetic,true
+seed_khac_qua_tang_05,tiền mừng tân gia,khac,tpl_khac_qua_tang,author_synthetic,true
+seed_khac_qua_tang_05_nd,tien mung tan gia,khac,tpl_khac_qua_tang,author_synthetic,true
+seed_khac_dong_gop_01,đóng góp quỹ thiện nguyện,khac,tpl_khac_dong_gop,author_synthetic,true
+seed_khac_dong_gop_01_nd,dong gop quy thien nguyen,khac,tpl_khac_dong_gop,author_synthetic,true
+seed_khac_dong_gop_02,ủng hộ cứu trợ thiên tai,khac,tpl_khac_dong_gop,author_synthetic,true
+seed_khac_dong_gop_02_nd,ung ho cuu tro thien tai,khac,tpl_khac_dong_gop,author_synthetic,true
+seed_khac_dong_gop_03,tiền ủng hộ thư viện cộng đồng,khac,tpl_khac_dong_gop,author_synthetic,true
+seed_khac_dong_gop_03_nd,tien ung ho thu vien cong dong,khac,tpl_khac_dong_gop,author_synthetic,true
+seed_khac_dong_gop_04,đóng góp quỹ cộng đồng địa phương,khac,tpl_khac_dong_gop,author_synthetic,true
+seed_khac_dong_gop_04_nd,dong gop quy cong dong dia phuong,khac,tpl_khac_dong_gop,author_synthetic,true
+seed_khac_dong_gop_05,ủng hộ chương trình giúp đỡ trẻ em,khac,tpl_khac_dong_gop,author_synthetic,true
+seed_khac_dong_gop_05_nd,ung ho chuong trinh giup do tre em,khac,tpl_khac_dong_gop,author_synthetic,true
+seed_khac_dich_vu_khac_01,phí gửi bưu kiện,khac,tpl_khac_dich_vu_khac,author_synthetic,true
+seed_khac_dich_vu_khac_01_nd,phi gui buu kien,khac,tpl_khac_dich_vu_khac,author_synthetic,true
+seed_khac_dich_vu_khac_02,phí làm bản sao công chứng,khac,tpl_khac_dich_vu_khac,author_synthetic,true
+seed_khac_dich_vu_khac_02_nd,phi lam ban sao cong chung,khac,tpl_khac_dich_vu_khac,author_synthetic,true
+seed_khac_dich_vu_khac_03,phí dịch vụ chuyển nhà,khac,tpl_khac_dich_vu_khac,author_synthetic,true
+seed_khac_dich_vu_khac_03_nd,phi dich vu chuyen nha,khac,tpl_khac_dich_vu_khac,author_synthetic,true
+seed_khac_dich_vu_khac_04,phí giặt ủi quần áo,khac,tpl_khac_dich_vu_khac,author_synthetic,true
+seed_khac_dich_vu_khac_04_nd,phi giat ui quan ao,khac,tpl_khac_dich_vu_khac,author_synthetic,true
+seed_khac_dich_vu_khac_05,phí cắt chìa khóa,khac,tpl_khac_dich_vu_khac,author_synthetic,true
+seed_khac_dich_vu_khac_05_nd,phi cat chia khoa,khac,tpl_khac_dich_vu_khac,author_synthetic,true
+seed_khac_thieu_ngu_canh_01,chi cá nhân,khac,tpl_khac_thieu_ngu_canh,author_synthetic,true
+seed_khac_thieu_ngu_canh_01_nd,chi ca nhan,khac,tpl_khac_thieu_ngu_canh,author_synthetic,true
+seed_khac_thieu_ngu_canh_02,khoản chi khác,khac,tpl_khac_thieu_ngu_canh,author_synthetic,true
+seed_khac_thieu_ngu_canh_02_nd,khoan chi khac,khac,tpl_khac_thieu_ngu_canh,author_synthetic,true
+seed_khac_thieu_ngu_canh_03,thanh toán khoản chi chưa nhớ nội dung,khac,tpl_khac_thieu_ngu_canh,author_synthetic,true
+seed_khac_thieu_ngu_canh_03_nd,thanh toan khoan chi chua nho noi dung,khac,tpl_khac_thieu_ngu_canh,author_synthetic,true
+seed_khac_thieu_ngu_canh_04,mua món đồ chưa ghi rõ loại,khac,tpl_khac_thieu_ngu_canh,author_synthetic,true
+seed_khac_thieu_ngu_canh_04_nd,mua mon do chua ghi ro loai,khac,tpl_khac_thieu_ngu_canh,author_synthetic,true
+seed_khac_thieu_ngu_canh_05,chi lặt vặt không bổ sung được mô tả,khac,tpl_khac_thieu_ngu_canh,author_synthetic,true
+seed_khac_thieu_ngu_canh_05_nd,chi lat vat khong bo sung duoc mo ta,khac,tpl_khac_thieu_ngu_canh,author_synthetic,true
+pub_pfa_005,đồ ăn DoorDash,an_uong,public_pfa_demo,public_synthetic,true
+pub_pfa_005_nd,do an DoorDash,an_uong,public_pfa_demo,public_synthetic,true
+pub_pfa_007,cước chuyến xe Lyft,di_chuyen,public_pfa_demo,public_synthetic,true
+pub_pfa_007_nd,cuoc chuyen xe Lyft,di_chuyen,public_pfa_demo,public_synthetic,true
+pub_pfa_009,thuê bao Netflix,giai_tri,public_pfa_demo,public_synthetic,true
+pub_pfa_009_nd,thue bao Netflix,giai_tri,public_pfa_demo,public_synthetic,true
+pub_pfa_010,trò chơi Steam,giai_tri,public_pfa_demo,public_synthetic,true
+pub_pfa_010_nd,tro choi Steam,giai_tri,public_pfa_demo,public_synthetic,true
+pub_pfa_013,quần áo H&M,mua_sam,public_pfa_demo,public_synthetic,true
+pub_pfa_013_nd,quan ao H&M,mua_sam,public_pfa_demo,public_synthetic,true
+pub_pfa_019,điện PG&E,nha_o_hoa_don,public_pfa_demo,public_synthetic,true
+pub_pfa_019_nd,dien PG&E,nha_o_hoa_don,public_pfa_demo,public_synthetic,true
+pub_pfa_026,giao thông công cộng MTA,di_chuyen,public_pfa_demo,public_synthetic,true
+pub_pfa_026_nd,giao thong cong cong MTA,di_chuyen,public_pfa_demo,public_synthetic,true
+pub_pfa_027,internet Comcast,nha_o_hoa_don,public_pfa_demo,public_synthetic,true
+pub_pfa_034,khám tại phòng khám Urgent Care,suc_khoe,public_pfa_demo,public_synthetic,true
+pub_pfa_034_nd,kham tai phong kham Urgent Care,suc_khoe,public_pfa_demo,public_synthetic,true
+pub_pfa_035,chuyến xe Uber,di_chuyen,public_pfa_demo,public_synthetic,true
+pub_pfa_035_nd,chuyen xe Uber,di_chuyen,public_pfa_demo,public_synthetic,true
+pub_pfa_039,phí đỗ xe City Parking,di_chuyen,public_pfa_demo,public_synthetic,true
+pub_pfa_039_nd,phi do xe City Parking,di_chuyen,public_pfa_demo,public_synthetic,true
+pub_pfa_045,rạp chiếu phim Regal,giai_tri,public_pfa_demo,public_synthetic,true
+pub_pfa_045_nd,rap chieu phim Regal,giai_tri,public_pfa_demo,public_synthetic,true
+pub_pfa_046,xăng Chevron,di_chuyen,public_pfa_demo,public_synthetic,true
+pub_pfa_046_nd,xang Chevron,di_chuyen,public_pfa_demo,public_synthetic,true
+pub_pfa_048,dịch vụ nước Water Utility,nha_o_hoa_don,public_pfa_demo,public_synthetic,true
+pub_pfa_048_nd,dich vu nuoc Water Utility,nha_o_hoa_don,public_pfa_demo,public_synthetic,true
+pub_pfa_053,đồ điện tử Best Buy,mua_sam,public_pfa_demo,public_synthetic,true
+pub_pfa_053_nd,do dien tu Best Buy,mua_sam,public_pfa_demo,public_synthetic,true
+pub_pfa_069,thực phẩm Safeway,an_uong,public_pfa_demo,public_synthetic,true
+pub_pfa_069_nd,thuc pham Safeway,an_uong,public_pfa_demo,public_synthetic,true
+pub_pfa_071,giao đồ ăn Uber Eats,an_uong,public_pfa_demo,public_synthetic,true
+pub_pfa_071_nd,giao do an Uber Eats,an_uong,public_pfa_demo,public_synthetic,true
+pub_pfa_078,chăm sóc răng Dental Care,suc_khoe,public_pfa_demo,public_synthetic,true
+pub_pfa_078_nd,cham soc rang Dental Care,suc_khoe,public_pfa_demo,public_synthetic,true
+pub_pfa_079,bánh sandwich Subway,an_uong,public_pfa_demo,public_synthetic,true
+pub_pfa_079_nd,banh sandwich Subway,an_uong,public_pfa_demo,public_synthetic,true

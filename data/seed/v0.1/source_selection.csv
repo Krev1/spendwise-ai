@@ -1,0 +1,101 @@
+source_row,original_description,description_base,decision,related_record_id,reason
+2,Employer Payroll Direct Deposit,Employer Payroll Direct Deposit,excluded_nonexpense,,"Số tiền nguồn không âm: thu/hoàn tiền, ngoài bài toán khoản chi."
+3,Disney Plus,Disney Plus,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+4,Target Store,Target Store,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+5,DoorDash Food,DoorDash Food,selected_translation,pub_pfa_005,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+6,Hilton Hotels 5681,Hilton Hotels,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+7,Lyft Fare,Lyft Fare,selected_translation,pub_pfa_007,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+8,Hilton Hotels 4917,Hilton Hotels,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+9,Netflix Subscription 9797,Netflix Subscription,selected_translation,pub_pfa_009,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+10,Steam Games 9598,Steam Games,selected_translation,pub_pfa_010,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+11,Kroger Supermarket,Kroger Supermarket,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+12,Planet Fitness Gym,Planet Fitness Gym,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+13,H&M Clothing,H&M Clothing,selected_translation,pub_pfa_013,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+14,Expedia Travel 2790,Expedia Travel,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+15,Kroger Supermarket 6334,Kroger Supermarket,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+16,Planet Fitness Gym 4172,Planet Fitness Gym,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+17,Tax Refund,Tax Refund,excluded_nonexpense,,"Số tiền nguồn không âm: thu/hoàn tiền, ngoài bài toán khoản chi."
+18,Marriott Stay 8965,Marriott Stay,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+19,PG&E Electric,PG&E Electric,selected_translation,pub_pfa_019,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+20,Amazon.com Order 6539,Amazon.com Order,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+21,Trader Joe's,Trader Joe's,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+22,Aldi 0192 5820,Aldi,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+23,CVS Pharmacy,CVS Pharmacy,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+24,Marriott Stay,Marriott Stay,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+25,Chipotle Mexican Grill,Chipotle Mexican Grill,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+26,MTA Transit 9086,MTA Transit,selected_translation,pub_pfa_026,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+27,Comcast Internet,Comcast Internet,selected_translation,pub_pfa_027,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+28,Comcast Internet 3129,Comcast Internet,merged_same_source_description,pub_pfa_027,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+29,Airbnb Booking 6994,Airbnb Booking,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+30,Hilton Hotels 7259,Hilton Hotels,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+31,Tax Refund,Tax Refund,excluded_nonexpense,,"Số tiền nguồn không âm: thu/hoàn tiền, ngoài bài toán khoản chi."
+32,Netflix Subscription,Netflix Subscription,merged_same_source_description,pub_pfa_009,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+33,Marriott Stay 9494,Marriott Stay,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+34,Urgent Care Clinic,Urgent Care Clinic,selected_translation,pub_pfa_034,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+35,Uber Ride 3166,Uber Ride,selected_translation,pub_pfa_035,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+36,Planet Fitness Gym,Planet Fitness Gym,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+37,H&M Clothing,H&M Clothing,merged_same_source_description,pub_pfa_013,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+38,Home Depot,Home Depot,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+39,City Parking Auth,City Parking Auth,selected_translation,pub_pfa_039,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+40,Spotify Premium,Spotify Premium,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+41,Verizon Wireless,Verizon Wireless,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+42,Delta Airlines,Delta Airlines,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+43,Freelance Payment,Freelance Payment,excluded_nonexpense,,"Số tiền nguồn không âm: thu/hoàn tiền, ngoài bài toán khoản chi."
+44,Verizon Wireless 9951,Verizon Wireless,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+45,Regal Cinema 6312,Regal Cinema,selected_translation,pub_pfa_045,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+46,Chevron Gas 2938,Chevron Gas,selected_translation,pub_pfa_046,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+47,Trader Joe's,Trader Joe's,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+48,Water Utility 5010,Water Utility,selected_translation,pub_pfa_048,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+49,Delta Airlines,Delta Airlines,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+50,Whole Foods Market 5697,Whole Foods Market,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+51,Aldi 0192,Aldi,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+52,Water Utility 9336,Water Utility,merged_same_source_description,pub_pfa_048,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+53,Best Buy Electronics,Best Buy Electronics,selected_translation,pub_pfa_053,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+54,Spotify Premium 7435,Spotify Premium,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+55,Marriott Stay 8398,Marriott Stay,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+56,Expedia Travel 4633,Expedia Travel,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+57,CVS Pharmacy 5297,CVS Pharmacy,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+58,Target Store 1905,Target Store,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+59,MTA Transit 3804,MTA Transit,merged_same_source_description,pub_pfa_026,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+60,Lyft Fare 6084,Lyft Fare,merged_same_source_description,pub_pfa_007,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+61,Shell Oil 2572,Shell Oil,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+62,Best Buy Electronics 3320,Best Buy Electronics,merged_same_source_description,pub_pfa_053,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+63,Chevron Gas 2758,Chevron Gas,merged_same_source_description,pub_pfa_046,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+64,Hilton Hotels,Hilton Hotels,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+65,Freelance Payment,Freelance Payment,excluded_nonexpense,,"Số tiền nguồn không âm: thu/hoàn tiền, ngoài bài toán khoản chi."
+66,City Parking Auth,City Parking Auth,merged_same_source_description,pub_pfa_039,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+67,Hilton Hotels 2764,Hilton Hotels,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+68,Walgreens Drugstore 4424,Walgreens Drugstore,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+69,Safeway Groceries 4220,Safeway Groceries,selected_translation,pub_pfa_069,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+70,Whole Foods Market,Whole Foods Market,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+71,Uber Eats Delivery,Uber Eats Delivery,selected_translation,pub_pfa_071,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+72,Airbnb Booking 3633,Airbnb Booking,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+73,CVS Pharmacy 4278,CVS Pharmacy,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+74,Waste Management,Waste Management,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+75,Kroger Supermarket,Kroger Supermarket,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+76,Expedia Travel 4353,Expedia Travel,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+77,Lyft Fare,Lyft Fare,merged_same_source_description,pub_pfa_007,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+78,Dental Care Associates,Dental Care Associates,selected_translation,pub_pfa_078,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+79,Subway Sandwiches,Subway Sandwiches,selected_translation,pub_pfa_079,Chọn mô tả có dịch vụ/sản phẩm đủ rõ theo ánh xạ dự thảo có version.
+80,Disney Plus 7788,Disney Plus,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+81,City Parking Auth,City Parking Auth,merged_same_source_description,pub_pfa_039,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+82,Tax Refund,Tax Refund,excluded_nonexpense,,"Số tiền nguồn không âm: thu/hoàn tiền, ngoài bài toán khoản chi."
+83,Waste Management,Waste Management,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+84,MTA Transit,MTA Transit,merged_same_source_description,pub_pfa_026,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+85,Comcast Internet 5168,Comcast Internet,merged_same_source_description,pub_pfa_027,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+86,H&M Clothing 4956,H&M Clothing,merged_same_source_description,pub_pfa_013,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+87,Chipotle Mexican Grill 6558,Chipotle Mexican Grill,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+88,Planet Fitness Gym 8112,Planet Fitness Gym,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+89,Subway Sandwiches 8163,Subway Sandwiches,merged_same_source_description,pub_pfa_079,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+90,Best Buy Electronics,Best Buy Electronics,merged_same_source_description,pub_pfa_053,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+91,Best Buy Electronics,Best Buy Electronics,merged_same_source_description,pub_pfa_053,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+92,DoorDash Food 5821,DoorDash Food,merged_same_source_description,pub_pfa_005,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+93,Subway Sandwiches 8183,Subway Sandwiches,merged_same_source_description,pub_pfa_079,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+94,Disney Plus,Disney Plus,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+95,Urgent Care Clinic 8065,Urgent Care Clinic,merged_same_source_description,pub_pfa_034,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+96,Target Store 2016,Target Store,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+97,Netflix Subscription 3260,Netflix Subscription,merged_same_source_description,pub_pfa_009,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+98,Chipotle Mexican Grill 5480,Chipotle Mexican Grill,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+99,H&M Clothing,H&M Clothing,merged_same_source_description,pub_pfa_013,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."
+100,Whole Foods Market 3493,Whole Foods Market,excluded_unmapped,,Tên cửa hàng/mô tả chưa rõ hoặc ranh giới nhãn chưa chốt; không tự suy đoán vật đã mua.
+101,DoorDash Food,DoorDash Food,merged_same_source_description,pub_pfa_005,"Cùng mô tả nguồn sau bỏ mã demo; giữ một mô tả canonical, không coi là mẫu độc lập."

@@ -70,3 +70,18 @@ Kết quả thực: **50 passed, 11 subtests passed**. Bao gồm 14 test hợp �
 CSV mẫu trả 9 giao dịch, thu 5.000.000, chi 2.593.000, chênh lệch 2.407.000 VND, một khoản chi thiếu nhãn. Tests xác minh input sai trả exit 1, thông báo stderr, không in báo cáo thành công; preview không sửa file hoặc tạo database.
 
 Không có dependency mới. Chưa có kiểm chứng SQLite, UI, baseline hoặc model. Test phần mềm không chứng minh chất lượng AI hoặc mức hiểu của người học.
+
+## TASK-05–06 — Dataset hư cấu, provenance và validator — 05/10/2026
+
+```powershell
+.\.venv\Scripts\python.exe -B scripts/collect_reference.py --verify-online
+.\.venv\Scripts\python.exe -B scripts/build_seed_dataset.py
+.\.venv\Scripts\python.exe -B scripts/validate_dataset.py data/seed/v0.1/expense_descriptions_vi.csv
+.\.venv\Scripts\python.exe -B -m pytest -q
+```
+
+Đã đối chiếu CSV nguồn và MIT notice tại commit `5d727c66bf2beba91a54d5cda043b6b2eca97ec3` với hash raw và UTF-8/LF: khớp. Builder đối chiếu bốn file seed/audit khớp byte. Validator cấu trúc pass: 356 hư cấu, 0 thật, đủ 8 nhãn, 33 nhóm, 179 câu sau gộp khác dấu; 0 cảnh báo PII theo các mẫu kỹ thuật được cài, không có chứng nhận ẩn danh.
+
+Toàn bộ tests: **86 passed, 11 subtests passed**. Test mới bao gồm source/cờ, ID/nhóm, encoding/header/quote/giới hạn, nhãn xung đột, trùng chuẩn hóa, biến thể khác dấu giao nhóm, nhóm lẫn nguồn, cảnh báo PII, provenance đủ ID/hash, từng dòng nguồn, tính tái tạo, nguồn bị sửa và CLI read-only từ cwd khác. Đã sửa output stderr UTF-8 trên Windows theo lỗi thực từ test. SHA-256 dataset: `537e48b08ba3bc6022bc09cfa8e0cf8944ea2b652a7a66906ad297d745c362f6`.
+
+Seed dùng nhãn AI dự thảo, chưa được người duyệt; validator không đo chất lượng nhãn. Có 0 người tham gia/0 mẫu human-reviewed. Chưa train/split và không có điểm ML. Việc thu thập thật và làm bài của người học còn chờ.

@@ -1,6 +1,6 @@
 # SpendWise AI — Dữ liệu và nghiên cứu mô hình
 
-Ngày lập: 05/10/2026. Trạng thái: thiết kế trước triển khai. **Chưa thu thập tập dữ liệu thật, chưa huấn luyện mô hình và chưa có kết quả đánh giá.** Mọi số lượng và điểm số bên dưới là mục tiêu cần kiểm chứng.
+Ngày lập: 05/10/2026. Trạng thái: đã triển khai seed hư cấu và validator (TASK-05–06); thiết kế train/evaluate còn chờ triển khai. **Chưa thu thập dữ liệu thật, chưa huấn luyện mô hình và chưa có kết quả đánh giá.** Số lượng mục tiêu bên dưới không phải số đã thu; số seed thực nằm trong data/seed/v0.1/audit_report.json.
 
 Tài liệu này dành cho người học ngành Trí tuệ nhân tạo muốn vừa xây sản phẩm, vừa hiểu mỗi quyết định để bảo vệ đồ án. Đọc cùng đặc tả yêu cầu và tài liệu thiết kế trong thư mục `docs/`.
 
@@ -60,7 +60,7 @@ Có thể báo cáo tỉ lệ đồng thuận thô và Cohen's kappa khi có hai
 
 | Mốc | Dữ liệu | Dùng để làm gì? | Chưa được kết luận gì? |
 |---|---|---|---|
-| Khởi động | 40–80 mô tả tự tạo, khoảng 5–10/lớp | Thử schema, bộ nhập, lệnh train, lưu/tải mô hình | Không chứng minh mô hình dùng tốt ngoài thực tế |
+| Khởi động | Seed hư cấu có phiên bản; số thực ghi trong dataset card | Thử schema, bộ nhập, lệnh train, lưu/tải mô hình | Không chứng minh mô hình dùng tốt ngoài thực tế |
 | Thử nghiệm sớm | Một tập mô tả thật nhỏ đã được đồng ý sử dụng | Sửa hướng dẫn gán nhãn, khảo sát sự đa dạng, kiểm tra split | Chưa suy rộng sang mọi sinh viên/người đi làm |
 | Mục tiêu đồ án | Khoảng 1.200 mẫu thật hợp lệ, hướng tới 150/lớp sau làm sạch | So sánh mô hình và đánh giá trên người chưa gặp | Không bảo đảm đạt điểm chỉ vì đủ mẫu |
 | Kiểm tra chính thức | Tập test thật có tối thiểu 20 mô tả khác nhau/lớp, từ người giữ lại hoàn toàn | Đánh giá một lần sau khi chốt phương pháp | Không dùng test này để chọn mô hình hay threshold |
@@ -91,9 +91,9 @@ Lưu dữ liệu thật trên máy có kiểm soát truy cập; bản demo và k
 |---|---|---|
 | `record_id` | Chuỗi duy nhất, không chứa danh tính | Truy vết một mẫu |
 | `description` | UTF-8, không rỗng, đã loại thông tin nhận dạng | Đầu vào duy nhất của classifier |
-| `label` | Một trong 8 slug cố định | Ground truth do người gán nhãn |
+| `label` | Một trong 8 slug cố định | Nhãn mục tiêu; seed dùng nhãn AI dự thảo, ground truth thật cần người duyệt |
 | `group_id` | Mã người cung cấp; với mẫu tự tạo là mã nguồn/khuôn tạo | Giữ mẫu có quan hệ cùng một tập |
-| `source` | `volunteer` hoặc `author_synthetic` | Phân biệt nguồn thật và tự tạo |
+| `source` | `volunteer`, `author_synthetic` hoặc `public_synthetic` | Phân biệt nguồn thật và tự tạo |
 | `is_synthetic` | `true`/`false`, nhất quán với `source` | Ngăn trộn kết quả thật với demo |
 
 Ví dụ **tự tạo**, không phải dữ liệu thật:
@@ -361,3 +361,16 @@ Sau mỗi bước, viết một đoạn bằng lời của mình vào nhật ký
 5. [Chỉ số phân loại](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html) và [hiệu chuẩn score](https://scikit-learn.org/stable/modules/calibration.html): tránh diễn giải quá mức.
 
 Các liên kết chính thức được kiểm tra ngày 05/10/2026. Khi triển khai, ghi phiên bản thực tế cài đặt; đường dẫn `stable` có thể cập nhật sau này.
+
+
+## 15. Dataset v0.1 — hợp đồng đã triển khai
+
+Đọc [dataset card](../data/seed/v0.1/DATASET_CARD.md), [task card](tasks/TASK-05-06.md) và [hướng dẫn học](https://github.com/Krev1/Learn/blob/main/spendwise-ai/guides/01_dataset_collection.md). Dữ liệu công khai phiên bản này hoàn toàn hư cấu; nhãn trong `provenance.csv` ghi `ai_draft`. Chưa có người gán nhãn độc lập hoặc test thật.
+
+`public_synthetic` chỉ dùng cho nguồn đã xác minh là hư cấu, chuyển ngữ/biên tập có lưu gốc. `author_synthetic` và `public_synthetic` bắt buộc `true`; `volunteer` bắt buộc `false`. Nhóm nguồn công khai được giữ chung một `group_id`; các mẫu tự tạo giữ cùng họ kịch bản và biến thể trong một nhóm. Đây là nhóm phụ thuộc để chia tập, không phải số người thật.
+
+Validator kiểm tra schema sáu cột, ID/nhóm ASCII 1–64, mô tả có chữ 1–300 ký tự, tám nhãn, cờ canonical, nhất quán nhóm/nguồn, trùng chuẩn hóa và biến thể chỉ khác dấu ở khác nhóm. NFC/lowercase/gộp khoảng trắng dùng cho khóa audit; CSV giữ câu gốc. Bỏ dấu chỉ dùng để tìm biến thể và tạo demo, không thay cấu hình chuẩn hóa chính của mô hình.
+
+Provenance bên cạnh giữ hash chuẩn hóa, họ câu, cách biến đổi, dòng nguồn, lý do nhãn và trạng thái duyệt. Rà PII bằng người vẫn bắt buộc; cảnh báo email/URL/chuỗi số dài chỉ hỗ trợ. Dữ liệu thật và ledger đồng ý ở `data/private/`, không đưa vào Git.
+
+Builder không tải mạng và chỉ nhận recipes hư cấu đã version. Collector chỉ kiểm tra snapshot từ commit nguồn cố định; không tự thu dữ liệu tài chính người dùng. Builder/validator không huấn luyện, không chia train/test và không đánh giá khả năng tổng quát hóa.

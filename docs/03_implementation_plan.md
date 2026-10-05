@@ -54,11 +54,11 @@ Các vai trò dưới đây dùng cùng định nghĩa trong `04_team_workflow.m
 | Task | Vai trò chính | Phụ thuộc / REQ | Đầu ra và tiêu chí hoàn tất |
 |---|---|---|---|
 | TASK-04 — Tạo domain và validator giao dịch | Developer | TASK-03; REQ-01,04,06 | Quy tắc ngày, VND, mô tả, thu/chi, ID 1–64 ký tự ASCII chữ/số/`_`/`-` và 8 slug nằm trong domain. CSV parser hỗ trợ UTF-8/BOM và dấu nháy; trả lỗi theo dòng; không ghi database. Kiểm tra các ranh giới hợp đồng. |
-| TASK-05 — Guideline nhãn và provenance | Data Engineer + ML Researcher | TASK-04; REQ-08,13 | Quy định 8 danh mục và trường hợp mơ hồ; schema dataset 6 cột; quy trình đồng ý, loại PII và kiểm tra nhãn. Tạo `Learn/spendwise-ai/lessons/02_csv_and_labels.md`. |
-| TASK-06 — Dataset validator và thu thập phiên bản đầu | Data Engineer | TASK-05; REQ-08,09 | Script xác thực ID/label/group/source/is_synthetic; báo phân bố lớp, số nhóm độc lập, số mẫu thật/tự viết. Dataset demo đánh dấu synthetic; ghi snapshot/hash. Tiếp tục thu dữ liệu thật được đồng ý trong các mốc sau. |
+| TASK-05 — Guideline nhãn và provenance | Data Engineer + ML Researcher | TASK-04; REQ-08,13 | Quy định 8 danh mục và trường hợp mơ hồ; schema dataset 6 cột; quy trình đồng ý, loại PII và kiểm tra nhãn. Bài 02b và phương pháp/guideline trong `Learn/spendwise-ai/`; bài 02 trước đó giải thích CSV giao dịch. |
+| TASK-06 — Dataset validator và thu thập phiên bản đầu | Data Engineer | TASK-05; REQ-08,09 | Script xác thực ID/label/group/source/is_synthetic; báo phân bố lớp, số nhóm phụ thuộc, số mẫu thật/tự viết/công khai hư cấu. Nhãn AI dự thảo ghi riêng, không tự coi là người duyệt. Dataset demo đánh dấu synthetic; ghi snapshot/hash. Tiếp tục thu dữ liệu thật được đồng ý trong các mốc sau. |
 | TASK-07 — Prototype baseline | ML Researcher + Mentor | TASK-05,06; REQ-09,13 | Viết bộ từ khoá có thứ tự ưu tiên và `DummyClassifier`. Dùng ví dụ nhỏ để hiểu hành vi; chưa báo điểm test. Giải thích câu có nhiều từ khoá, câu không có từ khoá và lớp phổ biến. |
 
-**Phạm vi file:** `src/spendwise/domain/`, parser/service kiểm tra CSV, `scripts/validate_dataset.py`, dữ liệu demo/guideline/manifest và file giải thích 02. Dữ liệu thật nằm ngoài Git.
+**Phạm vi file:** `src/spendwise/domain/`, `src/spendwise/data/`, parser/service kiểm tra CSV, scripts build/collect/validate, dữ liệu demo/provenance/manifest; phương pháp/guideline và bài 02b trong Learn. Dữ liệu thật nằm ngoài Git.
 
 **Điểm kiểm tra dữ liệu:** không bắt buộc có ngay đủ dữ liệu thật để chạy smoke test. Tuy nhiên thí nghiệm trên câu tự viết chỉ là bước học kỹ thuật. Trước kết luận về dùng thực tế cần holdout thật theo `05_data_and_ml.md`; nếu chưa đủ, trạng thái bằng chứng phải ghi đúng.
 

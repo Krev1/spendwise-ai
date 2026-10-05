@@ -6,7 +6,7 @@
 
 ## Trạng thái
 
-Đã chuẩn bị P1 và bắt đầu phần kỹ thuật P2: có domain giao dịch, CSV parser từ file/bytes, tổng hợp tháng và CLI preview. Bộ kiểm tra hiện tại đạt **50 tests, 11 subtests**; TASK-04 đang REVIEW. Việc thực hành Python của người học vẫn chưa được xác nhận. Chưa có ứng dụng hoàn chỉnh, dataset thật, mô hình đã huấn luyện hoặc kết quả ML. Các chỉ số trong spec là mục tiêu đề xuất.
+Đã chuẩn bị P1 và bắt đầu phần kỹ thuật P2: có domain giao dịch, CSV parser từ file/bytes, tổng hợp tháng và CLI preview. Bộ kiểm tra hiện tại đạt **86 tests, 11 subtests**; TASK-04 và phần kỹ thuật TASK-05–06 đang REVIEW. Có seed 356 mô tả hư cấu, nhãn AI dự thảo, chưa có người duyệt. Việc thực hành Python của người học vẫn chưa được xác nhận. Chưa có ứng dụng hoàn chỉnh, dataset thật, mô hình đã huấn luyện hoặc kết quả ML. Các chỉ số trong spec là mục tiêu đề xuất.
 
 Xem [tiến độ kỹ thuật](progress.md) và [bằng chứng kiểm tra](VERIFICATION.md). Code hiện có nằm trong `src/spendwise/`, tests trong `tests/` và `examples/`. `examples/csv_contract.py` là wrapper của code mới. Các phần SQLite, UI, ML và `artifacts/` trong thiết kế vẫn là đầu ra tương lai.
 
@@ -52,3 +52,14 @@ Xem [hướng dẫn code CSV](examples/README.md). Dữ liệu mẫu là hư c�
 [Learn/spendwise-ai](https://github.com/Krev1/Learn/tree/main/spendwise-ai) chứa lộ trình, bài 00/01/02, bài tập, nhật ký và hướng dẫn bảo vệ. Xem [hướng dẫn dùng hai repo](https://github.com/Krev1/Learn/blob/main/spendwise-ai/README.md). Code tham chiếu ở repo dự án; bài học đọc trong Learn và chạy bằng `.venv` của dự án.
 
 Tiếp tục task theo [kế hoạch](docs/03_implementation_plan.md), đối chiếu yêu cầu đồ án với giảng viên và giữ mọi kết quả thực nghiệm có bằng chứng. Không commit dữ liệu tài chính thật, database, credentials hoặc `.venv`.
+
+## Dataset khởi đầu
+
+[Dataset card](data/seed/v0.1/DATASET_CARD.md) và [CSV tiếng Việt](data/seed/v0.1/expense_descriptions_vi.csv): 356 mô tả, 8 nhãn, 0 mẫu thật. Có nguồn/commit/hash, provenance và audit từng dòng; toàn bộ nhãn chưa được con người kiểm tra độc lập. Dùng để học và thử pipeline; chưa chứng minh chất lượng thực tế.
+
+```powershell
+.\.venv\Scripts\python.exe -B scripts/build_seed_dataset.py
+.\.venv\Scripts\python.exe -B scripts/validate_dataset.py data/seed/v0.1/expense_descriptions_vi.csv
+```
+
+[Phương pháp thu thập/xây dữ liệu](https://github.com/Krev1/Learn/blob/main/spendwise-ai/guides/01_dataset_collection.md), [guideline nhãn](https://github.com/Krev1/Learn/blob/main/spendwise-ai/guides/02_labeling_manual.md) và bài thực hành nằm trong Learn. Không commit mô tả thật hoặc sổ đồng ý; lưu riêng ở `data/private/`.

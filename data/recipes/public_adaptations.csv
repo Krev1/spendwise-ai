@@ -1,0 +1,20 @@
+source_description_base,description_vi,label,annotation_rationale
+DoorDash Food,đồ ăn DoorDash,an_uong,Food nêu rõ đồ ăn
+Uber Eats Delivery,giao đồ ăn Uber Eats,an_uong,Eats Delivery nêu dịch vụ giao đồ ăn
+Subway Sandwiches,bánh sandwich Subway,an_uong,Sandwiches nêu món ăn
+Safeway Groceries,thực phẩm Safeway,an_uong,Groceries nêu hàng thực phẩm
+Lyft Fare,cước chuyến xe Lyft,di_chuyen,Fare là tiền chuyến đi
+Uber Ride,chuyến xe Uber,di_chuyen,Ride nêu chuyến xe
+MTA Transit,giao thông công cộng MTA,di_chuyen,Transit nêu dịch vụ giao thông
+City Parking Auth,phí đỗ xe City Parking,di_chuyen,Parking nêu đỗ xe
+Chevron Gas,xăng Chevron,di_chuyen,Gas trong mô tả trạm nhiên liệu
+Comcast Internet,internet Comcast,nha_o_hoa_don,Internet nêu dịch vụ mạng
+PG&E Electric,điện PG&E,nha_o_hoa_don,Electric nêu dịch vụ điện
+Water Utility,dịch vụ nước Water Utility,nha_o_hoa_don,Water Utility nêu nước sinh hoạt
+H&M Clothing,quần áo H&M,mua_sam,Clothing nêu quần áo
+Best Buy Electronics,đồ điện tử Best Buy,mua_sam,Electronics nêu hàng điện tử; chưa có mục đích học tập
+Netflix Subscription,thuê bao Netflix,giai_tri,"Subscription nêu thuê bao; dịch vụ xem phim được nhận diện theo tên thương hiệu, cần người kiểm tra"
+Steam Games,trò chơi Steam,giai_tri,Games nêu trò chơi
+Regal Cinema,rạp chiếu phim Regal,giai_tri,Cinema nêu rạp phim
+Dental Care Associates,chăm sóc răng Dental Care,suc_khoe,Dental Care nêu chăm sóc răng
+Urgent Care Clinic,khám tại phòng khám Urgent Care,suc_khoe,Clinic nêu phòng khám; cách dịch là nhãn dự thảo cần rà soát

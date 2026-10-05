@@ -211,7 +211,7 @@ Ví dụ kiểm tra: thu 1.500.000 VND; hai khoản chi 35.000 và 22.000 VND; t
 record_id,description,label,group_id,source,is_synthetic
 ```
 
-`label` là một trong 8 slug. `record_id` duy nhất. Với dữ liệu thật, `group_id` là mã người cung cấp đã thay thông tin nhận dạng, ví dụ `p001`; toàn bộ mô tả của người đó phải cùng một split. Với dữ liệu tự tạo, `group_id` là mã nguồn/khuôn tạo. `source` là `volunteer` hoặc `author_synthetic`; `is_synthetic` là `true`/`false`. Dòng `volunteer` phải có đồng ý được lưu ngoài CSV bằng manifest riêng. Dữ liệu minh hoạ do tác giả soạn phải mang `author_synthetic,true`, không được báo là dữ liệu người dùng thật.
+`label` là một trong 8 slug. `record_id` duy nhất. Với dữ liệu thật, `group_id` là mã người cung cấp đã thay thông tin nhận dạng, ví dụ `p001`; toàn bộ mô tả của người đó phải cùng một split. Với dữ liệu tự tạo, `group_id` là mã nguồn/khuôn tạo. `source` là `volunteer`, `author_synthetic` hoặc `public_synthetic`; `is_synthetic` là `true`/`false`. Dòng `volunteer,false` phải có đồng ý được lưu ngoài CSV bằng manifest riêng. Dữ liệu do dự án soạn mang `author_synthetic,true`; bản thích nghi từ nguồn công khai hư cấu mang `public_synthetic,true`. Cả hai không được báo là người dùng thật. Trạng thái nhãn dự thảo/được người duyệt nằm trong provenance, không suy ra từ việc CSV hợp lệ.
 
 Các bước: kiểm tra schema và nhãn → làm sạch và audit quan hệ → split theo nhóm hiệu lực → huấn luyện → lựa chọn trên validation → khoá recipe → đánh giá test → phân tích lỗi. Manifest audit riêng lưu `normalized_text_hash`, `pattern_family_id` và quan hệ người rà soát xác nhận giữa các họ câu. Hợp nhất các `group_id` liên quan thành thành phần liên thông; đó là đơn vị chia hiệu lực. Không để một người cung cấp hoặc một họ biến thể/khuôn liên quan nằm ở nhiều split. Schema CSV vẫn giữ 6 cột, không dùng các ID/metadata này làm feature.
 
@@ -330,3 +330,9 @@ Lỗi nghiệp vụ CSV nhiều dòng dùng số dòng bắt đầu bản ghi; l
 `Transaction` ở đây là dữ liệu preview, chưa phải schema SQLite ở phần 7. Category có thể thiếu và chưa biểu diễn xác nhận. Không lưu đối tượng preview trực tiếp như giao dịch hoàn tất khi triển khai P4–P5.
 
 Script chạy thêm `src/` vào import path để dùng checkout mà chưa cần packaging. Logic domain/services không tự sửa import path, không cần dependency mới. Wrapper `examples/csv_contract.py` dùng cùng implementation để lệnh bài 01 tiếp tục hoạt động.
+
+## Implementation dữ liệu — TASK-05–06
+
+`src/spendwise/data/dataset.py` kiểm tra dataset ML sáu cột độc lập với transaction parser. `scripts/validate_dataset.py` in thống kê JSON, lỗi exit 1 không in mô tả riêng tư. `scripts/collect_reference.py` đối chiếu snapshot có commit/hash/license cố định, mặc định offline. `scripts/build_seed_dataset.py` tái tạo seed/audit offline từ recipes hư cấu; mặc định so byte, `--write` mới ghi bốn file cố định.
+
+`data/seed/v0.1/` chứa main CSV, provenance, source selection, audit và dataset card. Phân biệt `volunteer,false`, `author_synthetic,true`, `public_synthetic,true`. Trạng thái nhãn nằm trong provenance; validator cấu trúc không cấp trạng thái người duyệt. Metadata không dùng làm feature. Dữ liệu thật ở `data/private/` theo consent, không đưa vào Git. Dataset engineering đã có; baseline, split, train và UI vẫn chưa triển khai.

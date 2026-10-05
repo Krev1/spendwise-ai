@@ -232,6 +232,8 @@ Chuẩn hoá cho model gồm NFC, chữ thường và thu gọn khoảng trắng
 
 ### 9.3. Hợp đồng inference
 
+Prototype B0/B1 TASK-07 theo A12 có [task card](tasks/TASK-07.md). B1 khớp từ/cụm theo ranh giới Unicode, giữ dấu, alias không dấu khai báo rõ. Hit dài loại hit ngắn bị chứa; hit độc lập nhiều lớp trả `khac/conflict`, không hit trả `khac/no_match`. Kết quả có hit/vị trí, version/hash rule, luôn cần xác nhận, score null. B0 nhận riêng descriptions/labels của train do caller cung cấp; fixture demo chưa phải train nghiên cứu. CLI chỉ in demo từ fixture hư cấu, không sinh split/metric/artifact. Đây là baseline so sánh; adapter inference app bên dưới vẫn dành cho model được chọn ở TASK-12.
+
 Input: `description` hợp lệ và phiên bản mô hình được chọn. Output:
 
 | Trường | Ý nghĩa |

@@ -176,6 +176,8 @@ Viết bảng từ khóa từ hiểu biết miền và train, đóng phiên bả
 
 Xuất cả kết quả trên toàn bộ test và tỷ lệ quy tắc thực sự khớp. Không gán số `0.99` cho rule và đem so như xác suất học máy. Chính sách abstain của rule cần được mô tả riêng; so sánh macro-F1 dự đoán đầy đủ giữa các phương pháp là phép so sánh chính.
 
+Prototype TASK-07 theo A12 xét hit dài trước (số token, số ký tự, thứ tự rule), loại hit ngắn bị chứa hoàn toàn trong hit đã giữ. Hit độc lập nhiều lớp trả `khac/conflict`; không hit trả `khac/no_match`. Alias không dấu phải khai báo, không bỏ dấu input ngầm. Rule version/hash khóa nội dung và thứ tự. B0 chỉ fit fixture hư cấu riêng cho smoke test, chưa fit seed hoặc tạo split/metric. TASK-10 dùng train của manifest TASK-08; demo TASK-07 không đo chất lượng thực.
+
 ### Naive Bayes học gì?
 
 Trực giác: mô hình tích lũy mức xuất hiện của đặc trưng theo từng lớp, kết hợp với prior của lớp. Giả định “naive” coi đặc trưng độc lập có điều kiện theo nhãn. Khi dự đoán, cộng các log-score rồi chọn lớp có score cao nhất. MultinomialNB hỗ trợ đặc trưng không âm; TF-IDF có thể dùng dù là giá trị phân số. [Tài liệu MultinomialNB](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html).

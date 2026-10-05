@@ -1,0 +1,33 @@
+{
+  "schema_version": "baseline-demo-v1",
+  "source": "author_synthetic",
+  "is_synthetic": true,
+  "purpose": "technical_smoke_only",
+  "fit_examples": [
+    {"description": "Ăn cơm trưa ở căng tin", "label": "an_uong"},
+    {"description": "Cà phê sáng trước giờ học", "label": "an_uong"},
+    {"description": "Bát phở buổi tối", "label": "an_uong"},
+    {"description": "Vé xe buýt đến trường", "label": "di_chuyen"},
+    {"description": "Tiền phòng trọ tháng này", "label": "nha_o_hoa_don"},
+    {"description": "Giáo trình môn cơ sở dữ liệu", "label": "hoc_tap"},
+    {"description": "Mua áo mới", "label": "mua_sam"},
+    {"description": "Vé phim cuối tuần", "label": "giai_tri"},
+    {"description": "Khám răng định kỳ", "label": "suc_khoe"},
+    {"description": "Quà mừng cưới bạn", "label": "khac"}
+  ],
+  "probes": [
+    "CÀ PHÊ sáng",
+    "com trua o cang tin",
+    "tiền nước phòng trọ",
+    "mua nước giặt",
+    "kem dưỡng da mua ở nhà thuốc",
+    "laptop để học",
+    "cơm trưa và vé phim",
+    "học phí và cơm trưa",
+    "mua thuốc lá",
+    "endgame",
+    "chuyển khoản",
+    "Grab",
+    "đặt lịch họp nhóm"
+  ]
+}

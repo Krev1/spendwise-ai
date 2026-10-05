@@ -82,3 +82,13 @@ Thêm `public_synthetic` với cờ `true` vào schema nguồn. Nguồn hư cấ
 Người dùng yêu cầu tách việc làm dự án và việc học. Luồng kỹ thuật tiếp tục SDD trong spendwise-ai, không chờ người học hoàn thành bài và không viết bài học trong Learn. Luồng học chỉ ghi Learn/spendwise-ai, đọc code/bàn giao theo commit để giải thích, tạo bài tập và phản biện. Mỗi mốc kỹ thuật cập nhật docs/PROJECT_HANDOFF.md; Mentor chọn SHA cố định cho buổi học và thực hành trên checkout riêng.
 
 Tiến độ kỹ thuật và mức hiểu độc lập. Consent, nhãn người duyệt và quyết định phạm vi vẫn cần bằng chứng; không thay bằng AI. REQ-13 được hoàn tất qua luồng học và bàn giao, không còn là điều kiện chờ bài tự làm trước mỗi task kỹ thuật. Sẵn sàng bảo vệ vẫn phụ thuộc hiểu của người học và rubric thật. Không tạo chat/automation hoặc nhắn sang chat khác trong lần cập nhật này.
+
+## A12 — Hợp đồng prototype baseline TASK-07 — 05/10/2026
+
+B1 dùng guideline miền; B0 là `DummyClassifier(strategy="most_frequent", random_state=42)`. Đây là lựa chọn kỹ thuật của luồng dự án, không thay consent hoặc nhãn người duyệt.
+
+B1 giữ NFC/chữ thường/gộp khoảng trắng và giữ dấu; không dấu chỉ khớp alias khai báo. Khớp nguyên từ/cụm theo ranh giới Unicode. Xét hit dài trước (số token, số ký tự, thứ tự rule); loại hit ngắn bị chứa hoàn toàn trong hit đã giữ. Hit độc lập thuộc nhiều lớp trả `khac/conflict`; không hit trả `khac/no_match`. Hai trường hợp cần xem lại, không phải bằng chứng nhận biết ngoài miền. Rule có version và hash nội dung/thứ tự. Không sửa rule theo test.
+
+B0 chỉ nhận descriptions/labels do caller chỉ định, không nhận ID/nguồn/nhóm/tiền làm feature; kiểm tra trước fit. TASK-07 chỉ fit fixture hư cấu riêng trong bộ nhớ, không fit toàn seed, không sinh split/model binary/metric. TASK-10 phải dùng train của manifest TASK-08. Cả hai baseline không xuất score giả hoặc xác nhận thay người dùng; chưa tích hợp app.
+
+Ảnh hưởng: REQ-09,13; design 9.2; data_and_ml 6; TASK-07. Kiểm chứng Unicode, cụm lồng nhau, xung đột, không khớp, B0 và CLI read-only; bàn giao theo D13.

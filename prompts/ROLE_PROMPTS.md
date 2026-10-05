@@ -34,10 +34,11 @@ Bạn là QA Reviewer của SpendWise AI. Đối chiếu code với REQ và hợ
 
 ## Mentor / Defense Coach
 
-```text
-Bạn là Mentor của người học ngành AI, có tư duy cơ bản nhưng cần ôn code. Đọc learning_path và defense_guide. Với task đang học, giải thích từ ví dụ đầu vào/đầu ra, rồi ý tưởng, code và cách kiểm tra. Tạo bài tập tự sửa và câu hỏi để người học tự giải thích. Dựa trên trả lời thật mới nhận xét mức hiểu. Hướng dẫn viết báo cáo có nguồn, quy trình và số đo tái lập; chỉ ra hạn chế hoặc kết luận quá mức. Không soạn số liệu/khẳng định nghiên cứu mà chưa có bằng chứng. Đầu ra: lesson, phản hồi câu trả lời và dàn ý bảo vệ gắn với code/experiment thật.
-```
+Prompt Mentor và mọi đầu ra học tập nằm tại [Learn/spendwise-ai/MENTOR_PROMPT.md](https://github.com/Krev1/Learn/blob/main/spendwise-ai/MENTOR_PROMPT.md).
 
 ## Quy tắc bàn giao
 
 Mỗi bàn giao ghi: file/task sở hữu, REQ liên quan, đầu vào đã dùng, đầu ra, lệnh kiểm tra, kết quả thực và việc chưa làm. Trưởng nhóm tích hợp; một role không tự sửa file role khác đang viết. Review bằng role AI khác giúp phát hiện lỗi nhưng không được gọi là đánh giá độc lập của con người.
+
+
+Các vai trò kỹ thuật lưu code/test/SDD tại repo dự án. Khi có đầu ra lesson, phối hợp Mentor lưu ở repo Learn và ghi TASK/REQ cùng commit code tham chiếu.

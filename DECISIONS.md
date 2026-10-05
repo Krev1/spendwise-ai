@@ -16,6 +16,8 @@ Ngày: 05/10/2026. Dùng file này để tránh biến một đề xuất kỹ t
 | D08 | Có nhiều thời gian; chưa có hạn nộp hoặc số giờ/tuần cụ thể | Thông tin thời gian |
 | D09 | Cần nhóm với vai trò khác nhau và tài liệu giải thích để học, bảo vệ | Yêu cầu người dùng |
 | D10 | Có tư duy lập trình cơ bản nhưng cần ôn kỹ thuật code | Thông tin năng lực |
+| D11 | Bài học/bài tập/nhật ký ở Krev1/Learn; repo Krev1/spendwise-ai giữ phần dự án | Yêu cầu phân tách repo ngày 05/10/2026 |
+| D12 | Chuyển repository dự án sang công khai | Yêu cầu người dùng ngày 05/10/2026 |
 
 ## Đề xuất kỹ thuật cho bản khởi đầu
 
@@ -34,7 +36,7 @@ Ngày: 05/10/2026. Dùng file này để tránh biến một đề xuất kỹ t
 
 P1 đã kiểm tra môi trường local: Windows 11 Pro 64-bit, Ryzen 5 7500F, RAM khoảng 31,7 GiB hiển thị, Python 3.14.7. Bộ thư viện trong requirements.lock.txt import được và ví dụ đạt 14 test. Đây là xác minh setup; chưa đo tốc độ train/inference hoặc độ chính xác AI.
 
-Người học đã chọn tài khoản GitHub kết nối thứ hai. GitHub xác nhận ID `293179070`, username hiện hành `Krev1`. Repository riêng tư `Krev1/spendwise-ai` được tạo cho dự án.
+Người học đã chọn tài khoản GitHub kết nối thứ hai. GitHub xác nhận ID `293179070`, username hiện hành `Krev1`. Ban đầu tạo repository riêng tư `Krev1/spendwise-ai`; người dùng sau đó yêu cầu chuyển công khai và tách bài học sang `Krev1/Learn`.
 
 ## Hợp đồng chung giữa các tài liệu
 

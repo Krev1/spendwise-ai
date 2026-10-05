@@ -2,6 +2,7 @@
 
 - Đọc README.md, DECISIONS.md, progress.md và các tài liệu SDD liên quan trước khi sửa.
 - Triển khai theo TASK/REQ; cập nhật yêu cầu và thiết kế khi hành vi thay đổi.
+- Repo Krev1/spendwise-ai giữ code, test và tài liệu SDD. Bài học, bài tập, nhật ký và hướng dẫn bảo vệ phải lưu ở Krev1/Learn, thư mục spendwise-ai; không tạo docs/learning trong repo dự án. Mỗi lesson ghi TASK/REQ và commit code tham chiếu.
 - Người học có tư duy lập trình cơ bản nhưng cần ôn code. Mỗi mốc phải có giải thích tiếng Việt, ví dụ, lệnh chạy, bài tập và câu hỏi tự trình bày.
 - Chưa xác nhận người học hiểu bài nếu chưa có câu trả lời hoặc sản phẩm tự làm.
 - Dùng Python trong `.venv`; không cài vào Python toàn hệ thống. Dependency thực đã kiểm tra nằm trong requirements.lock.txt.

@@ -1,8 +1,8 @@
-# SpendWise AI — Kế hoạch triển khai và học
+# SpendWise AI — Kế hoạch triển khai
 
 Ngày soạn: 05/10/2026. Phiên bản: 0.1. Trạng thái: kế hoạch cho việc viết code sau bộ SDD; chưa tuyên bố ứng dụng hay mô hình đã hoàn thành.
 
-Kế hoạch nối `01_requirements.md` → `02_design.md` → task nhỏ → code/dữ liệu → kiểm tra → bằng chứng → giải thích bằng tiếng Việt. Cách phối hợp các vai trò nằm trong `04_team_workflow.md`; nội dung AI chi tiết trong `05_data_and_ml.md`; cách học trong `06_learning_path.md`.
+Kế hoạch nối `01_requirements.md` → `02_design.md` → task nhỏ → code/dữ liệu → kiểm tra → bằng chứng → giải thích bằng tiếng Việt. Cách phối hợp các vai trò nằm trong `04_team_workflow.md`; nội dung AI chi tiết trong `05_data_and_ml.md`; bài học được lưu riêng ở Learn, xem [tài liệu học trong Learn](https://github.com/Krev1/Learn/blob/main/spendwise-ai/learning_path.md).
 
 ## 1. Cách triển khai
 
@@ -45,24 +45,20 @@ Các vai trò dưới đây dùng cùng định nghĩa trong `04_team_workflow.m
 | Task | Vai trò chính | Phụ thuộc / REQ | Đầu ra và tiêu chí hoàn tất |
 |---|---|---|---|
 | TASK-02 — Kiểm tra máy, tạo venv và khoá phụ thuộc | Developer + Mentor | TASK-01; REQ-11,12,13 | Ghi OS/CPU/RAM/Python; tạo venv trong project; kiểm tra import thư viện đã chọn; lưu phiên bản thực tế sau kiểm tra vào lock file. Không cài vào Python hệ thống để giải quyết lỗi project. |
-| TASK-03 — Ôn Python qua giao dịch nhỏ | Mentor | TASK-02; REQ-01,06,13 | Chạy ví dụ CSV có sẵn; tự thêm/sửa khoản chi và dự đoán tổng trước khi chạy; xử lý tiền âm/0/thập phân. Viết `docs/learning/01_python_and_money.md` bằng kết quả thực. |
+| TASK-03 — Ôn Python qua giao dịch nhỏ | Mentor | TASK-02; REQ-01,06,13 | Chạy ví dụ CSV có sẵn; tự thêm/sửa khoản chi và dự đoán tổng trước khi chạy; xử lý tiền âm/0/thập phân. Viết `Learn/spendwise-ai/lessons/01_python_and_money.md` bằng kết quả thực. |
 
 **Phạm vi file:** cấu hình môi trường, requirements, ví dụ học, file giải thích 01. Chỉ chốt phiên bản Python/package khi đã thử môi trường thật. Lưu lệnh Windows PowerShell có thể sao chép; nếu activate bị policy chặn, dùng đường dẫn `venv` Python trực tiếp thay vì hướng dẫn tắt bảo vệ toàn máy.
-
-**Bài tập và tự giải thích:** viết một hàm nhận tổng thu/tổng chi và trả chênh lệch; giải thích `str` so với `int`, return so với print, exception và lý do nhập sai phải dừng ghi dữ liệu.
 
 ### P2 — Hợp đồng dữ liệu và dữ liệu có nhãn
 
 | Task | Vai trò chính | Phụ thuộc / REQ | Đầu ra và tiêu chí hoàn tất |
 |---|---|---|---|
 | TASK-04 — Tạo domain và validator giao dịch | Developer | TASK-03; REQ-01,04,06 | Quy tắc ngày, VND, mô tả, thu/chi, ID 1–64 ký tự ASCII chữ/số/`_`/`-` và 8 slug nằm trong domain. CSV parser hỗ trợ UTF-8/BOM và dấu nháy; trả lỗi theo dòng; không ghi database. Kiểm tra các ranh giới hợp đồng. |
-| TASK-05 — Guideline nhãn và provenance | Data Engineer + ML Researcher | TASK-04; REQ-08,13 | Quy định 8 danh mục và trường hợp mơ hồ; schema dataset 6 cột; quy trình đồng ý, loại PII và kiểm tra nhãn. Tạo `docs/learning/02_csv_and_labels.md`. |
+| TASK-05 — Guideline nhãn và provenance | Data Engineer + ML Researcher | TASK-04; REQ-08,13 | Quy định 8 danh mục và trường hợp mơ hồ; schema dataset 6 cột; quy trình đồng ý, loại PII và kiểm tra nhãn. Tạo `Learn/spendwise-ai/lessons/02_csv_and_labels.md`. |
 | TASK-06 — Dataset validator và thu thập phiên bản đầu | Data Engineer | TASK-05; REQ-08,09 | Script xác thực ID/label/group/source/is_synthetic; báo phân bố lớp, số nhóm độc lập, số mẫu thật/tự viết. Dataset demo đánh dấu synthetic; ghi snapshot/hash. Tiếp tục thu dữ liệu thật được đồng ý trong các mốc sau. |
 | TASK-07 — Prototype baseline | ML Researcher + Mentor | TASK-05,06; REQ-09,13 | Viết bộ từ khoá có thứ tự ưu tiên và `DummyClassifier`. Dùng ví dụ nhỏ để hiểu hành vi; chưa báo điểm test. Giải thích câu có nhiều từ khoá, câu không có từ khoá và lớp phổ biến. |
 
 **Phạm vi file:** `src/spendwise/domain/`, parser/service kiểm tra CSV, `scripts/validate_dataset.py`, dữ liệu demo/guideline/manifest và file giải thích 02. Dữ liệu thật nằm ngoài Git.
-
-**Bài tập và tự giải thích:** gán nhãn riêng một nhóm câu, đối chiếu guideline và ghi bất đồng; chứng minh CSV giao dịch khác dataset train; sửa một CSV có ngày không tồn tại, ID trùng và mô tả chứa dấu phẩy.
 
 **Điểm kiểm tra dữ liệu:** không bắt buộc có ngay đủ dữ liệu thật để chạy smoke test. Tuy nhiên thí nghiệm trên câu tự viết chỉ là bước học kỹ thuật. Trước kết luận về dùng thực tế cần holdout thật theo `05_data_and_ml.md`; nếu chưa đủ, trạng thái bằng chứng phải ghi đúng.
 
@@ -71,16 +67,14 @@ Các vai trò dưới đây dùng cùng định nghĩa trong `04_team_workflow.m
 | Task | Vai trò chính | Phụ thuộc / REQ | Đầu ra và tiêu chí hoàn tất |
 |---|---|---|---|
 | TASK-08 — Đóng băng grouped split | Data Engineer + ML Researcher | TASK-06; REQ-08,09 | `group_id` của real là mã người, synthetic là nguồn/khuôn; audit `pattern_family_id` trong manifest riêng; hợp nhất nhóm liên quan thành thành phần hiệu lực. Chia train/validation/test khoảng 70/15/15, seed 42; khóa test ID/nhóm; báo số mẫu/lớp và sai lệch tỷ lệ. Kiểm tra người/nhóm/ID/trùng/gần trùng không giao nhau. |
-| TASK-09 — TF-IDF và pipeline | ML Researcher + Mentor | TASK-08; REQ-09,13 | Chuẩn hoá văn bản nhất quán; thử word/char features trên train/validation theo recipe nhỏ. Vocabulary/IDF chỉ fit train. Tạo `docs/learning/03_text_features.md` với ví dụ ma trận nhỏ. |
+| TASK-09 — TF-IDF và pipeline | ML Researcher + Mentor | TASK-08; REQ-09,13 | Chuẩn hoá văn bản nhất quán; thử word/char features trên train/validation theo recipe nhỏ. Vocabulary/IDF chỉ fit train. Tạo `Learn/spendwise-ai/lessons/03_text_features.md` với ví dụ ma trận nhỏ. |
 | TASK-10 — Train và so sánh các ứng viên | ML Researcher | TASK-07,08,09; REQ-09 | Chạy rules, Dummy, TF-IDF + NB, TF-IDF + LR trên cùng split. Lưu cấu hình, seed, môi trường và metrics validation thực. Không chọn sẵn model thắng hoặc tự điền metrics. |
-| TASK-11 — Chọn ngưỡng và phân tích lỗi validation | ML Researcher + QA Reviewer | TASK-10; REQ-09,10 | Dùng validation chọn model/tham số/ngưỡng; phân tích lỗi theo lớp và coverage/selective accuracy. 0,60 là khởi điểm thử, không ngưỡng có sẵn bằng chứng. Tạo `docs/learning/04_training_and_evaluation.md`. |
+| TASK-11 — Chọn ngưỡng và phân tích lỗi validation | ML Researcher + QA Reviewer | TASK-10; REQ-09,10 | Dùng validation chọn model/tham số/ngưỡng; phân tích lỗi theo lớp và coverage/selective accuracy. 0,60 là khởi điểm thử, không ngưỡng có sẵn bằng chứng. Tạo `Learn/spendwise-ai/lessons/04_training_and_evaluation.md`. |
 | TASK-12 — Xuất artifact và khoá recipe | ML Researcher + Architect | TASK-11; REQ-03,07,09,10 | Lưu pipeline + metadata/hash/class order và model card; chạy load/predict round-trip. Chọn artifact để tích hợp. Ghi rõ chưa đánh giá test cuối nếu chưa chạy; không tạo số test giả để đủ file. |
 
 **Phạm vi file:** `src/spendwise/ml/`, scripts split/train/evaluate, config/manifest/artifact báo cáo và file giải thích 03–04. Không sửa kết quả test để thuận tiện train. Các artifact có dự đoán/mô tả thật cần kiểm tra quyền riêng tư trước khi chia sẻ.
 
 **Giới hạn thí nghiệm:** khởi đầu grid nhỏ, dữ liệu nhỏ và một run đơn giản; đo thời gian/RAM thực rồi mới mở rộng. Không dùng transformer/GPU hoặc dịch vụ cloud trong MVP. Model đã train ở đây phục vụ thử luồng; test cuối và kết luận nghiên cứu là TASK-22.
-
-**Bài tập và tự giải thích:** tính precision/recall/F1 của một lớp từ TP/FP/FN; chỉ ra feature nào được học từ train; đọc hai cặp nhãn nhầm nhiều; giải thích vì sao score 0,85 chưa có nghĩa dự đoán đúng 85%.
 
 ### P4 — SQLite và logic tài chính
 
@@ -89,13 +83,11 @@ Các vai trò dưới đây dùng cùng định nghĩa trong `04_team_workflow.m
 | TASK-13 — Schema, migrations và repository | Developer + Architect | TASK-04; REQ-01,02,07,12 | Bảng giao dịch/batch/prediction/lịch sử theo design; bật FK; SQL có tham số; CHECK invariant; migration chạy được trên database trống và không làm mất bản cũ. |
 | TASK-14 — CRUD và báo cáo tiền | Developer | TASK-13; REQ-01,02,06,07 | Nhập/sửa/xoá mềm; lọc khoảng ngày/loại/danh mục; tổng theo tháng bằng số nguyên; lưu lịch sử sửa nhãn. Mở lại database còn dữ liệu, khoản thu không có nhãn khoản chi. |
 | TASK-15 — Import service nguyên tử và idempotent | Developer + QA Reviewer | TASK-04,13,14; REQ-04,05,07 | Canonical source hash trước AI/confirmation; preview không ghi DB; duplicate ID nội bộ lỗi; existing same source skip; diff source rollback cả batch. Thử lỗi giữa chừng và reimport sau sửa nhãn. |
-| TASK-16 — Backup, restore và giải thích SQLite | Developer + Mentor | TASK-13,14,15; REQ-12,13 | Hướng dẫn backup nhất quán/restore bản copy, `.gitignore` dữ liệu cá nhân, log không chứa mô tả đầy đủ. Tạo `docs/learning/05_sqlite_and_import.md`. |
+| TASK-16 — Backup, restore và giải thích SQLite | Developer + Mentor | TASK-13,14,15; REQ-12,13 | Hướng dẫn backup nhất quán/restore bản copy, `.gitignore` dữ liệu cá nhân, log không chứa mô tả đầy đủ. Tạo `Learn/spendwise-ai/lessons/05_sqlite_and_import.md`. |
 
 **Phạm vi file:** repositories/migrations, services giao dịch/import/report, tests nghiệp vụ, hướng dẫn backup và file giải thích 05. Không dùng model để tạo số tiền, sửa ngày hoặc xác định tổng.
 
 P4 có thể bắt đầu sau TASK-04 khi việc thu dữ liệu/huấn luyện P3 còn đang diễn ra, vì chỉ phụ thuộc hợp đồng. Nếu làm song song, phần SQLite và phần ML có chủ sở hữu file riêng; cùng thống nhất slug/schema trước khi ghép.
-
-**Bài tập và tự giải thích:** mô phỏng lỗi ở insert thứ hai; chứng minh sau rollback không có insert thứ nhất; đổi tên cùng file CSV rồi nhập lại và đếm dòng; giải thích vì sao hash nguồn giữ nguyên khi đổi nhãn đã xác nhận.
 
 ### P5 — Giao diện và tích hợp mô hình
 
@@ -104,11 +96,9 @@ P4 có thể bắt đầu sau TASK-04 khi việc thu dữ liệu/huấn luyện 
 | TASK-17 — Form, danh sách và dashboard Streamlit | Developer | TASK-14; REQ-01,02,06,13 | UI tiếng Việt gọi services; form nhập tay và xác nhận; lọc danh sách; sửa/xoá; dashboard/tháng trống. Rerun không lặp thao tác ghi. |
 | TASK-18 — Inference, phiên bản và fallback | Developer + ML Researcher | TASK-12,17; REQ-03,07,10,11 | Cache model theo version/hash, trả đúng slug từ `classes_`; score/threshold/model version hiển thị và audit; lỗi model vẫn chọn thủ công. Sửa mô tả làm gợi ý/xác nhận cũ hết hiệu lực. |
 | TASK-19 — CSV preview, chọn nhãn và commit | Developer + QA Reviewer | TASK-15,17,18; REQ-04,05,07 | UI kết nối import service; dòng lỗi hiển thị rõ; mọi khoản chi được rà soát trước commit; file/input đổi làm draft cũ hết hiệu lực. Skip không chạy AI lại và không ghi đè nhãn đã sửa. |
-| TASK-20 — Thử luồng local/offline và hướng dẫn app | QA Reviewer + Mentor | TASK-16,18,19; REQ-01…07,10,11,12,13 | Thử luồng tổng thể với dữ liệu demo, Internet tắt, model thiếu/hỏng, khởi động lại và backup. Ghi kết quả thực, đo latency trên máy, tạo `docs/learning/06_app_and_model.md`. |
+| TASK-20 — Thử luồng local/offline và hướng dẫn app | QA Reviewer + Mentor | TASK-16,18,19; REQ-01…07,10,11,12,13 | Thử luồng tổng thể với dữ liệu demo, Internet tắt, model thiếu/hỏng, khởi động lại và backup. Ghi kết quả thực, đo latency trên máy, tạo `Learn/spendwise-ai/lessons/06_app_and_model.md`. |
 
 **Phạm vi file:** `app.py`, `src/spendwise/ui/`, inference adapter và tests tích hợp cần thiết; cập nhật README/cấu hình local. Không thêm API, ngân hàng hay tính năng đăng nhập để hoàn tất mốc.
-
-**Bài tập và tự giải thích:** demo một khoản chi bị gợi ý sai nhưng được sửa trước lưu; giải thích từng bước từ browser đến service → model → xác nhận → SQLite → dashboard; đổi file model thành không tồn tại và vẫn nhập một giao dịch.
 
 ### P6 — Đánh giá cuối và bảo vệ
 
@@ -117,11 +107,9 @@ P4 có thể bắt đầu sau TASK-04 khi việc thu dữ liệu/huấn luyện 
 | TASK-21 — Pilot chức năng với người dùng mục tiêu | Product Analyst + QA Reviewer | TASK-20; REQ-01…07,11,12 | Nhờ người thử là sinh viên/người mới đi làm, có đồng ý; quan sát nhập/CSV/sửa nhãn/đọc báo cáo. Ghi lỗi và nhận xét thực, không tự tạo phản hồi người dùng. Dữ liệu pilot không tự trở thành train/test. |
 | TASK-22 — Đánh giá model trên test đã khoá | ML Researcher + QA Reviewer | TASK-08,12; REQ-08,09,10 | Chạy recipe đã khoá trên holdout độc lập; báo toàn test và từng lớp, baseline, confusion matrix, coverage/selective accuracy, số mẫu thật/lớp và giới hạn. Nếu test chưa đủ, ghi chưa đủ bằng chứng; không điều chỉnh ngưỡng theo test. |
 | TASK-23 — Tái lập và review theo REQ | QA Reviewer + Architect | TASK-20,22; REQ-01…13 | Dựng lại venv từ lock, chạy train/evaluate và app bằng hướng dẫn; so manifest/metric trong sai số được mô tả; đối chiếu từng REQ với bằng chứng. Lỗi quan trọng được sửa và chỉ chạy lại phần bị tác động. |
-| TASK-24 — Báo cáo, demo và luyện bảo vệ | Project Owner + Mentor | TASK-21,22,23; REQ-09,13 | Báo cáo có vấn đề, liên quan, dataset, thuật toán, thí nghiệm, sản phẩm, giới hạn/đóng góp; demo dùng dữ liệu hư cấu; đối chiếu rubric thật; tạo `docs/learning/07_experiments_and_defense.md`. Người học tự trình bày và trả lời câu hỏi bằng code/kết quả. |
+| TASK-24 — Báo cáo, demo và luyện bảo vệ | Project Owner + Mentor | TASK-21,22,23; REQ-09,13 | Báo cáo có vấn đề, liên quan, dataset, thuật toán, thí nghiệm, sản phẩm, giới hạn/đóng góp; demo dùng dữ liệu hư cấu; đối chiếu rubric thật; tạo `Learn/spendwise-ai/lessons/07_experiments_and_defense.md`. Người học tự trình bày và trả lời câu hỏi bằng code/kết quả. |
 
 **Phạm vi file:** báo cáo/pilot được đồng ý, kết quả đánh giá, model card, task registry, checklist demo và file giải thích 07. Không sửa corpus test hoặc dùng mục tiêu `.80/.60/.85` như số đo. Nếu sau test có thay đổi model để nghiên cứu tiếp, ghi đó là vòng mới và chuẩn bị một holdout mới cho kết luận độc lập.
-
-**Bài tập và tự giải thích:** viết một trang phân tích lỗi thật, một trang đóng góp/giới hạn và demo khi AI không hoạt động; trả lời câu hỏi “Mô hình thua baseline ở một lớp thì kết luận của bạn thay đổi thế nào?”.
 
 ## 4. Ma trận kiểm chứng có ý nghĩa
 
@@ -156,7 +144,7 @@ Mỗi task lưu bằng chứng tối thiểu:
 - Một giải thích bằng lời của người học, một bài tập tự sửa và điểm còn chưa hiểu.
 - Vấn đề còn lại và ảnh hưởng đến task tiếp theo.
 
-Mẫu file học bắt buộc lấy từ `06_learning_path.md`. Đặt cùng nội dung giải thích từng module/hàm trọng tâm, vì sao chọn cách làm, lỗi thường gặp, lệnh Windows và kết quả quan sát. Không viết sẵn câu trả lời “tôi đã hiểu” thay người học.
+Mẫu file học bắt buộc lấy từ [tài liệu học trong Learn](https://github.com/Krev1/Learn/blob/main/spendwise-ai/learning_path.md). Đặt cùng nội dung giải thích từng module/hàm trọng tâm, vì sao chọn cách làm, lỗi thường gặp, lệnh Windows và kết quả quan sát. Không viết sẵn câu trả lời “tôi đã hiểu” thay người học.
 
 ## 6. Điều kiện hoàn tất dự án
 
@@ -167,3 +155,6 @@ Mẫu file học bắt buộc lấy từ `06_learning_path.md`. Đặt cùng n�
 **Học và bảo vệ:** đủ bảy file giải thích tạo theo tiến độ; người học chạy lại được thí nghiệm và demo, giải thích kiến trúc/TF-IDF/mô hình/leakage/metrics/transaction và xác định đóng góp của mình. Yêu cầu chính thức của trường phải được đối chiếu, vì chưa có rubric trong cuộc trao đổi.
 
 Hoàn thành bộ SDD khởi động không đồng nghĩa hoàn thành các điều kiện trên. Code và các kết quả đánh giá được tạo theo từng mốc sau khi dùng prompt khởi động của bộ tài liệu.
+
+
+Bài tập theo mốc nằm ở [Learn/spendwise-ai/mentor_guide.md](https://github.com/Krev1/Learn/blob/main/spendwise-ai/mentor_guide.md). Các đường dẫn `Learn/spendwise-ai/lessons/` trong task là đầu ra ở repo Learn, không phải thư mục con của repo dự án. Bài 00/01 đã soạn; các bài còn lại tạo khi triển khai task.

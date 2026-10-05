@@ -72,7 +72,6 @@ spendwise-ai/
     splits/                      # Manifest train/validation/test
   local/                         # SQLite và dữ liệu người dùng; không đưa vào Git
   artifacts/runs/<run_id>/        # Kết quả thí nghiệm; kiểm tra trước khi chia sẻ
-  docs/learning/                 # Giải thích và bài tập tạo theo từng giai đoạn
   requirements.in
   requirements.lock.txt
   .gitignore
@@ -315,3 +314,6 @@ Thiết kế này chưa bao gồm ngân sách, tư vấn đầu tư, chatbot, k�
 | REQ-13 — Giải thích để học | 4 và các mốc học trong kế hoạch | 03,05,09,11,16,20,24 |
 
 Mã trong cột cuối viết gọn; ví dụ `15` là `TASK-15`. Đây là liên kết kế hoạch, không phải bằng chứng các task đã chạy hoặc pass.
+
+
+Bài học và bài tập được quản lý riêng trong [Krev1/Learn](https://github.com/Krev1/Learn/tree/main/spendwise-ai), ngoài cây thư mục repo dự án.

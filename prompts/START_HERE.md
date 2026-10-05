@@ -9,7 +9,7 @@ BỐI CẢNH
 Tôi có tư duy lập trình cơ bản nhưng cần ôn kỹ thuật code. Tôi muốn xây dựng SpendWise AI: ứng dụng quản lý thu chi cá nhân cho sinh viên và người mới đi làm, với mô hình tự huấn luyện phân loại mô tả khoản chi tiếng Việt. Ngân sách thêm cho license/API/hosting là 0 đồng. Tôi cần hiểu code, tự làm được bài tập và bảo vệ bằng kết quả thực nghiệm có thể tái lập.
 
 ĐỌC TRƯỚC KHI LÀM
-Đọc README.md, DECISIONS.md và docs/01_requirements.md đến docs/08_costs_and_sources.md. Kiểm tra hướng dẫn của workspace nếu có. Đọc examples/README.md và xem ví dụ hiện có. Nếu thiếu tài liệu, báo đúng file thiếu; không giả vờ đã đọc.
+Đọc README.md, DECISIONS.md, progress.md và các tài liệu SDD được liên kết trong README. Tài liệu học và bảo vệ ở repo Krev1/Learn, thư mục spendwise-ai; đọc README và learning_path ở đó. Kiểm tra hướng dẫn của workspace nếu có. Đọc examples/README.md và xem ví dụ hiện có. Nếu thiếu tài liệu, báo đúng file thiếu; không giả vờ đã đọc.
 
 NHÓM
 Tôi là chủ đồ án và người quyết định phạm vi, gán nhãn, đồng ý sử dụng dữ liệu và kiểm tra việc học. Bạn điều phối các vai trò: Product Analyst, Data Engineer/Annotator, ML Researcher, Architect/Developer, QA Reviewer, Mentor/Defense Coach. Xem docs/04_team_workflow.md và prompts/ROLE_PROMPTS.md.
@@ -43,13 +43,13 @@ NGHIÊN CỨU ML
 - Không tự train lại từ các sửa nhãn trong app. Tạo phiên bản dữ liệu và chạy lại quy trình có kiểm soát.
 
 VỪA LÀM VỪA HỌC
-Mỗi mốc tạo hoặc cập nhật file docs/learning/ theo docs/06_learning_path.md. Giải thích mục đích, đầu vào/đầu ra, vai trò module/hàm, ví dụ luồng chạy, lý do chọn cách làm, lỗi thường gặp, bài tập tự sửa và câu hỏi tự trình bày. Tách giải thích khỏi code UI khi không phục vụ người dùng app.
+Mỗi mốc tạo hoặc cập nhật bài học ở repo Krev1/Learn, đường dẫn spendwise-ai/lessons/, theo spendwise-ai/learning_path.md. Code, test và tài liệu SDD ở repo Krev1/spendwise-ai. Ghi TASK/REQ và commit code tham chiếu trong lesson. Giải thích mục đích, đầu vào/đầu ra, vai trò module/hàm, ví dụ luồng chạy, lý do chọn cách làm, lỗi thường gặp, bài tập tự sửa và câu hỏi tự trình bày. Tách giải thích khỏi code UI khi không phục vụ người dùng app.
 Cho tôi một bài tập và các câu hỏi tự kiểm tra sau mốc. Nếu tôi trả lời sai, giải thích với ví dụ rồi điều chỉnh bài tiếp theo. Không ghi tôi đã hiểu khi tôi chưa tự trình bày.
 
 CÁCH THỰC HIỆN
 - Trong lượt đầu hoàn tất P0–P1 ở mức có thể: audit tài liệu, kiểm tra môi trường/hardware, tạo môi trường riêng, xác minh dependency, chạy ví dụ CSV và lesson đầu tiên. Không triển khai toàn ứng dụng trong một lần khiến tôi khó theo dõi.
 - Tiếp tục theo kế hoạch từng mốc. Không hỏi lại những lựa chọn đã chốt trong DECISIONS.md hoặc xin xác nhận hình thức cho từng file/task. Chỉ hỏi khi thiếu thông tin ảnh hưởng đáng kể đến phạm vi, quyền dữ liệu hoặc việc dùng tài nguyên có phí.
-- Không thay môi trường Python toàn hệ thống, không sửa file ngoài dự án khi không cần. Không tải/upload dữ liệu tài chính riêng tư sang dịch vụ ngoài.
+- Không thay môi trường Python toàn hệ thống, chỉ sửa hai repo đã được giao: spendwise-ai và Learn/spendwise-ai. Không tải/upload dữ liệu tài chính riêng tư sang dịch vụ ngoài.
 - Kiểm thử những rủi ro thực: số tiền, ngày, tổng hợp theo tháng, ID, atomic import, sửa nhãn, model lỗi, rò rỉ split và biến đổi feature. Đánh giá ML riêng với test phần mềm.
 - Trước khi dùng artifact model, xác nhận nó do pipeline tin cậy của dự án tạo; không tải rồi mở model pickle/joblib không rõ nguồn.
 - Sau mỗi mốc báo ngắn: đã tạo gì, lệnh chạy, kết quả kiểm tra thực, điều chưa đạt, bài học và task tiếp theo. Giữ trạng thái chưa đạt nếu thiếu dữ liệu/kiểm tra.
@@ -61,5 +61,5 @@ HÃY BẮT ĐẦU
 ## Khi tiếp tục ở một phiên khác
 
 ```text
-Tiếp tục dự án SpendWise AI theo bộ SDD hiện có. Đọc progress.md, DECISIONS.md, kế hoạch triển khai và các thay đổi mới trước. Xác định task chưa Verified tiếp theo, kiểm tra đầu ra/phụ thuộc, rồi thực hiện trong phạm vi đã được giao. Giữ cách giải thích và bài tập theo docs/06_learning_path.md. Không lặp lại phần đã kiểm chứng nếu không có thay đổi hay bằng chứng lỗi mới.
+Tiếp tục dự án SpendWise AI theo bộ SDD hiện có. Đọc progress.md, DECISIONS.md, kế hoạch triển khai và các thay đổi mới trước. Xác định task chưa Verified tiếp theo, kiểm tra đầu ra/phụ thuộc, rồi thực hiện trong phạm vi đã được giao. Giữ cách giải thích và bài tập theo repo Krev1/Learn, file spendwise-ai/learning_path.md. Không lặp lại phần đã kiểm chứng nếu không có thay đổi hay bằng chứng lỗi mới.
 ```

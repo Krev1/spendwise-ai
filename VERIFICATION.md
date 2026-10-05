@@ -45,4 +45,12 @@ Trong `.venv`, đã thực hiện:
 
 Import thành công, `isolated_environment = true`; pip không báo xung đột. unittest đạt 14 tests OK; pytest đạt 14 passed. Phiên bản: Python 3.14.7, scikit-learn 1.9.1, pandas 3.0.6, Streamlit 1.65.0, joblib 1.6.0, pytest 9.1.1. Dependency đầy đủ được ghi ở `requirements.lock.txt`. Đây là kiểm tra trên máy Windows của phiên này, chưa phải kiểm chứng đa nền tảng.
 
-Các cấu trúc code, scripts và phần lớn file lesson được ghi trong thiết kế/kế hoạch là đầu ra tương lai. Bài học `docs/learning/01_python_and_money.md` và CSV luyện tập đã được chuẩn bị sau bộ khởi đầu; chưa xác nhận người học đã thực hiện. Các kiểm tra trên xác nhận bộ tài liệu có thể dùng để bắt đầu và ví dụ hiện có chạy được; không chứng minh sản phẩm đã hoàn thành.
+Các cấu trúc code, scripts và phần lớn file lesson được ghi trong thiết kế/kế hoạch là đầu ra tương lai. Bài học trong repo Learn và CSV luyện tập đã được chuẩn bị sau bộ khởi đầu; chưa xác nhận người học đã thực hiện. Các kiểm tra trên xác nhận bộ tài liệu có thể dùng để bắt đầu và ví dụ hiện có chạy được; không chứng minh sản phẩm đã hoàn thành.
+
+## Kiểm tra sau khi tách repo bài học — 05/10/2026
+
+- Bài học đã được xuất bản ở [Learn, commit 2e99d53](https://github.com/Krev1/Learn/commit/2e99d53a2689b25c46d43f78c36120dce0ece95a); fetch lại và đối chiếu toàn bộ Git tree với bản local khớp nhau.
+- Kiểm tra UTF-8, code fence và liên kết file nội bộ/chéo repo trên 23 file dự án và 12 file Learn: PASS. Tham chiếu vẫn thuộc 13 REQ đã khai báo.
+- Chạy lại `.\.venv\Scripts\python.exe -B -m pytest -q`: **14 passed, 11 subtests passed**.
+- Chạy validator của dự án trực tiếp với `..\Learn\spendwise-ai\exercises\transactions_practice.csv`: tổng tháng 10 khớp file mẫu — thu 5.000.000, chi 2.593.000, chênh lệch 2.407.000 VND. Đây là kiểm tra khả năng dùng bài tập giữa hai repo, không phải bài tự làm của người học.
+- Rà soát snapshot đã xuất bản: không thấy chuỗi khớp mẫu credential hoặc file môi trường/database/dữ liệu riêng; commit ban đầu chỉ chứa README. Dữ liệu CSV hiện có là hư cấu.

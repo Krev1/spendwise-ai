@@ -166,7 +166,7 @@ Giao dịch được lưu trong SQLite tại vị trí local rõ ràng. Đóng v
 
 ### REQ-13 — Học tập và giải thích được
 
-Bài học, bài tập, nhật ký và hướng dẫn bảo vệ được lưu tại [Krev1/Learn — spendwise-ai](https://github.com/Krev1/Learn/tree/main/spendwise-ai); repo dự án giữ code, test và tài liệu SDD. Mỗi bài học ghi TASK/REQ và commit code tham chiếu.
+Bài học, bài tập, nhật ký và hướng dẫn bảo vệ được lưu tại [Krev1/Learn — spendwise-ai](https://github.com/Krev1/Learn/tree/main/spendwise-ai); repo dự án giữ code, test và tài liệu SDD. Theo D13, hai luồng làm việc độc lập: dự án cập nhật bàn giao kỹ thuật theo mốc; Mentor tạo/cập nhật bài học trong Learn từ commit đã chọn. Mỗi bài học ghi TASK/REQ và commit code tham chiếu. Việc người học chưa hoàn thành bài không chặn task kỹ thuật đủ đầu vào; mức hiểu chỉ được ghi trong Learn sau bằng chứng thực hành.
 
 Mỗi giai đoạn có tệp giải thích bằng tiếng Việt: mục tiêu, kiến thức cần học, đầu vào/đầu ra, lệnh thực hành, cách kiểm tra và lỗi thường gặp. Tài liệu cần giải thích TF-IDF, mô hình phân loại, split dữ liệu, leakage, metric, ngưỡng điểm và giới hạn của dữ liệu tự tạo. Người học tự chạy và ghi lại kết quả, không chỉ sao chép câu trả lời AI.
 

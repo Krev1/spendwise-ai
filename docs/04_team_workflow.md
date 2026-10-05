@@ -1,144 +1,69 @@
-# 04 — Nhóm hỗ trợ AI và workflow SDD
+# 04 — Hai luồng làm việc và workflow SDD
 
-SpendWise AI được thực hiện bởi người học, với các vai trò hỗ trợ AI để chia nhỏ công việc và phản biện kết quả. Đây là mô hình làm việc cho một người chủ đồ án; danh sách vai trò không có nghĩa cần tuyển bảy nhân sự.
+Quyết định D13, ngày 05/10/2026: **dự án triển khai độc lập; việc học bám code và kết quả của dự án**. Các vai trò AI hỗ trợ chủ đồ án, không phải nhân sự đã được tuyển hoặc thẩm định của giảng viên.
 
-Người dùng đầu tiên đã chốt là sinh viên **và** người mới đi làm. Phương thức nhập đã chốt là nhập tay **và** CSV theo mẫu. Bài toán AI đầu tiên đã chốt là phân loại mô tả khoản chi tiếng Việt bằng mô hình người học tự huấn luyện.
+## 1. Phạm vi và quyền ghi
 
-## 1. Vai trò và trách nhiệm
-
-| Vai trò | Việc chịu trách nhiệm | Sản phẩm bàn giao | Câu hỏi phải trả lời |
+| Luồng | Vai trò | Được sửa | Đầu ra |
 |---|---|---|---|
-| **Project Owner — bạn, người chủ đồ án** | Xác định mục tiêu, lấy rubric trường, cho phép sử dụng dữ liệu, chạy bài thực hành và quyết định phạm vi | Quyết định, dữ liệu được phép dùng, nhật ký học và bằng chứng chạy | Tôi có hiểu và tự giải thích được kết quả không? |
-| **Orchestrator — AI điều phối** | Giữ tài liệu nhất quán, chia task, xử lý phụ thuộc, ghép kết quả và duy trì trạng thái | Kế hoạch cập nhật, bảng truy vết, tổng hợp vấn đề | Task tiếp theo dựa trên spec nào và đã đủ đầu vào chưa? |
-| **Product Analyst — AI phân tích yêu cầu** | Biến nhu cầu thành luồng sử dụng, phạm vi và tiêu chí chấp nhận | Đặc tả yêu cầu, tình huống sử dụng, quyết định phạm vi | Tính năng giải quyết việc cụ thể nào cho ai? |
-| **Data Engineer / Annotator — AI hỗ trợ dữ liệu** | Đề xuất schema, quy tắc gán nhãn, làm sạch, tìm trùng và thống kê dữ liệu | Hướng dẫn gán nhãn, dataset card, script kiểm tra, split manifest | Mẫu này có nguồn gì, nhãn vì sao đúng và có leakage không? |
-| **ML Researcher — AI hỗ trợ nghiên cứu** | Dựng baseline, chọn đặc trưng/mô hình CPU, thiết kế thực nghiệm và phân tích lỗi | Mã huấn luyện, cấu hình, artifact, báo cáo và model card | Mô hình tốt hơn baseline ở đâu, kém ở đâu và bằng chứng là gì? |
-| **Architect / Developer — AI hỗ trợ thiết kế và code** | Thiết kế hợp đồng dữ liệu, database, pipeline; triển khai từng task nhỏ | Tài liệu thiết kế, code, migration/hướng dẫn nếu cần | Quyết định thiết kế đáp ứng REQ nào và có thể kiểm tra thế nào? |
-| **QA Reviewer — AI hỗ trợ kiểm tra** | Đọc spec, xem diff, kiểm tra tiêu chí chấp nhận và các trường hợp lỗi | Kết quả kiểm tra, lỗi cụ thể, yêu cầu sửa | Có bằng chứng cho hành vi này hay mới chỉ có lời khẳng định? |
-| **Mentor / Defense Coach — AI hỗ trợ học và bảo vệ** | Giải thích kiến thức, tạo bài thực hành, hỏi phản biện theo kết quả thật | Tệp học, câu hỏi luyện tập, dàn ý bảo vệ | Người học có hiểu lựa chọn, metric, giới hạn và luồng dữ liệu không? |
+| Dự án | Orchestrator, Product Analyst, Data Engineer, ML Researcher, Architect/Developer, QA | Krev1/spendwise-ai | Spec, design, task, code, test, dữ liệu được phép, bằng chứng và bàn giao |
+| Học | Mentor/Defense Coach và người học | Krev1/Learn/spendwise-ai | Bài học, bài tập, lời giải của người học, nhật ký, câu hỏi bảo vệ và liên kết commit |
 
-AI giúp soạn nhãn và tài liệu, nhưng dữ liệu được công bố là “người gán nhãn” cần có kiểm tra thực sự của con người. AI tự đóng nhiều vai phản biện không thay thế đánh giá của giảng viên, người thử hoặc kiểm chứng độc lập.
+Project Owner quyết định phạm vi, cung cấp rubric/quyền dữ liệu và các bằng chứng cần người; đồng thời tự thực hành trong luồng học. AI soạn nhãn không trở thành người gán nhãn độc lập. Mỗi luồng chỉ đọc repo bên kia; không cùng sửa code dự án hoặc môi trường thực thi.
 
-## 2. Cách sử dụng nhóm mà không phát sinh API bắt buộc
+Trong luồng dự án có thể phân vai tuần tự; khi được giao dùng subagent, chia file sở hữu và tích hợp sau review. Không cần trả phí API để app/classifier chạy local. Mentor dùng prompt riêng; không tự triển khai tính năng sản phẩm trong chat học.
 
-Nếu công cụ đang dùng hỗ trợ subagent, AI điều phối có thể giao các phần độc lập cho các vai trò và tổng hợp lại. Cần giới hạn các tệp mỗi vai trò được phép sửa để tránh ghi đè nhau. Phần có phụ thuộc làm theo thứ tự, không chạy song song chỉ để có thêm vai trò.
-
-Nếu công cụ không hỗ trợ agent đồng thời, dùng cùng một cuộc trò chuyện và lần lượt chuyển vai. Chức năng dự án không phụ thuộc vào khả năng agent: mô hình phân loại và ứng dụng chạy local, không cần API cho việc suy luận.
-
-Ví dụ lệnh chuyển vai:
+## 2. Chu trình kỹ thuật độc lập
 
 ```text
-Bạn hãy đóng vai Product Analyst cho SpendWise AI.
-Đọc đặc tả hiện tại và các quyết định đã chốt.
-Chỉ làm rõ yêu cầu đang mơ hồ, bổ sung tiêu chí chấp nhận và liệt kê tác động.
-Không tự thêm tính năng vào MVP và không tuyên bố đã kiểm thử khi chưa chạy.
+REQ/tiêu chí chấp nhận → thiết kế → task/phụ thuộc → code/dữ liệu
+                     → kiểm tra → bằng chứng/commit → bàn giao
 ```
+
+Trước code xác định REQ, đầu vào và hợp đồng. Đổi hành vi thì cập nhật spec/design/DECISIONS trước hoặc cùng thay đổi phụ thuộc. QA chỉ ghi pass khi có kiểm tra thật; review tĩnh phải ghi giới hạn. Có thể làm task độc lập tiếp theo khi task trước đã đủ hợp đồng kỹ thuật, dù người học chưa học phần đó.
+
+Thiếu consent, dữ liệu thật, nhãn người duyệt, quyết định phạm vi hoặc tài nguyên vẫn là thiếu đầu vào thật. Ghi task bị ảnh hưởng, không thay bằng dữ liệu/đồng ý giả. Tiếp tục các task đủ đầu vào; không tuyên bố đạt chất lượng AI thật từ seed hư cấu.
+
+## 3. Bàn giao từ dự án sang học
+
+Mỗi mốc cập nhật [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md): TASK/REQ, code đã có, file/hàm trọng tâm, lý do thiết kế, lệnh kiểm tra, kết quả thực, hạn chế và task tiếp theo. Thay đổi code được commit theo quyền đã được giao; người triển khai báo SHA cho người dùng. Đây là đầu vào của Mentor, không phải bài giảng hoặc bằng chứng người học hiểu.
+
+Mentor đọc bàn giao tại một commit đã publish, đối chiếu code/test và ghi SHA đầy đủ vào lesson/nhật ký. Chọn phiên bản đang học trước khi chạy; không tự đổi phiên bản giữa buổi khi dự án tiến lên. Khi bắt đầu buổi mới, kiểm tra bàn giao/commit mới và bổ sung lộ trình. Nếu chưa truy cập nguồn thì báo rõ, không tự đoán nội dung.
+
+Đồng bộ bằng repo/bàn giao/commit, không cần tự gửi tin nhắn qua chat khác. Đây không phải cấu hình theo dõi hay tự động chạy nền. Người dùng có thể mở chat học và yêu cầu đọc bàn giao mới.
+
+## 4. Chu trình học theo bằng chứng dự án
 
 ```text
-Bạn hãy đóng vai QA Reviewer.
-Đọc REQ liên quan, thiết kế và diff của task vừa thực hiện.
-Tìm lỗi dữ liệu, logic và điểm thiếu bằng chứng; đưa ví dụ tái hiện cụ thể.
-Phân biệt kết quả đã chạy, nhận xét từ đọc code và việc chưa kiểm chứng.
+Bàn giao/commit → kiến thức cần ôn → giải thích code và quyết định
+               → thực hành trên bản riêng → tự trình bày → phản hồi Mentor
 ```
+
+Mentor có thể đi chậm hơn tiến độ code. Test dự án pass không chứng minh người học hiểu. Ghi mức hiểu chỉ sau lời giải/bài tự làm thật. Bài học tương lai chỉ soạn lý thuyết có ghi trạng thái; không viết rằng tính năng chưa có đã được triển khai.
+
+Thực hành cần sửa code hoặc ghi database/model dùng checkout và môi trường riêng trong Learn/spendwise-ai/practice/, bị Git ignore. Giữ repo triển khai và `.venv` kỹ thuật của nó khỏi sửa đổi bởi bài tập. Quy trình chi tiết ở [Learn — hai luồng](https://github.com/Krev1/Learn/blob/main/spendwise-ai/study_workflow.md).
+
+Nếu phát hiện lỗi, ghi ID task, commit, lệnh tái hiện, expected/actual trong phản hồi học; gửi qua người dùng để luồng dự án xử lý. Mentor không tự sửa sản phẩm. Phần bài tập nhỏ do người học viết không được ghi thành tính năng đã hoàn tất.
+
+## 5. Trạng thái tách biệt
+
+`progress.md` dự án phản ánh kỹ thuật: Planned/In progress/Verified theo đầu ra và bằng chứng. Task dùng TODO/DOING/REVIEW/DONE/BLOCKED; BLOCKED chỉ là task thiếu đầu vào cụ thể. Reviewer phải kiểm tra tiêu chí task, không lấy việc người học chưa trả lời làm lý do chặn code.
+
+`Learn/spendwise-ai/progress.md` ghi tài liệu đã soạn và mức hiểu riêng. Sẵn sàng bảo vệ vẫn cần người học trình bày, kết quả nghiên cứu trung thực và rubric của trường; hoàn thành code không tự đáp ứng điều này.
+
+## 6. Mẫu task và bàn giao
 
 ```text
-Bạn hãy đóng vai Mentor.
-Giải thích task vừa làm bằng tiếng Việt cho người còn nhớ tư duy lập trình
-nhưng cần ôn kỹ thuật. Tạo tệp bài học trong thư mục học đã thống nhất.
-Cho tôi một bài thực hành nhỏ, đáp án kiểm tra và ba câu hỏi bảo vệ.
+TASK / REQ:
+Vai trò kỹ thuật / file sở hữu:
+Đầu vào và phụ thuộc kỹ thuật:
+Hợp đồng / tiêu chí chấp nhận:
+Lệnh đã chạy / kết quả thực:
+File, hàm và quyết định trọng tâm:
+Dataset/model version nếu có:
+Giới hạn / thiếu đầu vào:
+Commit được publish:
+Task kỹ thuật tiếp theo:
 ```
 
-Không cần tạo chat riêng cho từng vai trò. Không cấu hình hay mua API trả phí để vận hành nhóm này. Công cụ AI hiện dùng vẫn có thể chịu hạn mức hoặc phí tài khoản sẵn có; workflow không bảo đảm quyền sử dụng vô hạn với chi phí 0 đồng.
-
-## 3. Nguyên tắc Spec-Driven Development
-
-Mọi thay đổi đi theo chuỗi:
-
-```text
-Nhu cầu → REQ và tiêu chí chấp nhận → Thiết kế → Task triển khai
-        → Code/dữ liệu → Kiểm tra → Bằng chứng → Cập nhật tài liệu
-```
-
-Một task không chỉ ghi “làm dashboard”. Nó cần biết phục vụ REQ nào, dùng hợp đồng dữ liệu nào, nhận đầu vào gì và kiểm tra kết quả ra sao.
-
-**Ví dụ truy vết:** REQ-06 yêu cầu tổng thu–chi chính xác → thiết kế dùng `amount_vnd` kiểu số nguyên và loại thu/chi → task viết truy vấn tổng hợp theo tháng → code → kiểm tra mẫu thu `2000000`, chi `40000` và `120000` → ghi kết quả tổng chi `160000`, chênh lệch `1840000` sau khi thực sự chạy.
-
-Chưa có bằng chứng chạy thì trạng thái là “chưa kiểm chứng”, không phải “pass”.
-
-## 4. Các bước và điều kiện chuyển giao
-
-### Bước A — Đặc tả yêu cầu
-
-Product Analyst và Project Owner thống nhất vấn đề, người dùng, phạm vi, đầu vào và các REQ. Mentor giải thích cách đọc spec và biến một nhu cầu thành tiêu chí chấp nhận.
-
-**Đầu ra:** đặc tả yêu cầu; quyết định đã chốt; giả định và thông tin cần xác minh.
-
-**Đủ để chuyển giao khi:** biết người dùng làm gì, đầu vào nào được hỗ trợ, tính năng nào chưa làm và cách biết mỗi yêu cầu đã đáp ứng. Rubric trường còn thiếu phải được ghi rõ; không suy diễn rằng trường đã duyệt.
-
-### Bước B — Tài liệu thiết kế
-
-Architect và ML Researcher cùng Data Engineer thống nhất giao diện, schema SQLite, mẫu CSV, tám nhãn khoản chi, xử lý xác nhận, pipeline train/inference và cách lưu artifact. Điểm `predict_proba` được ghi là chưa calibration. Ngưỡng `0.60` là đề xuất thử, cần chọn bằng validation.
-
-**Đầu ra:** thiết kế, hợp đồng dữ liệu và quyết định kỹ thuật có lý do.
-
-**Đủ để chuyển giao khi:** từ một mô tả khoản chi có thể chỉ ra cách chuẩn hóa, dự đoán, xác nhận, lưu và tổng hợp. Từ một mẫu huấn luyện có thể chỉ ra nguồn, nhãn, split và bước đánh giá. CSV nguyên tử và nhận diện import lại cùng batch có thiết kế kiểm chứng được.
-
-### Bước C — Kế hoạch triển khai
-
-Orchestrator chia thành các task vừa sức, mỗi task liên kết tới REQ và có thứ tự phụ thuộc. Mentor bổ sung kiến thức cần ôn ngay trước task đó.
-
-**Đầu ra:** kế hoạch task, mục tiêu học và tiêu chí hoàn tất từng task.
-
-**Đủ để chuyển giao khi:** mỗi task có đầu vào, tệp được phép sửa, bước thực hiện, kiểm tra phù hợp và đầu ra. Các task huấn luyện có budget CPU/dữ liệu hợp lý, không ngầm yêu cầu GPU hoặc API trả phí.
-
-### Bước D — Code theo từng phần
-
-Developer thực hiện một task hoặc một nhóm task nhỏ có liên quan. Data Engineer và ML Researcher làm phần dữ liệu/thực nghiệm theo cùng hợp đồng. Người học chạy lệnh, quan sát kết quả và trả lời câu hỏi trước khi chuyển sang phần khó hơn.
-
-**Đầu ra:** code hoặc dữ liệu, hướng dẫn thực hành, kết quả kiểm tra và vấn đề còn lại.
-
-**Đủ để chuyển giao khi:** task đáp ứng tiêu chí đã viết, hoặc có báo cáo thất bại cụ thể và kế hoạch sửa. Chạy baseline và đánh giá một mẫu dữ liệu nhỏ trước khi mở rộng; dữ liệu demo không được coi là bằng chứng mô hình tổng quát hóa tốt.
-
-### Bước E — Review và luyện bảo vệ
-
-QA Reviewer xem thay đổi theo spec. Mentor yêu cầu người học giải thích quyết định bằng kết quả thật. AI điều phối cập nhật kế hoạch và liên kết bằng chứng.
-
-**Đầu ra:** lỗi cần sửa, bản review, nhật ký học và phần giải thích phục vụ báo cáo.
-
-**Đủ để hoàn tất task khi:** lỗi trọng yếu đã xử lý, kiểm tra cần thiết đã chạy và tài liệu khớp code. Nếu review chỉ dựa trên đọc code, ghi rõ hạn chế đó.
-
-## 5. Quy tắc phối hợp và ghi tệp
-
-1. Một task có một vai trò chịu trách nhiệm chính; vai trò khác có thể review.
-2. Chốt hợp đồng dữ liệu trước khi giao các phần cùng sử dụng nó.
-3. Nếu chạy song song, chia tệp theo vùng rõ ràng; không để hai agent cùng sửa một tệp.
-4. Không dùng dữ liệu cá nhân thật làm ví dụ mặc định, không commit database cá nhân hoặc thông tin truy cập.
-5. Tạo dữ liệu giả có nhãn nguồn `synthetic`/tự viết và ghi giới hạn. Không gọi dữ liệu giả là giao dịch thực.
-6. Khi yêu cầu thay đổi, cập nhật spec và tác động trước hoặc cùng lúc với task sửa code.
-7. Không tự động lấy nhãn AI dự đoán để làm “ground truth”, không chọn model/ngưỡng trên test.
-8. Nhật ký phân biệt “đã làm”, “đã chạy”, “đã đạt” và “chưa kiểm chứng”.
-
-## 6. Mẫu task có thể dùng lại
-
-```text
-Task ID: TASK-xx
-Tên: <một kết quả nhỏ, cụ thể>
-Vai trò chính: <Developer / Data Engineer / ML Researcher...>
-REQ liên quan: <REQ-xx>
-Phụ thuộc: <task hoặc hợp đồng cần có trước>
-Tệp được phép sửa: <danh sách>
-Đầu vào: <schema, dữ liệu, cấu hình>
-Mục tiêu học: <khái niệm cần hiểu sau task>
-Các bước: <thứ tự thực hiện ngắn>
-Tiêu chí chấp nhận: <ví dụ có thể kiểm tra>
-Kiểm tra cần chạy: <lệnh hoặc thao tác thực tế>
-Bằng chứng: <log, metric, ảnh hoặc tệp kết quả>
-Vấn đề còn lại: <ghi rõ nếu có>
-Trạng thái: TODO / DOING / REVIEW / DONE / BLOCKED
-```
-
-`BLOCKED` ở bảng task nghĩa là task đang thiếu đầu vào cụ thể, không phải toàn bộ dự án phải dừng. AI điều phối tiếp tục phần độc lập và ghi việc cần người học/giảng viên cung cấp.
-
-## 7. Tài liệu đào tạo ở repo riêng
-
-Mentor lưu bài học, bài tập, nhật ký và hướng dẫn bảo vệ tại [Learn/spendwise-ai](https://github.com/Krev1/Learn/blob/main/spendwise-ai/README.md). Mẫu nhật ký và nhịp học nằm trong [mentor_guide.md](https://github.com/Krev1/Learn/blob/main/spendwise-ai/mentor_guide.md). Repo dự án giữ đặc tả, thiết kế, kế hoạch, code, test và bằng chứng kỹ thuật.
+Prompt [dự án](../prompts/START_HERE.md) và [Mentor](https://github.com/Krev1/Learn/blob/main/spendwise-ai/MENTOR_PROMPT.md) dùng riêng. Không ghi điểm số, dữ liệu thật, consent hoặc mức hiểu khi chưa có bằng chứng.

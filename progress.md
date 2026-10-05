@@ -5,7 +5,7 @@ Cập nhật: 05/10/2026. Đọc cùng [bằng chứng kiểm tra](VERIFICATION.
 | Mốc | Trạng thái | Bằng chứng hiện có / việc tiếp theo |
 |---|---|---|
 | P0 — Bộ SDD phiên bản 0.1 | Verified | Có bộ SDD, sổ quyết định và prompt; tài liệu học/bảo vệ được chuyển sang Learn; đã đối chiếu hợp đồng và liên kết. Đây là draft kỹ thuật, chưa phải phê duyệt đề tài của trường. |
-| P1 — Môi trường app và ôn Python | In progress | TASK-02 phần kỹ thuật đã kiểm tra: `.venv`, import package, pip check, dependency lock. 14 test PASS trong môi trường này. Bài 00/01 và CSV luyện tập ở repo Learn. TASK-03 chờ người học tự thực hiện/giải thích. |
+| P1 — Môi trường kỹ thuật | Verified kỹ thuật | TASK-02 đã kiểm tra `.venv`, import, pip check, dependency lock và ví dụ. 14 test PASS ở mốc setup. TASK-03/mức hiểu theo dõi riêng ở Learn, không chặn triển khai. |
 | P2 — Dữ liệu và baseline | In progress | TASK-04 phần kỹ thuật đã kiểm tra: domain, CSV file/bytes, reports, CLI; 50 tests và 11 subtests PASS. TASK-04 đang REVIEW; TASK-05–06 kỹ thuật đã có seed 356 câu hư cấu/0 thật, provenance và validator, tổng kiểm tra hiện tại 86 tests + 11 subtests. REVIEW nhãn do người và thu dữ liệu thật còn chờ; TASK-07 baseline chưa triển khai. |
 | P3 — Huấn luyện và validation | Planned | Có seed hư cấu cho P2; chưa có split/artifact hoặc số đo mô hình. |
 | P4 — SQLite và nghiệp vụ | Planned | Chưa có database hoặc services của ứng dụng. |
@@ -16,9 +16,10 @@ Các task chi tiết dùng trạng thái trong tài liệu nhóm. `Verified` c�
 
 ## Việc tiếp theo
 
-1. Đọc [GitHub và môi trường Python](https://github.com/Krev1/Learn/blob/main/spendwise-ai/lessons/00_git_and_environment.md).
-2. Người học thực hiện [buổi học đầu tiên](https://github.com/Krev1/Learn/blob/main/spendwise-ai/lessons/01_python_and_money.md): chạy ví dụ, sửa CSV luyện tập và giải thích kết quả. Sau đó đọc [bài 02 — CSV và validation](https://github.com/Krev1/Learn/blob/main/spendwise-ai/lessons/02_csv_and_labels.md), đối chiếu code mới; đọc [bài 02b — xây dữ liệu](https://github.com/Krev1/Learn/blob/main/spendwise-ai/lessons/02b_dataset_construction.md), tự rà 20 nhãn seed và chuẩn bị pilot thu thật theo template.
-3. Người học xác minh rubric của trường; việc học và chuẩn bị môi trường vẫn tiếp tục được trong lúc bổ sung thông tin đó.
+1. Luồng dự án đọc task/bằng chứng và tiếp tục TASK-07 baseline nếu đủ đầu vào prototype; không chờ bài học. Không khởi tạo lại setup đã kiểm chứng.
+2. Cập nhật [bàn giao kỹ thuật](docs/PROJECT_HANDOFF.md) sau mỗi mốc và báo commit cho người dùng/Mentor.
+3. Consent, dữ liệu thật, nhãn người duyệt và rubric cần được cung cấp thực tế. Tiếp tục task độc lập đủ đầu vào; không bịa phần thiếu.
+4. Luồng học riêng dùng [prompt Mentor](https://github.com/Krev1/Learn/blob/main/spendwise-ai/MENTOR_PROMPT.md); mức hiểu/bài tự làm chỉ ghi trong Learn.
 
 ## Nhật ký cập nhật tiếp theo
 
@@ -55,3 +56,7 @@ Ghi ngày, TASK/REQ, file thay đổi, lệnh chạy, kết quả thực, kiến
 - Builder tái tạo offline khớp byte; kiểm tra nguồn trực tuyến khớp hai hash. Test hiện tại 86 passed, 11 subtests passed; không sinh model/metric/split.
 - [Task card](docs/tasks/TASK-05-06.md) đang REVIEW phần kỹ thuật. Learn có phương pháp, quy tắc nhãn, template trống và bài thực hành.
 - Tiếp theo: người học rà 20 câu và giải thích, pilot thu thật riêng tư, gán nhãn độc lập. TASK-07 baseline tiếp tục sau khi hiểu hợp đồng; không chờ đủ 1.200 thật mới học kỹ thuật.
+
+## D13 — Tách luồng dự án và học — 05/10/2026
+
+Cập nhật AGENTS, prompt, SDD/REQ-13, phụ thuộc TASK-04 và bàn giao kỹ thuật. Tiến độ dự án chỉ ghi kỹ thuật; học theo commit ở Learn. Mốc P1 kỹ thuật Verified dựa bằng chứng đã có, không xác nhận TASK-03 hoặc mức hiểu. Lần này chỉ đổi workflow/tài liệu; không thêm baseline/model/DB/UI và không chạy lại kiểm tra code không đổi. Hai prompt thuộc hai luồng, không tự tạo chat hoặc automation.

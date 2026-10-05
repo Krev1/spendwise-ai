@@ -85,3 +85,11 @@ Không có dependency mới. Chưa có kiểm chứng SQLite, UI, baseline hoặ
 Toàn bộ tests: **86 passed, 11 subtests passed**. Test mới bao gồm source/cờ, ID/nhóm, encoding/header/quote/giới hạn, nhãn xung đột, trùng chuẩn hóa, biến thể khác dấu giao nhóm, nhóm lẫn nguồn, cảnh báo PII, provenance đủ ID/hash, từng dòng nguồn, tính tái tạo, nguồn bị sửa và CLI read-only từ cwd khác. Đã sửa output stderr UTF-8 trên Windows theo lỗi thực từ test. SHA-256 dataset: `537e48b08ba3bc6022bc09cfa8e0cf8944ea2b652a7a66906ad297d745c362f6`.
 
 Seed dùng nhãn AI dự thảo, chưa được người duyệt; validator không đo chất lượng nhãn. Có 0 người tham gia/0 mẫu human-reviewed. Chưa train/split và không có điểm ML. Việc thu thập thật và làm bài của người học còn chờ.
+
+## D13 — Tách triển khai và học — 05/10/2026
+
+Lần này chỉ sửa hướng dẫn, prompt, SDD, bàn giao và mapping/ignore; không đổi Python, dữ liệu, dependency hoặc test implementation. Đã kiểm tra UTF-8/code fence/liên kết trên 57 file dự án và 28 file Learn: PASS, 159 liên kết file nội bộ/chéo repo. Tham chiếu REQ vẫn thuộc 13 yêu cầu.
+
+Mapping có 4 bài đã tồn tại, 10 đường dẫn code/file được xác minh tại commit 9ac8ed0c4702b30ce4a26b980595526c4031e03a bằng git cat-file. Mức hiểu giữ not_verified; chưa tạo checkout/môi trường practice. git check-ignore xác nhận practice, .venv, DB và private input thuộc vùng ignore của Learn. git diff --cached --check không báo lỗi.
+
+Không chạy lại pytest vì code/dữ liệu không đổi. 86 tests và 11 subtests là bằng chứng mốc code trước, không phải test mới hoặc bằng chứng người học hoàn thành bài. Dự án và học dùng hai prompt/phạm vi ghi khác nhau, đồng bộ bằng bàn giao/commit ở đầu buổi; chưa tạo chat, automation hoặc nhắn sang chat khác.

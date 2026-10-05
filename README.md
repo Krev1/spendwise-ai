@@ -63,3 +63,9 @@ Tiếp tục task theo [kế hoạch](docs/03_implementation_plan.md), đối ch
 ```
 
 [Phương pháp thu thập/xây dữ liệu](https://github.com/Krev1/Learn/blob/main/spendwise-ai/guides/01_dataset_collection.md), [guideline nhãn](https://github.com/Krev1/Learn/blob/main/spendwise-ai/guides/02_labeling_manual.md) và bài thực hành nằm trong Learn. Không commit mô tả thật hoặc sổ đồng ý; lưu riêng ở `data/private/`.
+
+## Dự án và học hoạt động độc lập
+
+Theo D13, chat dự án chỉ triển khai trong repo này và tiếp tục task đủ đầu vào, không chờ hoàn thành bài học. [Prompt dự án](prompts/START_HERE.md) và [bàn giao kỹ thuật](docs/PROJECT_HANDOFF.md) là điểm bắt đầu. Code/test/SDD/tiến độ kỹ thuật do luồng dự án quản lý.
+
+Chat học dùng [prompt Mentor](https://github.com/Krev1/Learn/blob/main/spendwise-ai/MENTOR_PROMPT.md), đọc bàn giao/code theo commit và chỉ viết Learn/spendwise-ai. Người học thực hành trên checkout riêng; mức hiểu ghi ở Learn. [Quy trình hai luồng](docs/04_team_workflow.md) mô tả quyền ghi và cách đồng bộ.

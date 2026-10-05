@@ -76,3 +76,9 @@ Cách kiểm tra sau thay đổi:
 Người dùng yêu cầu thu thập/xây dataset và hướng dẫn ở Learn. Chọn seed nhỏ có truy vết, không thay mục tiêu dữ liệu thật bằng hàng loạt câu AI. Đã thu 100 hàng demo hư cấu từ nguồn MIT tại commit cố định; chuyển ngữ 19 mô tả được chọn, tự soạn 160 câu nền và thêm biến thể không dấu. Tổng 356 câu, 0 thật; mọi nhãn `ai_draft`. Giữ 33 nhóm phụ thuộc, chưa split/train.
 
 Thêm `public_synthetic` với cờ `true` vào schema nguồn. Nguồn hư cấu không có nhãn sẵn; bản dịch/nhãn chưa được con người duyệt. Repo dự án giữ dataset/build/validate/provenance, Learn giữ phương pháp, biểu mẫu và bài tập. Đây là lựa chọn khởi động kỹ thuật, chưa xác nhận taxonomy với pilot hoặc dữ liệu thật đủ đại diện.
+
+## D13 — Triển khai độc lập, học bám dự án — 05/10/2026
+
+Người dùng yêu cầu tách việc làm dự án và việc học. Luồng kỹ thuật tiếp tục SDD trong spendwise-ai, không chờ người học hoàn thành bài và không viết bài học trong Learn. Luồng học chỉ ghi Learn/spendwise-ai, đọc code/bàn giao theo commit để giải thích, tạo bài tập và phản biện. Mỗi mốc kỹ thuật cập nhật docs/PROJECT_HANDOFF.md; Mentor chọn SHA cố định cho buổi học và thực hành trên checkout riêng.
+
+Tiến độ kỹ thuật và mức hiểu độc lập. Consent, nhãn người duyệt và quyết định phạm vi vẫn cần bằng chứng; không thay bằng AI. REQ-13 được hoàn tất qua luồng học và bàn giao, không còn là điều kiện chờ bài tự làm trước mỗi task kỹ thuật. Sẵn sàng bảo vệ vẫn phụ thuộc hiểu của người học và rubric thật. Không tạo chat/automation hoặc nhắn sang chat khác trong lần cập nhật này.

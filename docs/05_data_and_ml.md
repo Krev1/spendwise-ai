@@ -1,6 +1,6 @@
 # SpendWise AI — Dữ liệu và nghiên cứu mô hình
 
-Ngày lập: 05/10/2026. Trạng thái: đã triển khai seed hư cấu và validator (TASK-05–06); thiết kế train/evaluate còn chờ triển khai. **Chưa thu thập dữ liệu thật, chưa huấn luyện mô hình và chưa có kết quả đánh giá.** Số lượng mục tiêu bên dưới không phải số đã thu; số seed thực nằm trong data/seed/v0.1/audit_report.json.
+Ngày lập: 05/10/2026. Trạng thái: đã có seed/validator (TASK-05–06) và baseline prototype TASK-07. B0 chỉ fit fixture hư cấu riêng trong bộ nhớ. **Chưa thu dữ liệu thật, chưa có grouped split, TF-IDF + NB/LR hoặc đánh giá nghiên cứu.** Số lượng mục tiêu bên dưới không phải số đã thu; số seed thực nằm trong data/seed/v0.1/audit_report.json.
 
 Tài liệu này dành cho người học ngành Trí tuệ nhân tạo muốn vừa xây sản phẩm, vừa hiểu mỗi quyết định để bảo vệ đồ án. Đọc cùng đặc tả yêu cầu và tài liệu thiết kế trong thư mục `docs/`.
 

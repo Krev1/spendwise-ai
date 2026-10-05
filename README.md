@@ -6,9 +6,9 @@
 
 ## Trạng thái
 
-Đã chuẩn bị P1 và bắt đầu phần kỹ thuật P2: có domain giao dịch, CSV parser từ file/bytes, tổng hợp tháng và CLI preview. Bộ kiểm tra hiện tại đạt **86 tests, 11 subtests**; TASK-04 và phần kỹ thuật TASK-05–06 đang REVIEW. Có seed 356 mô tả hư cấu, nhãn AI dự thảo, chưa có người duyệt. Việc thực hành Python của người học vẫn chưa được xác nhận. Chưa có ứng dụng hoàn chỉnh, dataset thật, mô hình đã huấn luyện hoặc kết quả ML. Các chỉ số trong spec là mục tiêu đề xuất.
+P1 kỹ thuật đã kiểm chứng; P2 có domain giao dịch, CSV file/bytes, tổng hợp tháng, CLI preview và **TASK-07 baseline prototype đã DONE**. Bộ kiểm tra hiện tại đạt **139 tests, 11 subtests**. TASK-04/05–06 giữ REVIEW; seed có 356 mô tả hư cấu, nhãn AI dự thảo, chưa có người duyệt. B0 chỉ fit 10 ví dụ hư cấu riêng; B1 là rule có version/hash. Chưa có split nghiên cứu, TF-IDF + NB/LR, dữ liệu thật, điểm ML hoặc app SQLite/Streamlit hoàn chỉnh. Các chỉ số trong spec vẫn là mục tiêu.
 
-Xem [tiến độ kỹ thuật](progress.md) và [bằng chứng kiểm tra](VERIFICATION.md). Code hiện có nằm trong `src/spendwise/`, tests trong `tests/` và `examples/`. `examples/csv_contract.py` là wrapper của code mới. Các phần SQLite, UI, ML và `artifacts/` trong thiết kế vẫn là đầu ra tương lai.
+Xem [tiến độ kỹ thuật](progress.md), [bảng task](docs/04_team_workflow.md#7-bảng-trạng-thái-task-kỹ-thuật) và [bằng chứng kiểm tra](VERIFICATION.md). Code ở `src/spendwise/`, tests ở `tests/` và `examples/`; baseline ở `src/spendwise/ml/`. SQLite, UI, pipeline huấn luyện và `artifacts/` vẫn là đầu ra tương lai.
 
 ## Tài liệu dự án
 
@@ -46,6 +46,14 @@ Nếu đã có `.venv` của dự án, dùng interpreter đó. Lock đã đượ
 ```
 
 Xem [hướng dẫn code CSV](examples/README.md). Dữ liệu mẫu là hư cấu; ví dụ chưa có SQLite, UI hoặc AI và không phải dataset đánh giá mô hình.
+
+Chạy [prototype baseline TASK-07](docs/tasks/TASK-07.md):
+
+```powershell
+.\.venv\Scripts\python.exe -B scripts/demo_baselines.py
+```
+
+CLI đọc fixture hư cấu đã version, fit Dummy trong bộ nhớ và in kết quả từ khóa/Dummy cho 13 probes. Không tạo split, model binary hoặc metric. Từ khóa xung đột/không khớp trả `khac` với lý do cần xem lại; mọi nhãn vẫn cần người dùng xác nhận. Đây là demo kỹ thuật, chưa tích hợp app hoặc chứng minh hiệu quả với người thật.
 
 ## Bài học ở repo Learn
 

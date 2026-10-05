@@ -1,0 +1,13 @@
+{
+  "python": "3.14.7",
+  "system": "Windows",
+  "architecture": "AMD64",
+  "isolated_environment": true,
+  "packages": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "streamlit": "1.65.0",
+    "joblib": "1.6.0",
+    "pytest": "9.1.1"
+  }
+}

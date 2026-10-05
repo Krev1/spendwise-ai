@@ -67,3 +67,34 @@ Task kỹ thuật tiếp theo:
 ```
 
 Prompt [dự án](../prompts/START_HERE.md) và [Mentor](https://github.com/Krev1/Learn/blob/main/spendwise-ai/MENTOR_PROMPT.md) dùng riêng. Không ghi điểm số, dữ liệu thật, consent hoặc mức hiểu khi chưa có bằng chứng.
+
+## 7. Bảng trạng thái task kỹ thuật
+
+Cập nhật 05/10/2026. Trạng thái mốc tổng hợp ở [progress](../progress.md); bảng này giữ trạng thái chi tiết, không đánh giá mức hiểu.
+
+| TASK | Trạng thái | Bằng chứng / đầu vào còn thiếu |
+|---|---|---|
+| 01 | DONE | SDD draft và D13; chưa có rubric trường |
+| 02 | DONE | [VERIFICATION](../VERIFICATION.md), môi trường riêng/lock import được |
+| 03 | TODO | Thuộc luồng học, không chặn code |
+| 04 | REVIEW | [Task card](tasks/TASK-04.md), domain/CSV/reports; giữ trạng thái trước |
+| 05 | REVIEW | [Task card](tasks/TASK-05-06.md), guideline/provenance; nhãn người duyệt chưa có |
+| 06 | REVIEW | [Task card](tasks/TASK-05-06.md), seed/validator; 0 mẫu thật |
+| 07 | DONE | [Task card](tasks/TASK-07.md), prototype B0/B1; 139 tests + 11 subtests, QA review; chưa đánh giá ML |
+| 08 | TODO | Grouped split/audit hiệu lực, chưa có manifest |
+| 09 | TODO | TF-IDF Pipeline, cần TASK-08 |
+| 10 | TODO | So sánh B0/B1/NB/LR, cần 07–09 |
+| 11 | TODO | Chọn model/ngưỡng bằng validation, cần 10 |
+| 12 | TODO | Artifact/model card, cần 11 |
+| 13 | TODO | SQLite schema/migrations, đủ hợp đồng TASK-04 |
+| 14 | TODO | CRUD/reports, cần 13 |
+| 15 | TODO | Atomic import/source hash, cần 13–14 |
+| 16 | TODO | Backup/restore, cần 13–15 |
+| 17 | TODO | Streamlit form/dashboard, cần 14 |
+| 18 | TODO | Inference/fallback, cần 12/17 |
+| 19 | TODO | UI import/xác nhận, cần 15/17/18 |
+| 20 | TODO | Local/offline end-to-end, cần 16/18/19 |
+| 21 | TODO | Pilot có consent/người thử, cần 20 |
+| 22 | TODO | Test cuối đã khóa + dữ liệu thật/người duyệt, cần 08/12 |
+| 23 | TODO | Tái lập và review REQ, cần 20/22 |
+| 24 | TODO | Báo cáo/rubric và trình bày người học, cần 21–23 |

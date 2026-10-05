@@ -1,6 +1,6 @@
 # SpendWise AI — Tài liệu thiết kế
 
-Ngày soạn: 05/10/2026. Phiên bản thiết kế: 0.1. Trạng thái: chuẩn bị triển khai; chưa có ứng dụng hoặc mô hình đã huấn luyện.
+Ngày soạn: 05/10/2026. Phiên bản thiết kế: 0.1. Trạng thái: đã triển khai domain/CSV/dataset và baseline prototype; chưa có app hoàn chỉnh hoặc mô hình văn bản huấn luyện theo grouped split.
 
 Tài liệu này cụ thể hoá đặc tả trong `01_requirements.md`. Các lựa chọn dưới đây là kiến trúc đề xuất cho đồ án trên máy cá nhân. Khả năng chạy và thời gian phản hồi phải được đo trên máy thật trong giai đoạn P1 và P5. Đọc cùng `05_data_and_ml.md` để hiểu quy trình dữ liệu và thí nghiệm.
 
@@ -337,4 +337,10 @@ Script chạy thêm `src/` vào import path để dùng checkout mà chưa cần
 
 `src/spendwise/data/dataset.py` kiểm tra dataset ML sáu cột độc lập với transaction parser. `scripts/validate_dataset.py` in thống kê JSON, lỗi exit 1 không in mô tả riêng tư. `scripts/collect_reference.py` đối chiếu snapshot có commit/hash/license cố định, mặc định offline. `scripts/build_seed_dataset.py` tái tạo seed/audit offline từ recipes hư cấu; mặc định so byte, `--write` mới ghi bốn file cố định.
 
-`data/seed/v0.1/` chứa main CSV, provenance, source selection, audit và dataset card. Phân biệt `volunteer,false`, `author_synthetic,true`, `public_synthetic,true`. Trạng thái nhãn nằm trong provenance; validator cấu trúc không cấp trạng thái người duyệt. Metadata không dùng làm feature. Dữ liệu thật ở `data/private/` theo consent, không đưa vào Git. Dataset engineering đã có; baseline, split, train và UI vẫn chưa triển khai.
+`data/seed/v0.1/` chứa main CSV, provenance, source selection, audit và dataset card. Phân biệt `volunteer,false`, `author_synthetic,true`, `public_synthetic,true`. Trạng thái nhãn nằm trong provenance; validator cấu trúc không cấp trạng thái người duyệt. Metadata không dùng làm feature. Dữ liệu thật ở `data/private/` theo consent, không đưa vào Git. Dataset engineering và TASK-07 baseline prototype đã có; split, TF-IDF train và UI chưa triển khai.
+
+## Implementation baseline — TASK-07
+
+`ml/baselines.py` cung cấp `normalize_description`, `KeywordBaseline.explain/predict` và `MostFrequentBaseline.fit/predict`. Validation không echo mô tả lỗi, từ chối Unicode surrogate. Ranh giới token gồm chữ/số/`_`/combining mark còn lại sau NFC; không nối cụm qua dấu câu. Rule hash chứa version, policy và keyword theo thứ tự.
+
+`scripts/demo_baselines.py` kiểm tra toàn fixture hư cấu trước fit/report, mặc định đọc `examples/baseline_demo.json` theo đường dẫn script nên chạy từ cwd khác. B0 chỉ fit 10 ví dụ riêng; probes chỉ predict. Không đọc seed/private/database, không mở joblib và không tạo artifact. Kết quả B1 khác inference app: status `matched/conflict/no_match`, không threshold/can_suggest. [Task card](tasks/TASK-07.md) nối REQ-09/13 với bằng chứng; caller nghiên cứu tương lai phải chọn train theo manifest.

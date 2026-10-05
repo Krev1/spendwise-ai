@@ -1,0 +1,23 @@
+{
+  "checked_date_local": "2026-10-05",
+  "timezone": "Asia/Saigon",
+  "cpu": "AMD Ryzen 5 7500F 6-Core Processor             ",
+  "cores": 6,
+  "logical_processors": 12,
+  "os": "Microsoft Windows 11 Pro",
+  "architecture": "64-bit",
+  "visible_ram_bytes": 33999355904,
+  "workspace_volume": "C",
+  "volume_free_bytes_at_check": 208285835264,
+  "base_commit": "6d28c6ab2502e29e202290433fdd374bc4417155",
+  "dependency_lock_sha256": "1bcca77bcff709f464d63f4cc7d15d42162c09cf4f2b91dde62535ace1a90d63",
+  "runtime_benchmark": "not_run",
+  "unknown": [
+    "school_rubric",
+    "weekly_time_budget",
+    "volunteer_consent",
+    "human_reviewed_labels",
+    "real_holdout",
+    "shared_machine_access_policy"
+  ]
+}

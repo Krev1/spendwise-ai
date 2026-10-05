@@ -1,0 +1,18 @@
+{
+  "code_commit": "b331e5f078a07a73e34d44f22da69d89774eae96",
+  "checked_date_local": "2026-10-05",
+  "timezone": "Asia/Saigon",
+  "changed_markdown_files_checked": 11,
+  "internal_file_links_checked": 79,
+  "utf8_code_fences_internal_file_links_req_ids": "passed",
+  "python_ast_files_checked": 5,
+  "source_sha256": {
+    "src/spendwise/ml/baselines.py": "e82afa1ced30994e9b4212f731fde707b30c47347aafe70cb2ba43f12620240a",
+    "src/spendwise/ml/__init__.py": "4d2d0fff524de3d50662897d0c59c9f01f57931f9f36b84836982b28922d14df",
+    "scripts/demo_baselines.py": "e975be1b7b5520b5b441d7ce8066a383fd2788a9d03a53e23f72db17697b20e7",
+    "tests/test_baselines.py": "b509f88de471bdef30102e7e63ee1496009b262a0ece2f1d466824a5c7c8bd4c",
+    "tests/test_baseline_cli.py": "b37cfa5c9043b3c4cb193a8e63657f99953eb1298de51956893a1085e3615ca3"
+  },
+  "research_metrics": "not_run",
+  "model_binary_created": false
+}

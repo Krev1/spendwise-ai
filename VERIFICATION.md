@@ -93,3 +93,26 @@ Lần này chỉ sửa hướng dẫn, prompt, SDD, bàn giao và mapping/ignore
 Mapping có 4 bài đã tồn tại, 10 đường dẫn code/file được xác minh tại commit 9ac8ed0c4702b30ce4a26b980595526c4031e03a bằng git cat-file. Mức hiểu giữ not_verified; chưa tạo checkout/môi trường practice. git check-ignore xác nhận practice, .venv, DB và private input thuộc vùng ignore của Learn. git diff --cached --check không báo lỗi.
 
 Không chạy lại pytest vì code/dữ liệu không đổi. 86 tests và 11 subtests là bằng chứng mốc code trước, không phải test mới hoặc bằng chứng người học hoàn thành bài. Dự án và học dùng hai prompt/phạm vi ghi khác nhau, đồng bộ bằng bàn giao/commit ở đầu buổi; chưa tạo chat, automation hoặc nhắn sang chat khác.
+
+## TASK-07 — Baseline prototype — 05/10/2026
+
+Code: [b331e5f](https://github.com/Krev1/spendwise-ai/commit/b331e5f078a07a73e34d44f22da69d89774eae96); REQ-09,13; A12. Đã đọc đầy đủ tài liệu bắt buộc tại checkout dự án `6d28c6a`. Không khởi tạo lại P0/P1 hoặc sửa Learn.
+
+```powershell
+.\.venv\Scripts\python.exe -B scripts/check_environment.py
+.\.venv\Scripts\python.exe -m pip check
+.\.venv\Scripts\python.exe -B scripts/demo_baselines.py
+.\.venv\Scripts\python.exe -B scripts/build_seed_dataset.py
+.\.venv\Scripts\python.exe -B scripts/validate_dataset.py data/seed/v0.1/expense_descriptions_vi.csv
+.\.venv\Scripts\python.exe -B scripts/preview_transactions.py examples/transactions_sample.csv --month 2026-10
+.\.venv\Scripts\python.exe -B -m pytest -q
+```
+
+- Kết quả cuối: **139 passed, 11 subtests passed**, [log](docs/evidence/TASK-07-2026-10-05/pytest.txt). 53 test case mới kiểm tra hành vi Unicode, cụm/ranh giới/conflict/no-match, B0 fit/predict/majority/tie, validation trước fit, CLI hư cấu read-only/cwd khác, lỗi schema/encoding/giới hạn/surrogate và không echo nội dung lỗi.
+- [Demo JSON](docs/evidence/TASK-07-2026-10-05/demo_baselines.json): 10 ví dụ fit hư cấu, 13 probes; Dummy trả `an_uong` vì majority 3, rule trả hit có version/hash. `score=null`, luôn cần xác nhận; `split_status=not_created`, `research_evaluation=not_run`.
+- [QA](docs/evidence/TASK-07-2026-10-05/qa_review.md): lỗi combining mark và surrogate đã sửa, probe xác minh; test ID dài gây lỗi môi trường Windows đã rút gọn. Không còn finding trong phạm vi review. Review AI không phải nhãn người duyệt hoặc đánh giá của trường.
+- [Builder](docs/evidence/TASK-07-2026-10-05/seed_reproduction.json) tái tạo đúng byte; [validator](docs/evidence/TASK-07-2026-10-05/dataset_validation.json) giữ 356 hư cấu, 0 thật, 33 nhóm và hash `537e48b08ba3bc6022bc09cfa8e0cf8944ea2b652a7a66906ad297d745c362f6`. Không thay seed, provenance hoặc trạng thái `ai_draft`.
+- [CSV preview](docs/evidence/TASK-07-2026-10-05/csv_preview.json): tháng 10 vẫn 9 giao dịch, thu 5.000.000, chi 2.593.000, chênh lệch 2.407.000 VND, một khoản chi thiếu nhãn. Không ghi DB.
+- [Môi trường](docs/evidence/TASK-07-2026-10-05/environment.json), [pip check](docs/evidence/TASK-07-2026-10-05/pip_check.txt), [hardware](docs/evidence/TASK-07-2026-10-05/hardware.json): `.venv` riêng, Python 3.14.7/sklearn 1.9.1, dependency không đổi/không xung đột; CPU/RAM/OS/dung lượng trống đọc local. [API DummyClassifier chính thức](https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html) và chữ ký API cài local đã đối chiếu.
+
+TASK-07 DONE chỉ cho prototype. P2 còn In progress: chưa có người duyệt nhãn hoặc dữ liệu/test thật. Chưa có split, TF-IDF Pipeline, NB/LR, model card nghiên cứu, metric hoặc benchmark inference; chưa kiểm tra SQLite/UI/offline end-to-end. Điểm `.80/.60/.85` vẫn là mục tiêu chưa đo. [Bàn giao kỹ thuật](docs/PROJECT_HANDOFF.md) ghi bước tiếp theo TASK-08 và phần còn thiếu.

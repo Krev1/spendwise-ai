@@ -1,0 +1,19 @@
+{
+  "month": "2026-10",
+  "rows": 9,
+  "income_vnd": 5000000,
+  "expense_vnd": 2593000,
+  "net_vnd": 2407000,
+  "expense_by_category": {
+    "an_uong": 45000,
+    "di_chuyen": 18000,
+    "hoc_tap": 250000,
+    "nha_o_hoa_don": 2000000,
+    "mua_sam": 120000,
+    "giai_tri": 50000,
+    "suc_khoe": 80000,
+    "can_xac_nhan": 30000
+  },
+  "pending_expense_categories": 1,
+  "note": "Chỉ preview; khoản chi thiếu nhãn cần xác nhận trước khi lưu app."
+}

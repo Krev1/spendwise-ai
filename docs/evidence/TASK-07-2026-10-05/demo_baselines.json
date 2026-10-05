@@ -1,0 +1,348 @@
+{
+  "purpose": "technical_smoke_only",
+  "source": "author_synthetic",
+  "is_synthetic": true,
+  "fixture_sha256": "c01debaa2834d2334309d4d41acb553e149406c17539f351e8f7bc0ceddfadf5",
+  "rule_version": "keywords-v0.1",
+  "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+  "python": "3.14.7",
+  "scikit_learn": "1.9.1",
+  "dummy_strategy": "most_frequent",
+  "seed": 42,
+  "fit_example_count": 10,
+  "fit_label_counts": {
+    "an_uong": 3,
+    "di_chuyen": 1,
+    "giai_tri": 1,
+    "hoc_tap": 1,
+    "khac": 1,
+    "mua_sam": 1,
+    "nha_o_hoa_don": 1,
+    "suc_khoe": 1
+  },
+  "dummy_classes": [
+    "an_uong",
+    "di_chuyen",
+    "giai_tri",
+    "hoc_tap",
+    "khac",
+    "mua_sam",
+    "nha_o_hoa_don",
+    "suc_khoe"
+  ],
+  "probe_count": 13,
+  "split_status": "not_created",
+  "research_evaluation": "not_run",
+  "limits": "Hư cấu, nhãn AI dự thảo; chưa đo chất lượng người thật, chưa calibration hoặc tích hợp app.",
+  "predictions": [
+    {
+      "description": "CÀ PHÊ sáng",
+      "keyword": {
+        "predicted_category": "an_uong",
+        "status": "matched",
+        "matches": [
+          {
+            "category": "an_uong",
+            "keyword": "cà phê",
+            "start": 0,
+            "end": 6
+          }
+        ],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": false
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "com trua o cang tin",
+      "keyword": {
+        "predicted_category": "an_uong",
+        "status": "matched",
+        "matches": [
+          {
+            "category": "an_uong",
+            "keyword": "com trua",
+            "start": 0,
+            "end": 8
+          }
+        ],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": false
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "tiền nước phòng trọ",
+      "keyword": {
+        "predicted_category": "nha_o_hoa_don",
+        "status": "matched",
+        "matches": [
+          {
+            "category": "nha_o_hoa_don",
+            "keyword": "tiền nước",
+            "start": 0,
+            "end": 9
+          }
+        ],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": false
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "mua nước giặt",
+      "keyword": {
+        "predicted_category": "mua_sam",
+        "status": "matched",
+        "matches": [
+          {
+            "category": "mua_sam",
+            "keyword": "nước giặt",
+            "start": 4,
+            "end": 13
+          }
+        ],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": false
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "kem dưỡng da mua ở nhà thuốc",
+      "keyword": {
+        "predicted_category": "mua_sam",
+        "status": "matched",
+        "matches": [
+          {
+            "category": "mua_sam",
+            "keyword": "kem dưỡng da mua ở nhà thuốc",
+            "start": 0,
+            "end": 28
+          }
+        ],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": false
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "laptop để học",
+      "keyword": {
+        "predicted_category": "hoc_tap",
+        "status": "matched",
+        "matches": [
+          {
+            "category": "hoc_tap",
+            "keyword": "laptop để học",
+            "start": 0,
+            "end": 13
+          }
+        ],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": false
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "cơm trưa và vé phim",
+      "keyword": {
+        "predicted_category": "khac",
+        "status": "conflict",
+        "matches": [
+          {
+            "category": "giai_tri",
+            "keyword": "vé phim",
+            "start": 12,
+            "end": 19
+          },
+          {
+            "category": "an_uong",
+            "keyword": "cơm",
+            "start": 0,
+            "end": 3
+          }
+        ],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": true
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "học phí và cơm trưa",
+      "keyword": {
+        "predicted_category": "khac",
+        "status": "conflict",
+        "matches": [
+          {
+            "category": "hoc_tap",
+            "keyword": "học phí",
+            "start": 0,
+            "end": 7
+          },
+          {
+            "category": "an_uong",
+            "keyword": "cơm",
+            "start": 11,
+            "end": 14
+          }
+        ],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": true
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "mua thuốc lá",
+      "keyword": {
+        "predicted_category": "khac",
+        "status": "matched",
+        "matches": [
+          {
+            "category": "khac",
+            "keyword": "thuốc lá",
+            "start": 4,
+            "end": 12
+          }
+        ],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": false
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "endgame",
+      "keyword": {
+        "predicted_category": "khac",
+        "status": "no_match",
+        "matches": [],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": true
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "chuyển khoản",
+      "keyword": {
+        "predicted_category": "khac",
+        "status": "no_match",
+        "matches": [],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": true
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "Grab",
+      "keyword": {
+        "predicted_category": "khac",
+        "status": "no_match",
+        "matches": [],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": true
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    },
+    {
+      "description": "đặt lịch họp nhóm",
+      "keyword": {
+        "predicted_category": "khac",
+        "status": "no_match",
+        "matches": [],
+        "rule_version": "keywords-v0.1",
+        "rule_sha256": "be9a1f118c13e7b4d75a45230676032f63483b37c79b18ce951d706fcd062add",
+        "score": null,
+        "requires_confirmation": true,
+        "needs_review": true
+      },
+      "dummy": {
+        "predicted_category": "an_uong",
+        "score": null,
+        "requires_confirmation": true
+      }
+    }
+  ]
+}

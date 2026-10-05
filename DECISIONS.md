@@ -92,3 +92,15 @@ B1 giữ NFC/chữ thường/gộp khoảng trắng và giữ dấu; không dấ
 B0 chỉ nhận descriptions/labels do caller chỉ định, không nhận ID/nguồn/nhóm/tiền làm feature; kiểm tra trước fit. TASK-07 chỉ fit fixture hư cấu riêng trong bộ nhớ, không fit toàn seed, không sinh split/model binary/metric. TASK-10 phải dùng train của manifest TASK-08. Cả hai baseline không xuất score giả hoặc xác nhận thay người dùng; chưa tích hợp app.
 
 Ảnh hưởng: REQ-09,13; design 9.2; data_and_ml 6; TASK-07. Kiểm chứng Unicode, cụm lồng nhau, xung đột, không khớp, B0 và CLI read-only; bàn giao theo D13.
+
+## A13 — Grouped split prototype TASK-08 — 05/10/2026
+
+Chỉ khóa partition kỹ thuật của seed hư cấu, không khóa test thật hoặc xác nhận nhãn. Audit 356 hàng/33 nhóm/51 họ câu cho thấy biến thể khác dấu giữ nhóm; thiếu dữ liệu thật và người rà soát gần trùng. CLI chỉ đọc seed/provenance/recipe trong repo, không nhận dataset riêng.
+
+Nhóm hiệu lực là union bắc cầu của group gốc, family và original phrase có namespace `(source_id, source_commit)`, folded text và quan hệ ghi trong recipe riêng. Ba cặp cùng dịch vụ qua nguồn được giữ chung để tránh tách biến thể có thể phụ thuộc; status `ai_conservative_prototype`, `human_reviewed=false`. Đây là ngoại lệ chỉ cho prototype hư cấu: không gọi là người đã xác nhận quan hệ, không áp dụng cho nghiên cứu thật. Không nối các câu chỉ vì cùng lớp hoặc vài từ chung.
+
+Screen gần trùng trên đại diện folded: SequenceMatcher ≥0.70 hoặc token Jaccard ≥0.50 hoặc char-3 Jaccard ≥0.40; bổ sung chứa nguyên cụm từ ít nhất 2 token/8 ký tự. Đại diện chọn theo ID sort, cặp so theo folded lexicographic; SequenceMatcher có thể phụ thuộc chiều so sánh, nên thứ tự này là một phần protocol. Đây là heuristic để lập danh sách cần người rà soát, không chứng minh quan hệ ngữ nghĩa. Prototype giới hạn 500 văn bản folded để chặn chi phí audit cặp tăng bậc hai. Rule/recipe và ngưỡng được khóa trước fit; chưa có fit hoặc metric ở task này.
+
+Chia một lần bằng `StratifiedGroupKFold(n_splits=7, shuffle=True, random_state=42)` trên ID đã sort và nhóm hiệu lực: fold 0 là test prototype, fold 1 validation, 5 fold còn lại train. Tỷ lệ danh nghĩa 5/7,1/7,1/7 gần 70/15/15; báo tỷ lệ thực và support/missing labels, không đổi seed/fold để làm đẹp điểm. Nhóm quan trọng hơn tỷ lệ; đủ 8 lớp ở các holdout với tỷ lệ 15% không khả thi với cấu trúc nhóm seed hiện tại.
+
+Bundle có input hashes, config/môi trường/guideline version/hash, manifest và audit; ghi qua thư mục tạm rồi rename, không overwrite bundle khác nội dung. Mặc định chỉ preview/verify; `--write` mới tạo bundle. Đọc lại phải đối chiếu hash và partition tái tạo, phát hiện file thiếu/thừa/sửa; không tin lock đã bị sửa cùng manifest. Đường dẫn bundle/cha và file con không dùng symlink, Windows junction hoặc reparse point. Dòng nguồn công khai cần số dòng CSV canonical từ 2, tối đa 9 chữ số. Không nạp model binary. TASK-08 giữ REVIEW cho nghiên cứu nếu còn thiếu human review hoặc support; prototype có thể kiểm chứng riêng. Ảnh hưởng REQ-08,09,13 và TASK-08–12/22.

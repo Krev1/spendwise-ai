@@ -1,6 +1,6 @@
 # SpendWise AI — Dữ liệu và nghiên cứu mô hình
 
-Ngày lập: 05/10/2026. Trạng thái: đã có seed/validator (TASK-05–06) và baseline prototype TASK-07. B0 chỉ fit fixture hư cấu riêng trong bộ nhớ. **Chưa thu dữ liệu thật, chưa có grouped split, TF-IDF + NB/LR hoặc đánh giá nghiên cứu.** Số lượng mục tiêu bên dưới không phải số đã thu; số seed thực nằm trong data/seed/v0.1/audit_report.json.
+Ngày lập: 05/10/2026. Trạng thái: đã có seed/validator, baseline prototype TASK-07 và grouped split prototype TASK-08 với 256 train/50 validation/50 test trên 356 câu hư cấu. B0 chỉ fit fixture riêng trong bộ nhớ. **Chưa thu dữ liệu thật, chưa có TF-IDF + NB/LR hoặc đánh giá nghiên cứu.** Nhãn/quan hệ chưa người duyệt; holdout thiếu lớp. Số lượng mục tiêu bên dưới không phải số đã thu; seed và [bundle prototype](../data/splits/README.md) ghi số thực.
 
 Tài liệu này dành cho người học ngành Trí tuệ nhân tạo muốn vừa xây sản phẩm, vừa hiểu mỗi quyết định để bảo vệ đồ án. Đọc cùng đặc tả yêu cầu và tài liệu thiết kế trong thư mục `docs/`.
 
@@ -136,6 +136,8 @@ Quy tắc dự án:
 6. Khóa dataset, hướng dẫn nhãn, split và test bằng phiên bản/hash trước khi lựa chọn mô hình trên validation.
 
 Không lặp seed đến khi “test đẹp”. Không chia random từng hàng rồi cho rằng không rò rỉ chỉ vì `record_id` khác nhau. Không di chuyển mẫu sai từ test về train và tiếp tục báo cáo cùng test là độc lập.
+
+TASK-08 prototype theo A13 dùng seed hư cấu, namespace family/original phrase theo source ID/commit và union bắc cầu. Recipe liên kết `ai_conservative_prototype` chỉ giữ một số cặp cùng dịch vụ chung partition, không thay điều kiện người rà soát cho nghiên cứu thật. Audit heuristic gần trùng vẫn ghi `human_reviewed=false`. SGKF 7 fold/seed42, fold0 test prototype/fold1 validation/còn lại train; không retry seed/fold. Báo mọi lớp thiếu và lệch tỷ lệ. Bundle khóa bằng hash để dùng kiểm tra kỹ thuật; test thật và kết luận tám lớp vẫn chưa đủ điều kiện. [Task card](tasks/TASK-08.md) ghi hợp đồng và bằng chứng.
 
 Một họ khuôn quá phổ biến có thể nối thành nhóm lớn. Khi đó phải ghi tradeoff, audit lại việc xác định họ khuôn và thu thập dữ liệu đa dạng hơn. Nếu thiếu lớp trong một tập, chưa đủ điều kiện cho đánh giá tám lớp; báo cáo thiếu dữ liệu hoặc sửa kế hoạch trước khi xem điểm. Không phá quy tắc giữ người riêng chỉ để đạt tỷ lệ tuyệt đối.
 

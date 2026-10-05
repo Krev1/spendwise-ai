@@ -1,0 +1,4 @@
+record_a,record_b,relation_status,human_reviewed,rationale
+seed_giai_tri_tro_choi_01,pub_pfa_010,ai_conservative_prototype,false,Cùng Steam/dịch vụ game; giữ chung trong prototype hư cấu; chưa được người rà soát xác nhận.
+seed_giai_tri_xem_phim_04,pub_pfa_045,ai_conservative_prototype,false,Cùng cụm dịch vụ rạp phim; giữ chung trong prototype hư cấu; chưa được người rà soát xác nhận.
+seed_suc_khoe_kham_03,pub_pfa_034,ai_conservative_prototype,false,Cùng cụm dịch vụ phòng khám; giữ chung trong prototype hư cấu; chưa được người rà soát xác nhận.

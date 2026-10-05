@@ -219,6 +219,8 @@ Split đích khoảng 70% train, 15% validation, 15% test; giữ nhóm quan tr�
 
 ### 9.2. Các thí nghiệm tối thiểu
 
+TASK-08 có [hợp đồng prototype](tasks/TASK-08.md) theo A13: input seed/provenance/recipe có hash, nhóm hiệu lực union bắc cầu, audit gần trùng và SGKF 7 fold một lần. Khóa bundle manifest/audit/config/input hashes bằng publish thư mục nguyên tử, không overwrite. Link bảo thủ AI chỉ phục vụ hư cấu; không cấp trạng thái người duyệt hoặc test thật. Mọi fit/feature trong TASK-09–10 phải nhận đúng ID train từ bundle đã verify, không đọc toàn dataset rồi fit ngầm.
+
 | Thí nghiệm | Vai trò |
 |---|---|
 | Từ khoá có thứ tự ưu tiên | Baseline quy tắc, người học giải thích được từng quyết định. Chỉ thiết kế/điều chỉnh bằng train và validation. |
@@ -337,7 +339,7 @@ Script chạy thêm `src/` vào import path để dùng checkout mà chưa cần
 
 `src/spendwise/data/dataset.py` kiểm tra dataset ML sáu cột độc lập với transaction parser. `scripts/validate_dataset.py` in thống kê JSON, lỗi exit 1 không in mô tả riêng tư. `scripts/collect_reference.py` đối chiếu snapshot có commit/hash/license cố định, mặc định offline. `scripts/build_seed_dataset.py` tái tạo seed/audit offline từ recipes hư cấu; mặc định so byte, `--write` mới ghi bốn file cố định.
 
-`data/seed/v0.1/` chứa main CSV, provenance, source selection, audit và dataset card. Phân biệt `volunteer,false`, `author_synthetic,true`, `public_synthetic,true`. Trạng thái nhãn nằm trong provenance; validator cấu trúc không cấp trạng thái người duyệt. Metadata không dùng làm feature. Dữ liệu thật ở `data/private/` theo consent, không đưa vào Git. Dataset engineering và TASK-07 baseline prototype đã có; split, TF-IDF train và UI chưa triển khai.
+`data/seed/v0.1/` chứa main CSV, provenance, source selection, audit và dataset card. Phân biệt `volunteer,false`, `author_synthetic,true`, `public_synthetic,true`. Trạng thái nhãn nằm trong provenance; validator cấu trúc không cấp trạng thái người duyệt. Metadata không dùng làm feature. Dữ liệu thật ở `data/private/` theo consent, không đưa vào Git. Dataset engineering, TASK-07 baseline và TASK-08 grouped split prototype đã có; TF-IDF train và UI chưa triển khai.
 
 ## Implementation baseline — TASK-07
 

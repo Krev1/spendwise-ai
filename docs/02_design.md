@@ -1,5 +1,8 @@
 # SpendWise AI — Tài liệu thiết kế
 
+> **Lịch sử v0.1:** [SDD v0.2](sdd-v0.2/README.md) là phạm vi hiện hành cho web công khai/ngân sách/Deep Learning. Giữ tài liệu này truy vết code cũ; ưu tiên v0.2 khi xung đột.
+
+
 Ngày soạn: 05/10/2026. Phiên bản thiết kế: 0.1. Trạng thái: đã triển khai domain/CSV/dataset và baseline prototype; chưa có app hoàn chỉnh hoặc mô hình văn bản huấn luyện theo grouped split.
 
 Tài liệu này cụ thể hoá đặc tả trong `01_requirements.md`. Các lựa chọn dưới đây là kiến trúc đề xuất cho đồ án trên máy cá nhân. Khả năng chạy và thời gian phản hồi phải được đo trên máy thật trong giai đoạn P1 và P5. Đọc cùng `05_data_and_ml.md` để hiểu quy trình dữ liệu và thí nghiệm.

@@ -1,5 +1,8 @@
 # SpendWise AI — hướng dẫn làm việc
 
+- Phạm vi hiện hành: `docs/sdd-v0.2/README.md` và tài liệu liên kết, ưu tiên web nhiều tài khoản/ngân sách/dự báo/Deep Learning/GPU. `prompts/START_HERE.md` đã đổi. REQ/TASK cũ giữ truy vết; không reset code hoặc ghi DONE SW-TASK chưa chạy.
+
+
 - Đọc README.md, DECISIONS.md, progress.md và các tài liệu SDD liên quan trước khi sửa.
 - Triển khai theo TASK/REQ; cập nhật yêu cầu và thiết kế khi hành vi thay đổi.
 - Repo Krev1/spendwise-ai giữ code, test và tài liệu SDD. Bài học, bài tập, nhật ký và hướng dẫn bảo vệ phải lưu ở Krev1/Learn, thư mục spendwise-ai; không tạo docs/learning trong repo dự án. Mỗi lesson ghi TASK/REQ và commit code tham chiếu.

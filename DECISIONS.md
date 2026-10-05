@@ -1,5 +1,8 @@
 # Sổ quyết định — phiên bản 0.1
 
+> **Cập nhật:** D14…22 và ADR mới ở [v0.2 decisions](docs/sdd-v0.2/05_decisions.md). Giả định local một người/CPU/chỉ traditional ML bên dưới đã thay; D01…13 giữ ở phần không xung đột.
+
+
 Ngày: 05/10/2026. Dùng file này để tránh biến một đề xuất kỹ thuật thành yêu cầu đã được xác nhận.
 
 ## Đã được người dùng xác nhận

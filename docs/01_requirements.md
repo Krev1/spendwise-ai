@@ -1,5 +1,8 @@
 # 01 — Đặc tả yêu cầu: SpendWise AI
 
+> **Lịch sử v0.1:** [SDD v0.2](sdd-v0.2/README.md) là phạm vi hiện hành cho web công khai/ngân sách/Deep Learning. Giữ tài liệu này truy vết code cũ; ưu tiên v0.2 khi xung đột.
+
+
 Phiên bản: 0.1 — bộ tài liệu khởi động đồ án, chưa phải ứng dụng đã hoàn thành.
 
 ## 1. Bài toán và mục tiêu

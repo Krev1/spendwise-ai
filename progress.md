@@ -1,5 +1,8 @@
 # Tiến độ ban đầu
 
+> **Phạm vi mới:** [SDD v0.2](docs/sdd-v0.2/README.md) đã soạn; SW-TASK-01…16 đều Planned. Bằng chứng v0.1 dưới đây chưa chứng minh web/ngân sách/Deep Learning/public. Lượt viết SDD chưa code/train mới.
+
+
 Cập nhật: 05/10/2026. Đọc cùng [bằng chứng kiểm tra](VERIFICATION.md) và [kế hoạch](docs/03_implementation_plan.md).
 
 | Mốc | Trạng thái | Bằng chứng hiện có / việc tiếp theo |

@@ -1,5 +1,8 @@
 # Prompt theo vai trò
 
+> **Vai trò phạm vi mới:** [SDD v0.2](../docs/sdd-v0.2/README.md), [START_HERE](START_HERE.md). Prompt stack local/CPU bên dưới chỉ giữ lịch sử.
+
+
 Chỉ dùng một mục riêng khi cần tập trung một phần. Mỗi vai trò đọc bộ SDD và chỉ sửa file được điều phối giao. Prompt chính nằm trong `START_HERE.md`; vai trò không được tự mở rộng phạm vi.
 
 ## Product Analyst

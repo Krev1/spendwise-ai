@@ -1,5 +1,8 @@
 # Chi phí, môi trường và nguồn tham khảo
 
+> **Lịch sử v0.1:** [SDD v0.2](sdd-v0.2/README.md) là phạm vi hiện hành cho web công khai/ngân sách/Deep Learning. Giữ tài liệu này truy vết code cũ; ưu tiên v0.2 khi xung đột.
+
+
 ## Giữ phí phần mềm/API của MVP ở 0 đồng
 
 | Thành phần | Lựa chọn đề xuất | Chi phí và điều kiện |

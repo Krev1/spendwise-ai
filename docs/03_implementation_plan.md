@@ -1,5 +1,8 @@
 # SpendWise AI — Kế hoạch triển khai
 
+> **Lịch sử v0.1:** [SDD v0.2](sdd-v0.2/README.md) là phạm vi hiện hành cho web công khai/ngân sách/Deep Learning. Giữ tài liệu này truy vết code cũ; ưu tiên v0.2 khi xung đột.
+
+
 Ngày soạn: 05/10/2026. Phiên bản: 0.1. Trạng thái: kế hoạch cho việc viết code sau bộ SDD; chưa tuyên bố ứng dụng hay mô hình đã hoàn thành.
 
 Kế hoạch nối `01_requirements.md` → `02_design.md` → task nhỏ → code/dữ liệu → kiểm tra → bằng chứng → giải thích bằng tiếng Việt. Cách phối hợp các vai trò nằm trong `04_team_workflow.md`; nội dung AI chi tiết trong `05_data_and_ml.md`; bài học được lưu riêng ở Learn, xem [tài liệu học trong Learn](https://github.com/Krev1/Learn/blob/main/spendwise-ai/learning_path.md).

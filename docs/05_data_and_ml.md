@@ -1,5 +1,8 @@
 # SpendWise AI — Dữ liệu và nghiên cứu mô hình
 
+> **Lịch sử v0.1:** [SDD v0.2](sdd-v0.2/README.md) là phạm vi hiện hành cho web công khai/ngân sách/Deep Learning. Giữ tài liệu này truy vết code cũ; ưu tiên v0.2 khi xung đột.
+
+
 Ngày lập: 05/10/2026. Trạng thái: đã có seed/validator, baseline prototype TASK-07 và grouped split prototype TASK-08 với 256 train/50 validation/50 test trên 356 câu hư cấu. B0 chỉ fit fixture riêng trong bộ nhớ. **Chưa thu dữ liệu thật, chưa có TF-IDF + NB/LR hoặc đánh giá nghiên cứu.** Nhãn/quan hệ chưa người duyệt; holdout thiếu lớp. Số lượng mục tiêu bên dưới không phải số đã thu; seed và [bundle prototype](../data/splits/README.md) ghi số thực.
 
 Tài liệu này dành cho người học ngành Trí tuệ nhân tạo muốn vừa xây sản phẩm, vừa hiểu mỗi quyết định để bảo vệ đồ án. Đọc cùng đặc tả yêu cầu và tài liệu thiết kế trong thư mục `docs/`.

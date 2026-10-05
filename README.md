@@ -1,5 +1,8 @@
 # SpendWise AI
 
+> **Phạm vi hiện hành ngày06/10/2026:** [SDD v0.2](docs/sdd-v0.2/README.md) cho web nhiều tài khoản/ngân sách/dự báo/Deep Learning. Nội dung v0.1 bên dưới là lịch sử; không dùng giả định local/CPU thay yêu cầu mới. [Prompt hiện hành](prompts/START_HERE.md).
+
+
 [Repository dự án](https://github.com/Krev1/spendwise-ai) · [Bài học trong Learn](https://github.com/Krev1/Learn/tree/main/spendwise-ai)
 
 Ứng dụng quản lý thu chi cá nhân cho sinh viên và người mới đi làm, tích hợp mô hình tự huấn luyện để phân loại mô tả khoản chi tiếng Việt. MVP nhập tay và CSV, chạy local trên CPU; ngân sách phí phần mềm/API thêm: 0 đồng.

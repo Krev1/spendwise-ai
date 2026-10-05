@@ -1,5 +1,8 @@
 # Bàn giao kỹ thuật cho Mentor
 
+> **Bàn giao mới:** [SDD v0.2](sdd-v0.2/README.md), [kế hoạch](sdd-v0.2/03_implementation_plan.md). Lượt này chỉ docs/prompt, chưa code/train/deploy; giữ SHA/evidence v0.1 bên dưới. SW-TASK-01 đọc lại work/HEAD thật.
+
+
 Ngày cập nhật: 05/10/2026. Quyết định D13/A12/A13. Bản này ghi đầu vào học; không xác nhận người học hiểu. Code TASK-08 ở [commit b5afb11c7bfc9133d6c94d986a5727363e43e1fc](https://github.com/Krev1/spendwise-ai/tree/b5afb11c7bfc9133d6c94d986a5727363e43e1fc); TASK-07 vẫn ở [b331e5f](https://github.com/Krev1/spendwise-ai/tree/b331e5f078a07a73e34d44f22da69d89774eae96). Mentor khóa SHA theo mốc đang học; bằng chứng từng mốc giữ riêng.
 
 ## Hiện trạng kỹ thuật

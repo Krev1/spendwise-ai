@@ -1,0 +1,41 @@
+{
+  "environment": {
+    "numpy": "2.5.3",
+    "python": "3.14.7",
+    "sklearn": "1.9.1"
+  },
+  "files_sha256": {
+    "audit.json": "034c4cb20353fe82deb3f5327727d5dcca202697a452fc04f23c8c4730ebc845",
+    "split_manifest.csv": "a607115f963094f998b9a73360c586712a7980e3e1880af4198174916f720844"
+  },
+  "implementation_sha256": "4971d4aab91c16f903ee3dad33f3562c67108cd4218e54a45d3c4a2a563ca111",
+  "input_sha256": {
+    "dataset": "537e48b08ba3bc6022bc09cfa8e0cf8944ea2b652a7a66906ad297d745c362f6",
+    "label_guideline_section": "e0f4bba9f62a69545f85732aa09899f48ff06ae2d0521fd9fa4846a0c374f180",
+    "provenance": "28dfc91888f8b59269c8c261cd8fd0b576aaea6d2e4154740bdd76585cc8b8e8",
+    "relations": "23f167e942944ff0db20fb6dafa236d68e082bdd56c20b7bfaa24d78c3b36205"
+  },
+  "label_guideline_version": "0.1; docs/05_data_and_ml.md section 2",
+  "near_audit": {
+    "char3_jaccard_min": 0.4,
+    "containment_min_characters": 8,
+    "containment_min_tokens": 2,
+    "max_folded_texts": 500,
+    "sequence_min": 0.7,
+    "token_jaccard_min": 0.5
+  },
+  "normalization": "NFC/lowercase/collapse_whitespace; accent_folding_for_audit_only",
+  "normalizer_implementation_sha256": "8a1552bee0d3216fe7644df969586d671405ab0e09b937bb028fe93327b635f2",
+  "protocol_version": "synthetic-prototype-split-v1",
+  "purpose": "synthetic_prototype_only",
+  "seed": 42,
+  "splitter": {
+    "class": "StratifiedGroupKFold",
+    "n_splits": 7,
+    "remaining_folds": "train",
+    "shuffle": true,
+    "test_fold": 0,
+    "validation_fold": 1
+  },
+  "test_scope": "fictional_prototype; not_independent_real_holdout"
+}

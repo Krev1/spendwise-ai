@@ -7,7 +7,7 @@ Cập nhật: 05/10/2026. Đọc cùng [bằng chứng kiểm tra](VERIFICATION.
 | P0 — Bộ SDD phiên bản 0.1 | Verified | Có bộ SDD, sổ quyết định và prompt; tài liệu học/bảo vệ được chuyển sang Learn; đã đối chiếu hợp đồng và liên kết. Đây là draft kỹ thuật, chưa phải phê duyệt đề tài của trường. |
 | P1 — Môi trường kỹ thuật | Verified | TASK-02 đã kiểm tra `.venv`, import, pip check, dependency lock và ví dụ. 14 test PASS ở mốc setup. TASK-03/mức hiểu theo dõi riêng ở Learn, không chặn triển khai. |
 | P2 — Dữ liệu và baseline | In progress | TASK-07 prototype B0/B1 DONE; [bằng chứng](docs/evidence/TASK-07-2026-10-05/pytest.txt): 139 tests + 11 subtests, seed 356 hư cấu/0 thật tái tạo đúng byte. TASK-04/05–06 giữ REVIEW; nhãn người duyệt và dữ liệu thật còn thiếu. Xem [bảng task](docs/04_team_workflow.md#7-bảng-trạng-thái-task-kỹ-thuật) và [bàn giao](docs/PROJECT_HANDOFF.md). |
-| P3 — Huấn luyện và validation | Planned | Có seed hư cấu cho P2; chưa có split/artifact hoặc số đo mô hình. |
+| P3 — Huấn luyện và validation | In progress | [TASK-08](docs/tasks/TASK-08.md) prototype Verified: train256/validation50/test50, 30 nhóm hiệu lực; 193 tests + 11 subtests. Nghiên cứu giữ REVIEW vì nhãn/quan hệ chưa người duyệt và holdout thiếu lớp. Chưa có Pipeline NB/LR hoặc điểm ML. |
 | P4 — SQLite và nghiệp vụ | Planned | Chưa có database hoặc services của ứng dụng. |
 | P5 — Giao diện và tích hợp AI | Planned | Chưa có ứng dụng Streamlit. |
 | P6 — Pilot, test cuối và bảo vệ | Planned | Chưa có kết quả test/pilot hoặc báo cáo đồ án hoàn chỉnh. |
@@ -16,7 +16,7 @@ Các task chi tiết dùng trạng thái trong tài liệu nhóm. `Verified` c�
 
 ## Việc tiếp theo
 
-1. TASK-07 prototype đã DONE. Tiếp theo TASK-08: audit nhóm hiệu lực/duplicate/template-family và manifest split prototype trên seed, ghi giới hạn nhãn AI. Chưa đủ consent/nhãn người duyệt/test thật cho đánh giá chính thức; TASK-13 SQLite có thể tiếp tục độc lập sau TASK-04.
+1. TASK-08 prototype đã Verified, nghiên cứu giữ REVIEW. Tiếp theo TASK-09: TF-IDF feature/Pipeline prototype, fit riêng ID train từ bundle đã verify. Chưa đủ consent/nhãn người duyệt/test thật cho đánh giá chính thức; TASK-13 SQLite có thể tiếp tục độc lập sau TASK-04.
 2. Cập nhật [bàn giao kỹ thuật](docs/PROJECT_HANDOFF.md) sau mỗi mốc và báo commit cho người dùng/Mentor.
 3. Consent, dữ liệu thật, nhãn người duyệt và rubric cần được cung cấp thực tế. Tiếp tục task độc lập đủ đầu vào; không bịa phần thiếu.
 4. Luồng học riêng dùng [prompt Mentor](https://github.com/Krev1/Learn/blob/main/spendwise-ai/MENTOR_PROMPT.md); mức hiểu/bài tự làm chỉ ghi trong Learn.
@@ -68,3 +68,11 @@ Cập nhật AGENTS, prompt, SDD/REQ-13, phụ thuộc TASK-04 và bàn giao k�
 - B1 có version/hash, Unicode boundary, ưu tiên hit dài chứa hit ngắn, conflict/no_match cần review. B0 chỉ fit 10 ví dụ hư cấu riêng, không fit seed/probes. CLI chỉ đọc/in JSON, không metric/split/model binary.
 - [Evidence](docs/evidence/TASK-07-2026-10-05/qa_review.md), [task card](docs/tasks/TASK-07.md), [bàn giao](docs/PROJECT_HANDOFF.md), [code commit b331e5f](https://github.com/Krev1/spendwise-ai/commit/b331e5f078a07a73e34d44f22da69d89774eae96). P2 chưa Verified vì dữ liệu người duyệt/thu thật còn thiếu; P3–P6 vẫn Planned.
 - Máy được đọc local: Windows 11 Pro 64-bit, Ryzen 5 7500F 6 core/12 thread, RAM khoảng 31,7 GiB; dung lượng trống lúc kiểm tra ở [hardware.json](docs/evidence/TASK-07-2026-10-05/hardware.json). `.venv` Python 3.14.7, lock import/pip check PASS. Chưa đo tốc độ train/inference; còn thiếu rubric, thời gian mỗi tuần và chính sách máy dùng chung.
+
+## TASK-08 — Grouped split prototype — 05/10/2026
+
+- A13/design/task contract ghi trước implementation; chỉ sửa repo dự án, không viết Learn hoặc đổi nhãn seed. Root sở hữu file, Data Engineer/QA chỉ đọc/probe.
+- Union bắc cầu namespace family/lineage/folded/ba link AI bảo thủ; SGKF7/seed42 một lần. Bundle manifest/audit/lock đã tạo và verify lại; code [b5afb11c7bfc9133d6c94d986a5727363e43e1fc](https://github.com/Krev1/spendwise-ai/commit/b5afb11c7bfc9133d6c94d986a5727363e43e1fc).
+- **193 tests + 11 subtests PASS**, 54 case mới; source_row và Windows junction finding đã sửa/probe lại. [Evidence](docs/evidence/TASK-08-2026-10-05/qa_review.md) ghi kết quả thật.
+- Seed356/0 thật/0human-reviewed giữ nguyên hash. Split256/50/50,30 nhóm hiệu lực; train đủ8 lớp, validation thiếu an_uong/di_chuyen/suc_khoe, test thiếu an_uong/di_chuyen/khac. Có12 candidate gần trùng còn pending human review, trong đó4 cặp chưa xác nhận giao partition; không gọi overlap pass là chứng nhận ngữ nghĩa.
+- Prototype Verified; TASK-08 REVIEW nghiên cứu, P2/P3 In progress. Không fit model/vectorizer hoặc đo metric, không đánh dấu mức hiểu. Tiếp theo TASK-09 feature prototype với train đã verify hoặc TASK-13 SQLite độc lập.

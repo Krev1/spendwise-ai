@@ -1,0 +1,252 @@
+{
+  "status": "created",
+  "effective_groups": 30,
+  "eight_class_partition_complete": false,
+  "exact_normalized_duplicates": 0,
+  "folded_unique_descriptions": 179,
+  "human_reviewed_records": 0,
+  "near_duplicate_candidates": [
+    {
+      "char3_jaccard": 0.388889,
+      "co_located_in_prototype": false,
+      "cross_source": false,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "seed_suc_khoe_xet_nghiem_02",
+      "record_b": "seed_suc_khoe_thuoc_05",
+      "sequence_ratio": 0.75,
+      "token_jaccard": 0.3
+    },
+    {
+      "char3_jaccard": 0.375,
+      "co_located_in_prototype": false,
+      "cross_source": false,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "seed_nha_o_hoa_don_dien_thoai_01",
+      "record_b": "seed_nha_o_hoa_don_dien_nuoc_05",
+      "sequence_ratio": 0.705882,
+      "token_jaccard": 0.375
+    },
+    {
+      "char3_jaccard": 0.441176,
+      "co_located_in_prototype": true,
+      "cross_source": true,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "pub_pfa_034",
+      "record_b": "seed_suc_khoe_kham_03",
+      "sequence_ratio": 0.633333,
+      "token_jaccard": 0.428571
+    },
+    {
+      "char3_jaccard": 0.296296,
+      "co_located_in_prototype": false,
+      "cross_source": false,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "seed_mua_sam_quan_ao_04",
+      "record_b": "seed_mua_sam_do_dung_05",
+      "sequence_ratio": 0.731707,
+      "token_jaccard": 0.428571
+    },
+    {
+      "char3_jaccard": 0.1875,
+      "co_located_in_prototype": false,
+      "cross_source": false,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "seed_mua_sam_quan_ao_01",
+      "record_b": "seed_mua_sam_my_pham_03",
+      "sequence_ratio": 0.782609,
+      "token_jaccard": 0.166667
+    },
+    {
+      "char3_jaccard": 0.242424,
+      "co_located_in_prototype": false,
+      "cross_source": false,
+      "human_reviewed": false,
+      "phrase_containment": true,
+      "record_a": "seed_mua_sam_thiet_bi_01",
+      "record_b": "seed_hoc_tap_hoat_dong_hoc_05",
+      "sequence_ratio": 0.408163,
+      "token_jaccard": 0.222222
+    },
+    {
+      "char3_jaccard": 0.4,
+      "co_located_in_prototype": false,
+      "cross_source": false,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "seed_mua_sam_thiet_bi_05",
+      "record_b": "seed_mua_sam_quan_ao_03",
+      "sequence_ratio": 0.583333,
+      "token_jaccard": 0.5
+    },
+    {
+      "char3_jaccard": 0.52381,
+      "co_located_in_prototype": true,
+      "cross_source": true,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "seed_giai_tri_tro_choi_01",
+      "record_b": "pub_pfa_010",
+      "sequence_ratio": 0.756757,
+      "token_jaccard": 0.6
+    },
+    {
+      "char3_jaccard": 0.48,
+      "co_located_in_prototype": true,
+      "cross_source": true,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "seed_giai_tri_xem_phim_04",
+      "record_b": "pub_pfa_045",
+      "sequence_ratio": 0.682927,
+      "token_jaccard": 0.5
+    },
+    {
+      "char3_jaccard": 0.28125,
+      "co_located_in_prototype": false,
+      "cross_source": false,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "seed_suc_khoe_xet_nghiem_03",
+      "record_b": "seed_suc_khoe_kham_02",
+      "sequence_ratio": 0.73913,
+      "token_jaccard": 0.222222
+    },
+    {
+      "char3_jaccard": 0.458333,
+      "co_located_in_prototype": false,
+      "cross_source": false,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "seed_nha_o_hoa_don_dien_nuoc_01",
+      "record_b": "seed_di_chuyen_xe_cong_nghe_03",
+      "sequence_ratio": 0.829268,
+      "token_jaccard": 0.5
+    },
+    {
+      "char3_jaccard": 0.40625,
+      "co_located_in_prototype": false,
+      "cross_source": false,
+      "human_reviewed": false,
+      "phrase_containment": false,
+      "record_a": "seed_di_chuyen_xe_cong_nghe_03",
+      "record_b": "seed_nha_o_hoa_don_thue_o_01",
+      "sequence_ratio": 0.666667,
+      "token_jaccard": 0.375
+    }
+  ],
+  "original_groups": 33,
+  "original_phrases": 179,
+  "partition_overlap_check": "passed_for_declared_keys_and_links",
+  "pattern_families": 51,
+  "per_split": {
+    "test": {
+      "effective_groups": 5,
+      "folded_unique_descriptions": 25,
+      "fraction": 0.1404494382022472,
+      "fraction_deviation": -0.009550561797752793,
+      "missing_labels": [
+        "an_uong",
+        "di_chuyen",
+        "khac"
+      ],
+      "records": 50,
+      "records_by_label": {
+        "an_uong": 0,
+        "di_chuyen": 0,
+        "giai_tri": 10,
+        "hoc_tap": 10,
+        "khac": 0,
+        "mua_sam": 10,
+        "nha_o_hoa_don": 10,
+        "suc_khoe": 10
+      },
+      "records_by_source": {
+        "author_synthetic": 50
+      },
+      "target_fraction": 0.15
+    },
+    "train": {
+      "effective_groups": 20,
+      "folded_unique_descriptions": 129,
+      "fraction": 0.7191011235955056,
+      "fraction_deviation": 0.019101123595505642,
+      "missing_labels": [],
+      "records": 256,
+      "records_by_label": {
+        "an_uong": 48,
+        "di_chuyen": 50,
+        "giai_tri": 26,
+        "hoc_tap": 20,
+        "khac": 30,
+        "mua_sam": 23,
+        "nha_o_hoa_don": 25,
+        "suc_khoe": 34
+      },
+      "records_by_source": {
+        "author_synthetic": 219,
+        "public_synthetic": 37
+      },
+      "target_fraction": 0.7
+    },
+    "validation": {
+      "effective_groups": 5,
+      "folded_unique_descriptions": 25,
+      "fraction": 0.1404494382022472,
+      "fraction_deviation": -0.009550561797752793,
+      "missing_labels": [
+        "an_uong",
+        "di_chuyen",
+        "suc_khoe"
+      ],
+      "records": 50,
+      "records_by_label": {
+        "an_uong": 0,
+        "di_chuyen": 0,
+        "giai_tri": 10,
+        "hoc_tap": 10,
+        "khac": 10,
+        "mua_sam": 10,
+        "nha_o_hoa_don": 10,
+        "suc_khoe": 0
+      },
+      "records_by_source": {
+        "author_synthetic": 50
+      },
+      "target_fraction": 0.15
+    }
+  },
+  "prototype_links": [
+    {
+      "human_reviewed": "false",
+      "rationale": "Cùng Steam/dịch vụ game; giữ chung trong prototype hư cấu; chưa được người rà soát xác nhận.",
+      "record_a": "seed_giai_tri_tro_choi_01",
+      "record_b": "pub_pfa_010",
+      "relation_status": "ai_conservative_prototype"
+    },
+    {
+      "human_reviewed": "false",
+      "rationale": "Cùng cụm dịch vụ rạp phim; giữ chung trong prototype hư cấu; chưa được người rà soát xác nhận.",
+      "record_a": "seed_giai_tri_xem_phim_04",
+      "record_b": "pub_pfa_045",
+      "relation_status": "ai_conservative_prototype"
+    },
+    {
+      "human_reviewed": "false",
+      "rationale": "Cùng cụm dịch vụ phòng khám; giữ chung trong prototype hư cấu; chưa được người rà soát xác nhận.",
+      "record_a": "seed_suc_khoe_kham_03",
+      "record_b": "pub_pfa_034",
+      "relation_status": "ai_conservative_prototype"
+    }
+  ],
+  "purpose": "synthetic_prototype_only",
+  "real_evaluation_ready": false,
+  "real_records": 0,
+  "records": 356,
+  "research_metrics": "not_run",
+  "semantic_relationship_review": "pending_human_review"
+}

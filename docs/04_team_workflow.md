@@ -81,7 +81,7 @@ Cập nhật 05/10/2026. Trạng thái mốc tổng hợp ở [progress](../prog
 | 05 | REVIEW | [Task card](tasks/TASK-05-06.md), guideline/provenance; nhãn người duyệt chưa có |
 | 06 | REVIEW | [Task card](tasks/TASK-05-06.md), seed/validator; 0 mẫu thật |
 | 07 | DONE | [Task card](tasks/TASK-07.md), prototype B0/B1; 139 tests + 11 subtests, QA review; chưa đánh giá ML |
-| 08 | TODO | Grouped split/audit hiệu lực, chưa có manifest |
+| 08 | REVIEW | [Task card](tasks/TASK-08.md), prototype Verified: 256/50/50; 193 tests + 11 subtests; nhãn/quan hệ người duyệt và holdout đủ lớp còn thiếu |
 | 09 | TODO | TF-IDF Pipeline, cần TASK-08 |
 | 10 | TODO | So sánh B0/B1/NB/LR, cần 07–09 |
 | 11 | TODO | Chọn model/ngưỡng bằng validation, cần 10 |

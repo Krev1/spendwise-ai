@@ -7,6 +7,7 @@ TASK-05–06 / REQ-08,09,13. Snapshot công khai chỉ chứa dữ liệu hư c�
 | `reference/` | Snapshot CSV hư cấu đã thu, MIT notice, URL/commit/hash |
 | `recipes/` | 160 câu tiếng Việt tự tạo và 19 ánh xạ chuyển ngữ có version |
 | `seed/v0.1/` | 356 mô tả, provenance, audit và quyết định từng dòng nguồn |
+| `splits/` | Bundle prototype hư cấu TASK-08; 256/50/50, còn thiếu human review/support |
 | `private/` | Dữ liệu thật/consent/annotation/split riêng; bị Git ignore, không công khai |
 
 Code xây/kiểm tra dữ liệu nằm trong `scripts/` và `src/spendwise/data/`; tài liệu dạy học, template trống và phương pháp nằm ở [Learn](https://github.com/Krev1/Learn/blob/main/spendwise-ai/guides/01_dataset_collection.md). Dataset ML sáu cột khác CSV giao dịch sáu cột; không đưa file này vào transaction preview.

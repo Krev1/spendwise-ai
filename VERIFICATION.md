@@ -116,3 +116,24 @@ Code: [b331e5f](https://github.com/Krev1/spendwise-ai/commit/b331e5f078a07a73e34
 - [Môi trường](docs/evidence/TASK-07-2026-10-05/environment.json), [pip check](docs/evidence/TASK-07-2026-10-05/pip_check.txt), [hardware](docs/evidence/TASK-07-2026-10-05/hardware.json): `.venv` riêng, Python 3.14.7/sklearn 1.9.1, dependency không đổi/không xung đột; CPU/RAM/OS/dung lượng trống đọc local. [API DummyClassifier chính thức](https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html) và chữ ký API cài local đã đối chiếu.
 
 TASK-07 DONE chỉ cho prototype. P2 còn In progress: chưa có người duyệt nhãn hoặc dữ liệu/test thật. Chưa có split, TF-IDF Pipeline, NB/LR, model card nghiên cứu, metric hoặc benchmark inference; chưa kiểm tra SQLite/UI/offline end-to-end. Điểm `.80/.60/.85` vẫn là mục tiêu chưa đo. [Bàn giao kỹ thuật](docs/PROJECT_HANDOFF.md) ghi bước tiếp theo TASK-08 và phần còn thiếu.
+
+## TASK-08 — Grouped split prototype — 05/10/2026
+
+Code [b5afb11c7bfc9133d6c94d986a5727363e43e1fc](https://github.com/Krev1/spendwise-ai/commit/b5afb11c7bfc9133d6c94d986a5727363e43e1fc); REQ-08,09,13; A13/D13. Spec/task contract cập nhật trước code. Không sửa Learn hoặc nhãn seed.
+
+```powershell
+.\.venv\Scripts\python.exe -B -m pytest -q tests/test_splitting.py tests/test_split_cli.py
+.\.venv\Scripts\python.exe -B -m pytest -q
+.\.venv\Scripts\python.exe -B scripts/split_dataset.py --write
+.\.venv\Scripts\python.exe -B scripts/split_dataset.py
+.\.venv\Scripts\python.exe -B scripts/check_environment.py
+.\.venv\Scripts\python.exe -m pip check
+```
+
+54 case mới pass, suite đầy đủ **193 passed, 11 subtests passed**: [log](docs/evidence/TASK-08-2026-10-05/pytest.txt). Bao gồm namespace/union bắc cầu/reorder, metadata/hash/lineage/source/giới hạn, dữ liệu thật bị từ chối, manifest không giao khóa khai báo, bundle tamper/stale/file thiếu-thừa/lock giả, write failure/collision không publish-overwrite, junction Windows thật và CLI read-only từ cwd khác. [QA](docs/evidence/TASK-08-2026-10-05/qa_review.md) probe và đóng hai finding source_row/junction; không còn finding trong phạm vi review AI.
+
+[Creation](docs/evidence/TASK-08-2026-10-05/split_creation.json) trả created, [verify](docs/evidence/TASK-08-2026-10-05/split_verification.json) trả verified_existing. Seed356 hư cấu/0 thật/0human-reviewed giữ hash cũ; 30 nhóm hiệu lực,51family,179lineage/unique folded. Train256/validation50/test50; train đủ8 lớp, validation thiếu an_uong/di_chuyen/suc_khoe, test thiếu an_uong/di_chuyen/khac. Tỷ lệ71,91/14,04/14,04%, SGKF7 seed42 một lần. Có12 candidate gần trùng cần người rà;3link giao nguồn co-locate bảo thủ AI,4candidate chưa xác nhận giao partition. Overlap pass chỉ cho khóa/quan hệ khai báo.
+
+[Bundle](data/splits/README.md) đúng manifest/audit/lock, hash snapshot/provenance/relations/guideline section/config/môi trường/implementation/đầu ra; raw byte expected không tin editable lock. [Environment](docs/evidence/TASK-08-2026-10-05/environment.json) và [pip](docs/evidence/TASK-08-2026-10-05/pip_check.txt) PASS, không thêm dependency. Đối chiếu [API StratifiedGroupKFold chính thức](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedGroupKFold.html) và phiên bản cài local; cân bằng lớp chỉ gần đúng khi giữ nhóm.
+
+TASK-08 prototype Verified, nghiên cứu REVIEW. Human labels/semantic relations/consent/test thật đủ support còn thiếu. Không fit model/vectorizer hoặc đo metric ML, chưa benchmark inference, không xác nhận mức hiểu người học/phê duyệt trường. P2/P3 In progress; TASK-09 feature prototype có thể tiếp tục với ID train đã verify, TASK-13 SQLite độc lập đủ hợp đồng.

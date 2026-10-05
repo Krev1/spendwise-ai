@@ -6,7 +6,7 @@
 
 ## Trạng thái
 
-P1 kỹ thuật đã kiểm chứng; P2 có domain giao dịch, CSV file/bytes, tổng hợp tháng, CLI preview và **TASK-07 baseline prototype đã DONE**. Bộ kiểm tra hiện tại đạt **139 tests, 11 subtests**. TASK-04/05–06 giữ REVIEW; seed có 356 mô tả hư cấu, nhãn AI dự thảo, chưa có người duyệt. B0 chỉ fit 10 ví dụ hư cấu riêng; B1 là rule có version/hash. Chưa có split nghiên cứu, TF-IDF + NB/LR, dữ liệu thật, điểm ML hoặc app SQLite/Streamlit hoàn chỉnh. Các chỉ số trong spec vẫn là mục tiêu.
+P1 kỹ thuật đã kiểm chứng; P2 có domain giao dịch/CSV/baseline; P3 có **TASK-08 grouped split prototype đã Verified** với 256 train/50 validation/50 test hư cấu. Bộ kiểm tra hiện tại đạt **193 tests, 11 subtests**. TASK-04/05–06/08 giữ REVIEW phần còn thiếu: nhãn/quan hệ người duyệt, dữ liệu thật và holdout đủ lớp. B0 chỉ fit 10 ví dụ hư cấu riêng; B1 là rule có version/hash. Chưa có TF-IDF + NB/LR, điểm ML hoặc app SQLite/Streamlit hoàn chỉnh. Các chỉ số trong spec vẫn là mục tiêu.
 
 Xem [tiến độ kỹ thuật](progress.md), [bảng task](docs/04_team_workflow.md#7-bảng-trạng-thái-task-kỹ-thuật) và [bằng chứng kiểm tra](VERIFICATION.md). Code ở `src/spendwise/`, tests ở `tests/` và `examples/`; baseline ở `src/spendwise/ml/`. SQLite, UI, pipeline huấn luyện và `artifacts/` vẫn là đầu ra tương lai.
 
@@ -71,6 +71,14 @@ Tiếp tục task theo [kế hoạch](docs/03_implementation_plan.md), đối ch
 ```
 
 [Phương pháp thu thập/xây dữ liệu](https://github.com/Krev1/Learn/blob/main/spendwise-ai/guides/01_dataset_collection.md), [guideline nhãn](https://github.com/Krev1/Learn/blob/main/spendwise-ai/guides/02_labeling_manual.md) và bài thực hành nằm trong Learn. Không commit mô tả thật hoặc sổ đồng ý; lưu riêng ở `data/private/`.
+
+Kiểm tra [bundle grouped split prototype](data/splits/README.md):
+
+```powershell
+.\.venv\Scripts\python.exe -B scripts/split_dataset.py
+```
+
+CLI chỉ nhận seed hư cấu đã version. Mặc định verify bundle hiện có hoặc preview nếu chưa có; `--write` tạo mới qua staging+rename, không overwrite. Kiểm tra lại raw input/config/hash và từng byte của manifest/audit/lock. Nhãn/quan hệ chưa người duyệt, validation/test thiếu lớp; chưa dùng để kết luận chất lượng tám lớp.
 
 ## Dự án và học hoạt động độc lập
 

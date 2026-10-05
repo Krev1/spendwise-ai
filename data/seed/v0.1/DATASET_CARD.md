@@ -46,7 +46,7 @@ Hai lệnh đầu mặc định chỉ đối chiếu, không tải mạng/ghi fi
 
 ## Giới hạn và sử dụng tiếp
 
-Chưa tạo split, chưa train, chưa có metric. Câu do AI soạn có thể đơn giản, lặp từ đặc trưng và không đại diện ngôn ngữ sinh viên/người mới đi làm. Biến thể bỏ dấu là nhân tạo; không đại diện lỗi gõ tự nhiên. Các nhóm hiện chỉ ngăn quan hệ đã biết; chưa có audit gần trùng ngữ nghĩa của người.
+TASK-08 đã tạo [grouped split prototype](../../splits/README.md) riêng: 256 train/50 validation/50 test hư cấu, 30 nhóm hiệu lực; dataset/provenance v0.1 giữ nguyên byte. Validation/test thiếu lớp; nhãn và quan hệ vẫn chưa có người duyệt. Chưa train hoặc có metric. Câu do AI soạn có thể đơn giản, lặp từ đặc trưng và không đại diện ngôn ngữ sinh viên/người mới đi làm. Biến thể bỏ dấu là nhân tạo; không đại diện lỗi gõ tự nhiên. Các nhóm chỉ ngăn quan hệ đã biết; chưa có audit gần trùng ngữ nghĩa của người.
 
 Validator đã kiểm tra ID/nhãn/nguồn/cờ, trùng chuẩn hóa, biến thể khác dấu giao nhóm và cấu trúc. Không có cảnh báo email/URL/chuỗi số dài ở file chính; bộ dò này không nhận diện được mọi PII hay chứng nhận đã ẩn danh. Nhãn cần người học rà theo [guideline](../../../docs/05_data_and_ml.md). Thu mô tả thật tự nguyện, giữ riêng người và khóa test thật trước khi kết luận chất lượng. Chi tiết phương pháp, template và bài tập ở [Learn](https://github.com/Krev1/Learn/blob/main/spendwise-ai/guides/01_dataset_collection.md).
 

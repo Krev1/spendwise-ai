@@ -1,0 +1,14 @@
+{
+  "code_commit": "b5afb11c7bfc9133d6c94d986a5727363e43e1fc",
+  "markdown_files_checked": 24,
+  "internal_file_links_checked": 124,
+  "utf8_fences_file_links": "passed",
+  "changed_python_ast": "passed",
+  "bundle_after_document_updates": "verified_existing",
+  "staged_implementation_and_normalizer_hashes": "match_lock",
+  "dataset_sha256": "537e48b08ba3bc6022bc09cfa8e0cf8944ea2b652a7a66906ad297d745c362f6",
+  "largest_effective_group_records": 67,
+  "unconfirmed_near_candidates_cross_partition": 4,
+  "research_evaluation": "not_run",
+  "human_reviewed_records": 0
+}

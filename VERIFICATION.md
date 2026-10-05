@@ -54,3 +54,19 @@ Các cấu trúc code, scripts và phần lớn file lesson được ghi trong t
 - Chạy lại `.\.venv\Scripts\python.exe -B -m pytest -q`: **14 passed, 11 subtests passed**.
 - Chạy validator của dự án trực tiếp với `..\Learn\spendwise-ai\exercises\transactions_practice.csv`: tổng tháng 10 khớp file mẫu — thu 5.000.000, chi 2.593.000, chênh lệch 2.407.000 VND. Đây là kiểm tra khả năng dùng bài tập giữa hai repo, không phải bài tự làm của người học.
 - Rà soát snapshot đã xuất bản: không thấy chuỗi khớp mẫu credential hoặc file môi trường/database/dữ liệu riêng; commit ban đầu chỉ chứa README. Dữ liệu CSV hiện có là hư cấu.
+
+
+## TASK-04 — Domain, CSV và CLI — 05/10/2026
+
+Từ repo dự án, dùng Python trong `.venv`:
+
+```powershell
+.\.venv\Scripts\python.exe -B -m pytest -q
+.\.venv\Scripts\python.exe -B scripts/preview_transactions.py examples/transactions_sample.csv --month 2026-10
+```
+
+Kết quả thực: **50 passed, 11 subtests passed**. Bao gồm 14 test hợp đồng cũ qua wrapper, cộng kiểm tra giới hạn tiền/ID/mô tả, NFC trước đo độ dài, input dict thiếu/thừa/sai kiểu, header, encoding, quote lỗi, CSV nhiều dòng, chính xác 5.000 bản ghi và 2.000.000 byte, file quá lớn và CLI từ cwd ngoài dự án.
+
+CSV mẫu trả 9 giao dịch, thu 5.000.000, chi 2.593.000, chênh lệch 2.407.000 VND, một khoản chi thiếu nhãn. Tests xác minh input sai trả exit 1, thông báo stderr, không in báo cáo thành công; preview không sửa file hoặc tạo database.
+
+Không có dependency mới. Chưa có kiểm chứng SQLite, UI, baseline hoặc model. Test phần mềm không chứng minh chất lượng AI hoặc mức hiểu của người học.

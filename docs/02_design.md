@@ -317,3 +317,16 @@ Mã trong cột cuối viết gọn; ví dụ `15` là `TASK-15`. Đây là liê
 
 
 Bài học và bài tập được quản lý riêng trong [Krev1/Learn](https://github.com/Krev1/Learn/tree/main/spendwise-ai), ngoài cây thư mục repo dự án.
+
+
+## 11. Implementation đầu tiên — TASK-04
+
+Đã có `domain/transactions.py`, `services/csv_reader.py`, `services/reports.py`, CLI và tests. Chưa triển khai các phần còn lại của cây thiết kế. [Task card](tasks/TASK-04.md) nối REQ với phạm vi và bằng chứng.
+
+`parse_transaction` nhận đúng sáu trường văn bản, trả đối tượng preview đã kiểm tra. `parse_row` bổ sung vị trí lỗi. `read_transactions_bytes` dùng cho input upload sau này; `read_transactions` đọc tối đa 2.000.001 byte để phát hiện vượt giới hạn rồi gọi parser bytes. `summarize` chỉ tính trên danh sách đã kiểm tra.
+
+Lỗi nghiệp vụ CSV nhiều dòng dùng số dòng bắt đầu bản ghi; lỗi cú pháp dùng dòng parser phát hiện lỗi. Khi có lỗi, API raise ValidationError và không trả batch thành công một phần. CLI in lỗi ra stderr, exit 1; thành công in JSON, exit 0. Parser không ghi database hoặc sửa nguồn.
+
+`Transaction` ở đây là dữ liệu preview, chưa phải schema SQLite ở phần 7. Category có thể thiếu và chưa biểu diễn xác nhận. Không lưu đối tượng preview trực tiếp như giao dịch hoàn tất khi triển khai P4–P5.
+
+Script chạy thêm `src/` vào import path để dùng checkout mà chưa cần packaging. Logic domain/services không tự sửa import path, không cần dependency mới. Wrapper `examples/csv_contract.py` dùng cùng implementation để lệnh bài 01 tiếp tục hoạt động.

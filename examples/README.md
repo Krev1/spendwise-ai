@@ -1,8 +1,8 @@
 # CSV validator và tổng hợp thu chi
 
-- `csv_contract.py`: đọc CSV theo hợp đồng, kiểm tra từng dòng và tổng hợp theo tháng.
+- `csv_contract.py`: wrapper tương thích, gọi domain/services trong `src/spendwise/`.
 - `transactions_sample.csv`: 10 giao dịch hư cấu dùng để chạy thử và đối chiếu test.
-- `test_csv_contract.py`: 14 test cho validation, Unicode, lọc tháng và số tiền.
+- `test_csv_contract.py`: 14 test giữ hợp đồng và lệnh cũ; bộ kiểm tra đầy đủ gồm cả `tests/`, hiện đạt 50 tests và 11 subtests.
 
 Từ thư mục gốc dự án:
 

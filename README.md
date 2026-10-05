@@ -6,9 +6,9 @@
 
 ## Trạng thái
 
-Đang ở P1: môi trường Python riêng và dependency đã kiểm tra; ví dụ kiểm tra CSV/tính tiền có 14 test đạt. Chưa có ứng dụng hoàn chỉnh, dataset thật, mô hình đã huấn luyện hoặc kết quả ML. Các chỉ số trong spec là mục tiêu đề xuất.
+Đã chuẩn bị P1 và bắt đầu phần kỹ thuật P2: có domain giao dịch, CSV parser từ file/bytes, tổng hợp tháng và CLI preview. Bộ kiểm tra hiện tại đạt **50 tests, 11 subtests**; TASK-04 đang REVIEW. Việc thực hành Python của người học vẫn chưa được xác nhận. Chưa có ứng dụng hoàn chỉnh, dataset thật, mô hình đã huấn luyện hoặc kết quả ML. Các chỉ số trong spec là mục tiêu đề xuất.
 
-Xem [tiến độ kỹ thuật](progress.md) và [bằng chứng kiểm tra](VERIFICATION.md). Cấu trúc `src/`, `tests/` và `artifacts/` trong thiết kế là đầu ra tương lai; mã hiện có nằm trong `examples/`.
+Xem [tiến độ kỹ thuật](progress.md) và [bằng chứng kiểm tra](VERIFICATION.md). Code hiện có nằm trong `src/spendwise/`, tests trong `tests/` và `examples/`. `examples/csv_contract.py` là wrapper của code mới. Các phần SQLite, UI, ML và `artifacts/` trong thiết kế vẫn là đầu ra tương lai.
 
 ## Tài liệu dự án
 
@@ -42,13 +42,13 @@ Nếu đã có `.venv` của dự án, dùng interpreter đó. Lock đã đượ
 ## Chạy code hiện có
 
 ```powershell
-.\.venv\Scripts\python.exe -B examples/csv_contract.py examples/transactions_sample.csv --month 2026-10
+.\.venv\Scripts\python.exe -B scripts/preview_transactions.py examples/transactions_sample.csv --month 2026-10
 ```
 
 Xem [hướng dẫn code CSV](examples/README.md). Dữ liệu mẫu là hư cấu; ví dụ chưa có SQLite, UI hoặc AI và không phải dataset đánh giá mô hình.
 
 ## Bài học ở repo Learn
 
-[Learn/spendwise-ai](https://github.com/Krev1/Learn/tree/main/spendwise-ai) chứa lộ trình, bài 00/01, CSV luyện tập, nhật ký và hướng dẫn bảo vệ. Xem [hướng dẫn dùng hai repo](https://github.com/Krev1/Learn/blob/main/spendwise-ai/README.md). Code tham chiếu ở repo dự án; bài học đọc trong Learn và chạy bằng `.venv` của dự án.
+[Learn/spendwise-ai](https://github.com/Krev1/Learn/tree/main/spendwise-ai) chứa lộ trình, bài 00/01/02, bài tập, nhật ký và hướng dẫn bảo vệ. Xem [hướng dẫn dùng hai repo](https://github.com/Krev1/Learn/blob/main/spendwise-ai/README.md). Code tham chiếu ở repo dự án; bài học đọc trong Learn và chạy bằng `.venv` của dự án.
 
 Tiếp tục task theo [kế hoạch](docs/03_implementation_plan.md), đối chiếu yêu cầu đồ án với giảng viên và giữ mọi kết quả thực nghiệm có bằng chứng. Không commit dữ liệu tài chính thật, database, credentials hoặc `.venv`.

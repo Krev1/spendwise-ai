@@ -6,7 +6,7 @@ Cập nhật: 05/10/2026. Đọc cùng [bằng chứng kiểm tra](VERIFICATION.
 |---|---|---|
 | P0 — Bộ SDD phiên bản 0.1 | Verified | Có bộ SDD, sổ quyết định và prompt; tài liệu học/bảo vệ được chuyển sang Learn; đã đối chiếu hợp đồng và liên kết. Đây là draft kỹ thuật, chưa phải phê duyệt đề tài của trường. |
 | P1 — Môi trường app và ôn Python | In progress | TASK-02 phần kỹ thuật đã kiểm tra: `.venv`, import package, pip check, dependency lock. 14 test PASS trong môi trường này. Bài 00/01 và CSV luyện tập ở repo Learn. TASK-03 chờ người học tự thực hiện/giải thích. |
-| P2 — Dữ liệu và baseline | Planned | Chưa thu dữ liệu thật, chưa có baseline đã chạy. |
+| P2 — Dữ liệu và baseline | In progress | TASK-04 phần kỹ thuật đã kiểm tra: domain, CSV file/bytes, reports, CLI; 50 tests và 11 subtests PASS. TASK-04 đang REVIEW; TASK-05–07, dữ liệu thật và baseline chưa triển khai. |
 | P3 — Huấn luyện và validation | Planned | Chưa có dataset/split/artifact và chưa có số đo mô hình. |
 | P4 — SQLite và nghiệp vụ | Planned | Chưa có database hoặc services của ứng dụng. |
 | P5 — Giao diện và tích hợp AI | Planned | Chưa có ứng dụng Streamlit. |
@@ -17,7 +17,7 @@ Các task chi tiết dùng trạng thái trong tài liệu nhóm. `Verified` c�
 ## Việc tiếp theo
 
 1. Đọc [GitHub và môi trường Python](https://github.com/Krev1/Learn/blob/main/spendwise-ai/lessons/00_git_and_environment.md).
-2. Người học thực hiện [buổi học đầu tiên](https://github.com/Krev1/Learn/blob/main/spendwise-ai/lessons/01_python_and_money.md): chạy ví dụ, sửa CSV luyện tập và giải thích kết quả. Sau đó Mentor hỗ trợ ôn hàm/list/dict; tiếp tục P2 theo kế hoạch.
+2. Người học thực hiện [buổi học đầu tiên](https://github.com/Krev1/Learn/blob/main/spendwise-ai/lessons/01_python_and_money.md): chạy ví dụ, sửa CSV luyện tập và giải thích kết quả. Sau đó đọc [bài 02 — CSV và validation](https://github.com/Krev1/Learn/blob/main/spendwise-ai/lessons/02_csv_and_labels.md), đối chiếu code mới; tiếp tục guideline nhãn và dataset validator theo kế hoạch.
 3. Người học xác minh rubric của trường; việc học và chuẩn bị môi trường vẫn tiếp tục được trong lúc bổ sung thông tin đó.
 
 ## Nhật ký cập nhật tiếp theo
@@ -39,3 +39,11 @@ Ghi ngày, TASK/REQ, file thay đổi, lệnh chạy, kết quả thực, kiến
 - Theo D11/D12, bài học, lộ trình, hướng dẫn bảo vệ, bài tập và nhật ký học chuyển sang [Krev1/Learn](https://github.com/Krev1/Learn/tree/main/spendwise-ai).
 - Repo dự án giữ code, test, SDD, dependency, prompt kỹ thuật và bằng chứng; cập nhật các tham chiếu sang Learn.
 - Thay đổi này chỉ tổ chức tài liệu; trạng thái ứng dụng, dữ liệu và mô hình vẫn như bảng mốc ở trên.
+
+
+## TASK-04 — Domain và CSV preview — 05/10/2026
+
+- [Task card](docs/tasks/TASK-04.md) ghi phạm vi, REQ và tiêu chí chấp nhận; trạng thái REVIEW.
+- Tách implementation sang `src/spendwise/domain/` và `src/spendwise/services/`; thêm CLI, API đọc bytes, test ranh giới hợp đồng và vị trí dòng CSV.
+- Có bài 02/bài tập trong Learn. Chưa có bài tự làm hoặc câu trả lời từ người học; không đánh dấu TASK-03 DONE.
+- Hướng dẫn tiếp theo: người học làm bài 01; phần kỹ thuật tiếp theo là TASK-05–06.

@@ -158,3 +158,8 @@ Hoàn thành bộ SDD khởi động không đồng nghĩa hoàn thành các đi
 
 
 Bài tập theo mốc nằm ở [Learn/spendwise-ai/mentor_guide.md](https://github.com/Krev1/Learn/blob/main/spendwise-ai/mentor_guide.md). Các đường dẫn `Learn/spendwise-ai/lessons/` trong task là đầu ra ở repo Learn, không phải thư mục con của repo dự án. Bài 00/01 đã soạn; các bài còn lại tạo khi triển khai task.
+
+
+## Tiến độ TASK-04
+
+Xem [task card](tasks/TASK-04.md): phần kỹ thuật đã kiểm tra, đang REVIEW. TASK-03 vẫn cần bài tự làm của người học; phần kỹ thuật TASK-04 được chuẩn bị theo yêu cầu bắt đầu triển khai, không thay bằng chứng học tập. Kế hoạch mốc P2 gồm cả guideline, dataset và baseline nên chưa hoàn tất.

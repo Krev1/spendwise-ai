@@ -1,0 +1,11 @@
+transaction_id,date,transaction_type,amount_vnd,description,category
+demo_income_01,2026-10-01,income,5000000,Lương công việc bán thời gian,
+demo_expense_01,2026-10-02,expense,45000,Ăn trưa cơm gà,an_uong
+demo_expense_02,2026-10-03,expense,18000,Vé xe buýt đi học,di_chuyen
+demo_expense_03,2026-10-04,expense,250000,Mua giáo trình môn học,hoc_tap
+demo_expense_04,2026-10-05,expense,2000000,Tiền thuê phòng tháng 10,nha_o_hoa_don
+demo_expense_05,2026-10-05,expense,120000,Mua áo thun,mua_sam
+demo_expense_06,2026-10-06,expense,50000,Vé xem phim,giai_tri
+demo_expense_07,2026-10-06,expense,80000,Mua thuốc cảm,suc_khoe
+demo_expense_08,2026-10-07,expense,30000,Cà phê sáng,
+demo_previous_month,2026-09-30,expense,55000,Bữa tối tháng trước,an_uong

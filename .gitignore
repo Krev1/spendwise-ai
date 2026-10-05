@@ -1,0 +1,38 @@
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local credentials and editor files
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.idea/
+.vscode/
+
+# Private finance data and database
+data/private/
+local/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Model binaries and run outputs; reviewed reports can be added separately
+artifacts/
+*.joblib
+*.pkl
+
+# Packaging intermediates
+build/
+dist/
+*.egg-info/
+*.log

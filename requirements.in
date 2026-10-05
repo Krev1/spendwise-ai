@@ -1,0 +1,6 @@
+# Resolved versions are recorded in requirements.lock.txt after verification.
+scikit-learn
+pandas
+streamlit
+joblib
+pytest
